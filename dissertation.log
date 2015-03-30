@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.29)  29 MAR 2015 22:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.29)  30 MAR 2015 23:58
 entering extended mode
 **C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
 (C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
@@ -326,16 +326,48 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-) [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
+
+ []
+
+[1
 
 
 ]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ¢ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ¢ in font ptmr7t!
+) [2]
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.te
 x
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
-) [2
+) [3
 
 
 
@@ -343,7 +375,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.te
 x
 Chapter 3.
-) [3
+) [4
 
 
 
@@ -357,7 +389,7 @@ Missing character: There is no ½ in font ptmr7t!
 Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¿ in font ptmr7t!
 Missing character: There is no ½ in font ptmr7t!
-) [4
+) [5
 
 
 
@@ -365,11 +397,11 @@ Missing character: There is no ½ in font ptmr7t!
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter5/chapter5.te
 x
 Chapter 5.
-) [5
+) [6
 
 
 
-] [6
+] [7
 
 
 ]
@@ -382,7 +414,7 @@ Missing character: There is no ½ in font ptmr7t!
 Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¿ in font ptmr7t!
 Missing character: There is no ½ in font ptmr7t!
-) [7
+) [8
 
 
 ]
@@ -392,12 +424,12 @@ Appendix B.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 7.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [8
+) [9
 
 
 
-] [9])
-[10]
+] [10])
+[11]
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.bbl
 Underfull \hbox (badness 1661) in paragraph at lines 22--24
 []\OT1/ptm/m/n/10.95 Apache Soft-ware Foun-da-tion, ``Apache Li-cense, Ver-sion
@@ -406,7 +438,7 @@ Underfull \hbox (badness 1661) in paragraph at lines 22--24
 
 ) 
 AED: lastpage setting LastPage
-[11
+[12
 
 
 ]
@@ -444,9 +476,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on dissertation.pdf (18 pages, 109982 bytes).
+Output written on dissertation.pdf (19 pages, 113630 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
