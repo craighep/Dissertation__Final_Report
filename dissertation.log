@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.29)  1 APR 2015 17:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.29)  1 APR 2015 21:48
 entering extended mode
 **C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
 (C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
@@ -350,12 +350,12 @@ ng ac-tions to matrices- http://glmatrix.net
 
 [2]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
- [3] [4]) [5]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+ [3] [4] [5]) [6]
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.te
 x
 Chapter 2.
-) [6
+) [7
 
 
 
@@ -363,7 +363,7 @@ Chapter 2.
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.te
 x
 Chapter 3.
-) [7
+) [8
 
 
 
@@ -377,7 +377,7 @@ Missing character: There is no ½ in font ptmr7t!
 Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¿ in font ptmr7t!
 Missing character: There is no ½ in font ptmr7t!
-) [8
+) [9
 
 
 
@@ -385,11 +385,11 @@ Missing character: There is no ½ in font ptmr7t!
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter5/chapter5.te
 x
 Chapter 5.
-) [9
+) [10
 
 
 
-] [10
+] [11
 
 
 ]
@@ -402,7 +402,7 @@ Missing character: There is no ½ in font ptmr7t!
 Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¿ in font ptmr7t!
 Missing character: There is no ½ in font ptmr7t!
-) [11
+) [12
 
 
 ]
@@ -412,12 +412,12 @@ Appendix B.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 7.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [12
+) [13
 
 
 
-] [13])
-[14]
+] [14])
+[15]
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.bbl
 Underfull \hbox (badness 1661) in paragraph at lines 22--24
 []\OT1/ptm/m/n/10.95 Apache Soft-ware Foun-da-tion, ``Apache Li-cense, Ver-sion
@@ -426,7 +426,7 @@ Underfull \hbox (badness 1661) in paragraph at lines 22--24
 
 ) 
 AED: lastpage setting LastPage
-[15
+[16
 
 
 ]
@@ -452,7 +452,7 @@ aux)) )
 Here is how much of TeX's memory you used:
  2920 strings out of 493921
  42307 string characters out of 3144879
- 95035 words of memory out of 3000000
+ 95036 words of memory out of 3000000
  6065 multiletter control sequences out of 15000+200000
  26005 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -464,9 +464,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on dissertation.pdf (22 pages, 122820 bytes).
+Output written on dissertation.pdf (23 pages, 127268 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
