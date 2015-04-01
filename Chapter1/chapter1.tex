@@ -1,5 +1,5 @@
 \chapter{Background \& Objectives}
-Before commencing the design of the application and the project planning, it is important to have analysed what I hope to have achieved at the end of my project time, and also what steps I will need to be taking to implement each feature. As I will mention later, using FDD will play a big part of how I shape my project and create each feature whether it be by priority, size or difficulty. This section details my understanding for my project requirements, steps I am going to need to take, and also the first sections of an FDD project; developing an overall model and building the list of requirements and features.
+Before commencing the design of the application and the project planning, it is important to have analysed what I hope to have achieved at the end of my project time, and also what steps I will need to be taking to implement each feature. As I will mention later, choosing the best fitting life cycle methodology will play a big part of how I shape my project and create each feature whether it be by priority, size or difficulty. This section details my understanding for my project requirements, steps I am going to need to take, and as I would prefer my project to be similar to and FDD one; developing an overall model and building the list of requirements and features.
 
 \section{Background}
 The choice of undertaking a project such as this one was due to two combining factors: maths and an interest to learn graphical programming. The fact that this application will require me to learn graphics, and how to implement visual effects representing the requirements of the project in ways completely new to myself. As graphics is something I have not had much to do with in the past, this project appears both exciting and daunting task due to the learning curve I will need to take. As for the maths factor, I can assume quite a lot of maths will be involved(especially for creating curves, rolls and turns along most of the manoeuvres) which I enjoy learning about.
@@ -32,9 +32,54 @@ Upon starting this project, several meetings with the project supervisor are pla
 The list shown above also has an \textbf{accompanying} report which I created after my first project meeting. This report includes the list of initial requirements, alongside footnotes, and also a detailing of the methodology and process I plan to follow. The document can be found in the appendices section of this report. 
 
 \section{Analysis}
-Upon finding out the initial requirements and the main purposes of my proposed application, I have been able to look in more detail at the OLAN manoeuvres in further detail, by breaking down each manoeuvre into their primitive elements. 
-%Taking into account the problem and what you learned from the background work, what was your analysis of the problem? How did your analysis help to decompose the problem into the main tasks that you would undertake? Were there alternative approaches? Why did you choose one approach compared to the alternatives? There should be a clear statement of the objectives of the work, which you will evaluate at the end of the work. In most cases, the agreed objectives or requirements will be the result of a compromise between what would ideally have been produced and what was felt to be possible in the time available. A discussion of the process of arriving at the final list is usually appropriate.
+Before I begin using my chosen life cycle model, It is important I analyse the overall model and requirements of the intended application. I plan to analyse two items: the requirements analysed by time, effort and difficulty, and also a breakdown of the OLAN and Aresti manoeuvres. The second of which I will break down to their primative forms, hopefully finding out how I can make my application create each manoeuvre as simple and effieciently as possible.
+
+\subsection{OLAN and Aresti interpretations}
+The best place to begin with my analysis is to look in more detail at the OLAN manoeuvres individually, by breaking down each manoeuvre into their primitive elements. As with the previous section, alongisde I have attatched a document to the apendices of this report, detailing the maain and most important manoeuvres I believe are key to finding primative shapes. I began this by firstly organising each OLAN and their corresponding Aresti shapes into sub groups. 
+
+Of these, there were:
+\begin{itemize}
+	\item Single element- These include manoeuvres that can be described as one fluid movement. For instance, the OLAN letter 'd' would mean diagonal line up, which requires only one action to complete the manoeuvre.
+	\item Two-element- This group includes any manouvres that require two seperate manoeuvres to complete a given manoeuvres. An example of this could be the 'z' notation, also known as a shark tooth. This shape requires both a diagonal line up followed by a vertical line down. 
+	\item Loops- These like the single element moves, consist of a sinlge manoeuvre, and can be combined to make other maneouvres.
+	\item Loop-line combinations- These are loops that are a combination of a loop and a single or two-element manoeuvre.
+	\item Double-loops- As the name states, these are maneouvres that contain two loops.
+	\item Humpty-Dumpties, Hammerheads and Tailslides- Each of these manoeuvres represent specific shapes, such as a 'humpty dumpty' which consists of a bump shape comprised of a 180 degree turn to come back down vertically. As the previous, these shapes can simply be combined from single element pieces. 
+	\item Complex 3 rolling elements- The naming behind this group of manoeuvres comes fom the fact that each contain a set of 3 elements to create the entire figure.
+	\item Special and 'oddball' figures- The group of moneuvres that are more complex in such a way that they require special sections not availible from any of the other groups. One example of this is the OLAN letter 'f' which represets a flick. This comprises of rolling the aircraft 360 degrees along its horizontal line.
+\end{itemize}
+
+Another important part of the OLAN analysis that I had to understand before proceeding was the possible parameters, prefixes and postfixes that can be attatched to manoeuvres. 
+
+Looking at prefixes first, each one-letter-notation, \textbf{some} moves are able to be reversed, or inverted. These are so:
+\begin{itemize}
+	\item r - Reverse, meaning to order of how eahc part of the manoeuvre is done. For example, placing the letter 'r' before 'c', would represent a cuban loop flown in the opposite oreder. 
+	\item i - Inverse, meaing that each part of the manoeuvre is done in the same order, but inverted in terms of value. For example, the letter 'i' before 'c' would mean that rather than looping upwards, the loop would go down. A diagonal line upwards would become a diagonal line downwards.
+	\item ir - This is simply a mixture of both the previous. The manoeuvre fixed to the end of this postfix would both be inverted and then reversed. 
+\end{itemize}
+
+In addition, there are a number of postfixes that can be used with some manoeuvres particularly with roll or turn based figures. For example, manoeuvres containing rolls can be represented with the prefix angle of turn in multiples of 90 degrees, and a postfix of the amount of rolls along the same part of the path. So in one example, the notation '2j2' would represent a 180 degree turn, whilst rolling the aircraft twice. Alike the prefixes for inverting and reversing manoeuvres, the parameters are not availible on all the manoeuvres in the OLAN catalogue. Again, the full list can be found on the the OpenArea site, or see the my OLAN understandings in my \textbf{appendices}.
+
+One final set of optional paramaters that could be required of my application to handle are the positions of manoeuvres. Although not strictly in part of the OLAN catalogue, it is already availible in the OpenAero application. These parameters are strcutured (x,y) with x represeting the amount of horizontal distance and y teh vertical distance from the end of the previous manoeuvre to the start of the current manoeuvre. These can also be negative values to ensure the user can control the position fully. 
+
+The main reason for the need of this is that simply all manoeuvres cannot fully follow each other straight after each other. In real-life if a manoeuvre made the pilot finish near the ground, and the next move required them to perform a diagonal line down, they would hit the ground. Obviously my application will attempt some form of validation and checks, but offering the option to the user is a very useful feature.
+
+From my analysis in the groups listed above, a number of asssumptions can be made.
+\begin{enumerate}
+	\item I have already deduced that all none-single manoeuvres that do not include loops or rolls should be possible to be made from a set of single element manoveuvres.
+	\item In total, any manoeuvre can be constrcuted from one of three primary moves: diagonal and straight lines, cuvred lines, and turns and rolls. Each of which should be able to carry parameters.
+	\item Each curve should be possible to be created based on 45 degree increments, as this is the smallest change of angle in any manouvre, and all other angles seem to be in multiples of this number. This will shorten the need for multiple commands for different ranges of angles when programming in the manoeuvres.
+	\item Turns, curves and rolls will all need parameters programmtically, as some curves are steeper and shorter than others. The same goes for rolls, where you can choose anything from quarter to 3 rolls, and in turns the angle of turn should be specifyable.
+\end{enumerate}
+
+By considering my analysis of the set of manoeuvres, I can now envision what maneoivres will be possible to create easiest, and prioiritise my work better. The next section of this report will group up the functionality of the application with my OLAN manoeuvre findings.
+
+\subsection{Application functionality interpretations}
+Upon having my initial meetings with the project supervisor, and on analysis of the OLAN catalogue, I can now make more final judgements on what I want to have been achieved by the end of this project. 
+
+
 
 \section{Process}
+
 %You need to describe briefly the life cycle model or research method that you used. You do not need to write about all of the different process models that you are aware of. Focus on the process model that you have used. It is possible that you needed to adapt an existing process model to suit your project; clearly identify what you used and how you adapted it for your needs.
 
