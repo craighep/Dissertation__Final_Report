@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.29)  2 APR 2015 10:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.29)  2 APR 2015 13:04
 entering extended mode
 **C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
 (C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
@@ -342,16 +342,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
+<images/notes.jpg, id=32, 3276.24pt x 2457.18pt>
+File: images/notes.jpg Graphic file (type jpg)
+ <use images/notes.jpg>
+Package pdftex.def Info: images/notes.jpg used on input line 15.
+(pdftex.def)             Requested size: 213.39566pt x 160.02225pt.
 
-Overfull \hbox (35.79684pt too wide) in paragraph at lines 24--25
+Overfull \hbox (35.79684pt too wide) in paragraph at lines 30--31
 []\OT1/ptm/m/n/10.95 glMatrix- JavaScript li-brary for help-ing with per-form-i
 ng ac-tions to matrices- http://glmatrix.net 
  []
 
-[2]
+[2 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/notes.jpg>
+]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
- [3] [4] [5] [6]) [7]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
+ [3] [4]
+Overfull \hbox (2.08116pt too wide) in paragraph at lines 91--105
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5] [6]) [7]
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.te
 x
 Chapter 2.
@@ -450,10 +464,10 @@ aux)
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2.
 aux)) ) 
 Here is how much of TeX's memory you used:
- 2920 strings out of 493921
- 42307 string characters out of 3144879
- 95037 words of memory out of 3000000
- 6065 multiletter control sequences out of 15000+200000
+ 2930 strings out of 493921
+ 42455 string characters out of 3144879
+ 97047 words of memory out of 3000000
+ 6072 multiletter control sequences out of 15000+200000
  26005 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,10n,45p,1690b,399s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -464,9 +478,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on dissertation.pdf (24 pages, 130542 bytes).
+Output written on dissertation.pdf (24 pages, 3172580 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
+ 105 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

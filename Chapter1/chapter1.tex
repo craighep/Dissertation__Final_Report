@@ -4,11 +4,17 @@ Before commencing the design of the application and the project planning, it is 
 \section{Background}
 The choice of undertaking a project such as this one was due to two combining factors: maths and an interest to learn graphical programming. The fact that this application will require me to learn graphics, and how to implement visual effects representing the requirements of the project in ways completely new to myself. As graphics is something I have not had much to do with in the past, this project appears both exciting and daunting task due to the learning curve I will need to take. As for the maths factor, I can assume quite a lot of maths will be involved(especially for creating curves, rolls and turns along most of the manoeuvres) which I enjoy learning about.
 
-In terms of the history of the topic, OLAN was originally developed by Michael Gorden in \textbf{2006} and was designed to provide shorthand notation for pilots planning out aerobatic routines without having to draw out the full Aresti diagrams. In recent years, the OLAN notation became used much more until because of licensing issues with the original owner was taken offline. Because of this, a new form of the notation has been created in a more open source way paving the way for applications such as this project's intended aim. Although in this report and my planned application itself will be still referring the notation as OLAN, the new re-make of the language is known as the \textbf{'OpenAero language'}. This is based off of the original, yet is open and allows anyone to use it. In combination with this, the creators of the OpenAero language also developed a web-based \textbf{application} that allows the conversion of the notations to 2D Aresti diagrams. This is somewhat similar to what I hope to achieve, but alongside plenty more features most importantly the ability to see a plane perform the moves.
+In terms of the history of the topic, OLAN was originally developed by Michael Gorden in \textbf{2006} and was designed to provide shorthand notation for pilots planning out aerobatic routines without having to draw out the full Aresti diagrams. In recent years, the OLAN notation became used much more until because of licensing issues with the original owner was taken off-line. Because of this, a new form of the notation has been created in a more open source way paving the way for applications such as this project's intended aim. Although in this report and my planned application itself will be still referring the notation as OLAN, the new re-make of the language is known as the \textbf{'OpenAero language'}. This is based off of the original, yet is open and allows anyone to use it. In combination with this, the creators of the OpenAero language also developed a web-based \textbf{application} that allows the conversion of the notations to 2D Aresti diagrams. This is somewhat similar to what I hope to achieve, but alongside plenty more features most importantly the ability to see a plane perform the moves.
 
 As for Aresti, named after its conceiver José Luis Aresti Aguirre \textbf{https://www.aerobatics.org.uk/aresti} is the diagram format that OLAN achieves, and represent informative diagrams showing the shape of the routine, direction of travel, rolls and sharpness of turns. Aresti diagrams also can include angles or turns, ranging from 90 degrees to 270. Each diagram usually has a name, relating normally to the shape of the manoeuvre, though some are more commonly known to pilots rather than the regular user. The OLAN notation for each diagram usually attempts to try describe the manoeuvre with the letter used, such as 'o' for a loop, or 'z' for a shark tooth. The full list of manoeuvres, including their OLAN notation and full name can be found on the \textbf{OpenAero site}.
 
 Upon starting this project, several meetings with the project supervisor are planned each providing more detail of the initial requirements. Each of the meetings will be found in the Gantt for the project, with a smaller document in the\textbf{ appendix} showing the results of each meeting. Because I have already attended several meetings at this stage, I can provide a fairly accurate list of initial requirements of the application.\\
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.5\textwidth]{images/notes.jpg}
+  \caption{Image of my initial user stories after my first meeting, short and concise requirements.}
+\end{figure}
 
 \noindent The initial required application can be broken down into an extensive(but less detailed) list of main functional requirements. These are as follows:
 \begin{enumerate}
@@ -30,8 +36,6 @@ Upon starting this project, several meetings with the project supervisor are pla
 \end{enumerate}
 
 The list shown above also has an \textbf{accompanying} report which I created after my first project meeting. This report includes the list of initial requirements, alongside footnotes, and also a detailing of the methodology and process I plan to follow. The document can be found in the appendices section of this report. 
-
-INCLUDE PICTURE OF USER STORIES
 
 In addition to the list, I feel it should be highlighted why and what language I will be using to create my application. I chose WebGL over OpenGL because of two reasons, the first being that I like the idea of being able to run an application such as this simply in a web browser, without the need for any compilers or platforms installed on the user's device. The other reason being that I already have good experience using JavaScript, and this will help when it comes to the writing code, making sure the coding style is appropriate, and maximising any features it could bring to my application.
 
@@ -81,7 +85,24 @@ By considering my analysis of the set of manoeuvres, I can now envision what man
 \subsection{Application functionality interpretations}
 Upon having my initial meetings with the project supervisor, and on analysis of the OLAN catalogue, I can now make more final judgements on what I want to have been achieved by the end of this project. As I discussed in the background section, I had already created a set of initial assumed requirements. Though, some of the features raised questions, such as the possibilities to use libraries for the physics and graphical side. After some research I can now define a more cohesive and stable list of features and requirements of my application. Rather than in a list format though, here I will group features together and discuss the most important factors.
 
-INCLUDE PICTURE OF USER REQUIREMENTS
+\begin{table}[h]
+\caption{A table of prioritised features and tasks that I would like to have implemented by the end of the project. The lower ranked items will only be started on completion of higher tasks.}
+ \label{tbl:rank-table}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Rank} & \textbf{Description}                                                                \\ \hline
+1             & Support broken down manoeuvres, via JSON, convert to vectors and ultimately figures \\ \hline
+2             & Allow for each manoeuvre to link together, start at end of previous                 \\ \hline
+3             & Animate along a path of the manoeuvres                                              \\ \hline
+4             & Create cameras, onboard and birds eye                                               \\ \hline
+5             & Ground and lighting additions                                                       \\ \hline
+6             & Saving and loading of inputs                                                        \\ \hline
+7             & Manoeuvre validation                                                                \\ \hline
+8             & Physics options, different aircrafts                                                \\ \hline
+9             & Movie reel functionality                                                            \\ \hline
+10            & Mobile compatibility and nice GUI                                                   \\ \hline
+\end{tabular}
+\end{table}
 
 Starting with the underlying functionality based on my OLAN interpretations, what I hope to be achievable by the end of this project is the possibility to allow users to enter any length of space separated OLAN characters into an input box, alongside any possible prefixes, postfixes and parameters. I hope to achieve this by making my system as general as possible, and by using very abstract methods that can support any given move input. One way I could think of implementing this now would be to break each manoeuvre into a set of instructions, each one saying which direction to move, the angle and length. By breaking each manoeuvre into these, I could use a single method to construct each manoeuvre on the fly. This is important as it would then allow for the user to play through the manoeuvre in an animated fashion and see the aircraft move.
 
@@ -97,10 +118,8 @@ Physics is also an option I would like to include, such as wind, type of aircraf
 
 Finally, a more smaller task I think I should set myself is to make the application mobile compatible. As most phones also now have WebGL capabilities, making the application run on mobiles should be possible. This is more a GUI centred feature on the site itself though, and should be added nearer the end of the project.
 
-PICTURE OF RANKINGS OF ITEMS a bit like scrum.
-
 \section{Process}
-Moving onto more project and time management specific items, the process in which I follow can have a large effect on what features I complete on time. At this stage, I would suggest using a hybrid of both the waterfall methodology alongside feature-driven development to create me application. The reasoning for this starts with the way I have already created a list of features in my analysis, which is already part of the FDD life cycle. This would mean following this, I would be able to simply iterate over each feature, plan, implement and test each one by one. This is an ideal trait that comes from using this methodology which allows me to create each feature separately, and more importantly by priority. Then for instance if I was not to finish the entire list I outlined, my application would still have a good deal of functionality on offer. If I were to use the waterfall method alone, It might mean I try implement too many items at once, yet not finish certain parts that rely on others. This would result in an incomplete and less functional program.
+Moving onto more project and time management specific items, the process in which I follow can have a large effect on what features I complete on time. At this stage, I would suggest using a hybrid of both the waterfall methodology alongside feature-driven development to create me application. The reasoning for this starts with the way I have already created a list of features in my analysis, which is already part of the FDD life cycle. This would mean following this, I would be able to simply iterate over each feature, plan, implement and test each one by one. This is an ideal trait that comes from using this methodology which allows me to create each feature separately, and more importantly by priority. Then for instance if I was not to finish the entire list I outlined, my application would still have a good deal of functionality on offer. If I were to use the waterfall method alone, It might mean I try implement too many items at once, yet not finish certain parts that rely on others. This would result in an incomplete and less functional program. I feel like there is also a clear part of the scrum methodology put to use here, as I showed with some user stories, and the prioritised list of features.
 
 The second reason, and reason for including the waterfall cycle in my hybrid approach is because I would like to create a more big up front design before beginning implementation. This is where my approach is going to be different from a solely FDD way, where I would usually have to design each feature before implementation and testing. I prefer the way of knowing how the entirety of the structure of code should look before I begin, yet keep the structure as loosely connected as possible to ensure that features avoid relying on each other to an extent where if one is broken, the rest is broken. 
 
