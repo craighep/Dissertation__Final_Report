@@ -10,16 +10,44 @@ A level-1 auxiliary file: Chapter4/chapter4.aux
 A level-1 auxiliary file: Chapter5/chapter5.aux
 A level-1 auxiliary file: Appendix1/appendix1.aux
 A level-1 auxiliary file: Appendix2/appendix2.aux
+A level-1 auxiliary file: Appendix3/appendix3.aux
 The style file: IEEEannot.bst
 Database file #1: References/references.bib
-Warning--entry type for "apache_poi" isn't style-file defined
---line 57 of file References/references.bib
-Warning--entry type for "apache_license" isn't style-file defined
---line 66 of file References/references.bib
+Warning--entry type for "Olan_Intro" isn't style-file defined
+--line 13 of file References/references.bib
+Warning--entry type for "Olan_Basics" isn't style-file defined
+--line 22 of file References/references.bib
+Warning--entry type for "OpenAero_Language" isn't style-file defined
+--line 31 of file References/references.bib
+Warning--entry type for "OpenAero_Application" isn't style-file defined
+--line 40 of file References/references.bib
+Warning--entry type for "Aresti" isn't style-file defined
+--line 49 of file References/references.bib
+Warning--string name "n/a" is undefined
+--line 61 of file References/references.bib
+I was expecting a `,' or a `}'---line 64 of file References/references.bib
+ :  
+ :  Title = {Aresti Made Simple},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "ThreeJs" isn't style-file defined
+--line 68 of file References/references.bib
+Warning--entry type for "GlMatrix" isn't style-file defined
+--line 77 of file References/references.bib
+Warning--entry type for "FDD" isn't style-file defined
+--line 86 of file References/references.bib
+Warning--entry type for "Local_Storage" isn't style-file defined
+--line 95 of file References/references.bib
+Warning--I didn't find a database entry for "apache_poi"
+Warning--I didn't find a database entry for "apache_license"
+Warning--I didn't find a database entry for "NumericalRecipes"
 -- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Sorting version - not for use with work to be submitted to the IEEE.
+Warning--empty title in Aresti_Simple
+Warning--empty journal in Aresti_Simple
+Warning--empty year in Aresti_Simple
 
 Done.
-(There were 2 warnings)
+(There was 1 error message)

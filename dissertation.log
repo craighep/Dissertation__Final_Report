@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.29)  2 APR 2015 13:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.29)  2 APR 2015 20:34
 entering extended mode
 **C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
 (C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
@@ -192,6 +192,66 @@ Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count106
+\calc@Bcount=\count107
+\calc@Adimen=\dimen116
+\calc@Bdimen=\dimen117
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count108
+\calc@Cskip=\skip63
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box33
+\AM@toc@title=\toks22
+\c@AM@survey=\count109
+\AM@templatesizebox=\box34
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty"
+Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -215,36 +275,38 @@ x)
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1.
 aux)
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2.
+aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3.
 aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen116
-\scratchbox=\box33
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen117
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count110
+\scratchdimen=\dimen118
+\scratchbox=\box35
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen119
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks24
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
@@ -252,7 +314,8 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 34.
+(lastpage)             ! on input line 37.
+\AtBeginShipoutBox=\box36
  (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\cover.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
@@ -328,12 +391,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
-
-Overfull \hbox (15.84605pt too wide) in paragraph at lines 9--10
-[]\OT1/ptm/m/n/10.95 As for Aresti, named af-ter its con-ceiver Jos Luis Aresti
- Aguirre \OT1/ptm/b/n/10.95 https://www.aerobatics.org.uk/aresti
- []
-
 [1
 
 
@@ -347,11 +404,6 @@ File: images/notes.jpg Graphic file (type jpg)
  <use images/notes.jpg>
 Package pdftex.def Info: images/notes.jpg used on input line 15.
 (pdftex.def)             Requested size: 213.39566pt x 160.02225pt.
-
-Overfull \hbox (35.79684pt too wide) in paragraph at lines 30--31
-[]\OT1/ptm/m/n/10.95 glMatrix- JavaScript li-brary for help-ing with per-form-i
-ng ac-tions to matrices- http://glmatrix.net 
- []
 
 [2 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/notes.jpg>
 ]
@@ -410,40 +462,193 @@ Chapter 5.
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1.
 tex
 Appendix A.
-Missing character: There is no ï in font ptmr7t!
-Missing character: There is no ¿ in font ptmr7t!
-Missing character: There is no ½ in font ptmr7t!
-Missing character: There is no ï in font ptmr7t!
-Missing character: There is no ¿ in font ptmr7t!
-Missing character: There is no ½ in font ptmr7t!
-) [13
+[13
 
 
-]
+] <images/first.png, id=71, 1312.905pt x 248.42813pt>
+File: images/first.png Graphic file (type png)
+
+<use images/first.png>
+Package pdftex.def Info: images/first.png used on input line 10.
+(pdftex.def)             Requested size: 654.4075pt x 170.7181pt.
+
+Overfull \hbox (2.8394pt too wide) in paragraph at lines 10--11
+ [][] 
+ []
+
+[14
+
+ <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/first.png>] 
+<images/init.pdf, id=77, page=1, 614.295pt x 794.97pt>
+File: images/init.pdf Graphic file (type pdf)
+
+<use images/init.pdf, page 1>
+Package pdftex.def Info: images/init.pdf, page1 used on input line 19.
+(pdftex.def)             Requested size: 512.17993pt x 512.1634pt.
+
+Overfull \hbox (85.3886pt too wide) in paragraph at lines 19--20
+[][] 
+ []
+
+<images/init.pdf, id=78, page=2, 614.295pt x 794.97pt>
+File: images/init.pdf Graphic file (type pdf)
+
+<use images/init.pdf, page 2>
+Package pdftex.def Info: images/init.pdf, page2 used on input line 23.
+(pdftex.def)             Requested size: 512.17993pt x 512.1634pt.
+
+Overfull \hbox (85.3886pt too wide) in paragraph at lines 23--24
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15
+
+
+ <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/init.pdf>] [
+16 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/init.pdf>]
+ <images/eval.pdf, id=111, page=1, 597.55246pt x 845.07718pt>
+File: images/eval.pdf Graphic file (type pdf)
+
+<use images/eval.pdf, page 1>
+Package pdftex.def Info: images/eval.pdf, page1 used on input line 32.
+(pdftex.def)             Requested size: 455.25697pt x 597.5074pt.
+
+Overfull \hbox (28.46564pt too wide) in paragraph at lines 32--33
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/eval.pdf, id=112, page=2, 597.55246pt x 845.07718pt>
+File: images/eval.pdf Graphic file (type pdf)
+
+<use images/eval.pdf, page 2>
+Package pdftex.def Info: images/eval.pdf, page2 used on input line 36.
+(pdftex.def)             Requested size: 455.25697pt x 597.5074pt.
+
+Overfull \hbox (28.46564pt too wide) in paragraph at lines 36--37
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/eval.pdf, id=113, page=3, 597.55246pt x 845.07718pt>
+File: images/eval.pdf Graphic file (type pdf)
+
+<use images/eval.pdf, page 3>
+Package pdftex.def Info: images/eval.pdf, page3 used on input line 40.
+(pdftex.def)             Requested size: 455.25697pt x 597.5074pt.
+
+Overfull \hbox (28.46564pt too wide) in paragraph at lines 40--41
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/eval.pdf, id=114, page=4, 597.55246pt x 845.07718pt>
+File: images/eval.pdf Graphic file (type pdf)
+
+<use images/eval.pdf, page 4>
+Package pdftex.def Info: images/eval.pdf, page4 used on input line 44.
+(pdftex.def)             Requested size: 455.25697pt x 597.5074pt.
+
+Overfull \hbox (28.46564pt too wide) in paragraph at lines 44--45
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/eval.pdf, id=115, page=5, 597.55246pt x 845.07718pt>
+File: images/eval.pdf Graphic file (type pdf)
+
+<use images/eval.pdf, page 5>
+Package pdftex.def Info: images/eval.pdf, page5 used on input line 48.
+(pdftex.def)             Requested size: 455.25697pt x 597.5074pt.
+
+Overfull \hbox (28.46564pt too wide) in paragraph at lines 48--49
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17
+
+] [18 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/eval.pd
+f>] [19 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/eval.
+pdf>] [20 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/eva
+l.pdf>] [21 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/e
+val.pdf>] [22 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images
+/eval.pdf>] [23
+
+] <images/second.png, id=177, 1029.8475pt x 411.03563pt>
+File: images/second.png Graphic file (type png)
+
+<use images/second.png>
+Package pdftex.def Info: images/second.png used on input line 58.
+(pdftex.def)             Requested size: 654.43304pt x 170.71458pt.
+
+Overfull \hbox (2.86494pt too wide) in paragraph at lines 58--59
+ [][] 
+ []
+
+[24
+
+ <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/second.png>]
+)
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2.
 tex
 Appendix B.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 7.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [14
+Missing character: There is no ï in font ptmr7t!
+Missing character: There is no ¿ in font ptmr7t!
+Missing character: There is no ½ in font ptmr7t!
+Missing character: There is no ï in font ptmr7t!
+Missing character: There is no ¿ in font ptmr7t!
+Missing character: There is no ½ in font ptmr7t!
+
+LaTeX Warning: Citation `apache_poi' on page 25 undefined on input line 12.
+
+
+LaTeX Warning: Citation `apache_license' on page 25 undefined on input line 13.
+
+
+) [25
 
 
 
-] [15])
-[16]
-(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.bbl
-Underfull \hbox (badness 1661) in paragraph at lines 22--24
-[]\OT1/ptm/m/n/10.95 Apache Soft-ware Foun-da-tion, ``Apache Li-cense, Ver-sion
- 2.0,'' $http : / / www . apache . org /$
- []
-
-) 
-AED: lastpage setting LastPage
-[17
 
 
 ]
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3.
+tex
+Appendix C.
+
+LaTeX Warning: Citation `NumericalRecipes' on page 26 undefined on input line 5
+.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 7.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [26
+
+
+
+] [27])
+[28]
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.bbl
+[29
+
+
+]) 
+AED: lastpage setting LastPage
+[30]
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.aux
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\cover.aux)
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\declaration.aux)
@@ -462,25 +667,35 @@ x)
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1.
 aux)
 (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2.
-aux)) ) 
+aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3.
+aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2930 strings out of 493921
- 42455 string characters out of 3144879
- 97047 words of memory out of 3000000
- 6072 multiletter control sequences out of 15000+200000
+ 5741 strings out of 493921
+ 94863 string characters out of 3144879
+ 174627 words of memory out of 3000000
+ 8830 multiletter control sequences out of 15000+200000
  26005 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,10n,45p,1690b,399s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on dissertation.pdf (24 pages, 3172580 bytes).
+ 37i,11n,45p,1690b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/pal
+atino/uplri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb
+8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dissertation.pdf (37 pages, 3702468 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 231 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
