@@ -1,17 +1,42 @@
 %\addcontentsline{toc}{chapter}{Development Process}
 \chapter{Design}
-On completion of my analysis and background planning for the project, I can now look at more detailed design for the application overview, and the individual component it comprises of. Becuase my application relies heavily on front end components due to the code being written in Javascript and WebGl alongside a well organised GUI, I will split my design into to sections. The reasoning for this is becuase I would prefer to have the GUI and logic of the application to be decoupled, so that the code can be changed in the Javascript easily without having to affect the user interface. Other than planning the application itself, it is also important I plan what key assisting services I use, such as how I intend on versioning my code, to how I will deploy my code.
+On completion of my analysis and background planning for the project, I can now look at more detailed design for the application overview, and the individual component it comprises of. Becuase my application will present both a front-end GUI and back-end Javascript and WebGl, I will split my design into two sections. The reasoning for this is becuase I would prefer to have the GUI and logic of the application to be decoupled, so that the code can be changed in the Javascript easily without having to affect the user interface. Other than planning the application itself, it is also important I plan what key assisting services I use, such as how I intend on versioning my code, to how I will deploy my code.
 
 \section{Overall Architecture}
-To begin, I should first look to seperate the features I listed in the analysis section of this report into categories. These categories will then help me to deteerming how I could structure my application in as best object orientated way as possible.
 
-\section{Some detailed design}
+\section{Back-end logic and design}
+The first of the two design categories concentrates on the Javascript that will act as the functions to run each of the proposed features of the applocation. The code on this side will be responsible for mainting contact with the GUI, and more importanly the WebGL canvas on the webpage. To make the code be as maintainable and run effectivly as possible, I will look into a variety of design patterns.
 
-\subsection{Even more detail}
+\subsection{Design patterns}
+
+%Talk about rejected design patterns
+
+\subsection{Module diagram}
+Becuase much of the code I will be implimenting will hold various Three.Js objects, I have decided that modulating methods and objects will be better than simulating classes seeing as Javascript is a class-less language. This is a pattern known as the module pattern. Although this may appear less object orientated, modules allow for more robust archetecture where units of code can be seperated and organised. Modules are slightly similar to classes in the way they can hide code that should not be accessable to other modules by encapsulates privacy. When code is modulated, and then that module is called upon by another, only a public API is returned, and other methods in that module are kept private from being used in other parts of the application. These private methods are good for use as supporting methods, holding such things as calculations, or private variables for getters and setters. Again, this is a similar case to the traditional class diagram.
+
+In order to create a basis for modulating code, I should first look to seperate the features I listed in the analysis section of this report into categories. These categories will then help me to determine how I could structure my application in as best object orientated way as possible.
+
+The categories I have been able to come to are:
+\begin{itemize}
+  \item Main- initiating other modules, beginning the application.
+  \item
+  \item
+  \item
+  \item
+\end{itemize}
+http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript
+
+\subsection{Object and storage formatting}
+
+\subsection{Naming conventions}
 
 \section{User Interface}
 
-\section{Other relevant sections}
+\subsection{GUI Use-case}
+
+\subsection{CSS and wireframe design}
+
+\section{Planned use of services}
 
 % word count -252 = 181
-%You should concentrate on the more important aspects of the design. It is essential that an overview is presented before going into detail. As well as describing the design adopted it must also explain what other designs were considered and why they were rejected.The design should describe what you expected to do, and might also explain areas that you had to revise after some investigation.Typically, for an object-oriented design, the discussion will focus on the choice of objects and classes and the allocation of methods to classes. The use made of reusable components should be described and their source referenced. Particularly important decisions concerning data structures usually affect the architecture of a system and so should be described here.How much material you include on detailed design and implementation will depend very much on the nature of the project. It should not be padded out. Think about the significant aspects of your system. For example, describe the design of the user interface if it is a critical aspect of your system, or provide detail about methods and data structures that are not trivial. Do not spend time on long lists of trivial items and repetitive descriptions. If in doubt about what is appropriate, speak to your supervisor. You should also identify any support tools that you used. You should discuss your choice of implementation tools - programming language, compilers, database management system, program development environment, etc.Some example sub-sections may be as follows, but the specific sections are for you to define. 
+%You should concentrate on the more important aspects of the design. It is essential that an overview is presented before going into detail. As well as describing the design adopted it must also explain what other designs were considered and why they were rejected.The design should describe what you expected to do, and might also explain areas that you had to revise after some investigation.Typically, for an object-oriented design, the discussion will focus on the choice of objects and classes and the allocation of methods to classes. The use made of reusable components should be described and their source referenced. Particularly important decisions concerning data structures usually affect the architecture of a system and so should be described here.How much material you include on detailed design and implementation will depend very much on the nature of the project. It should not be padded out. Think about the significant aspects of your system. For example, describe the design of the user interface if it is a critical aspect of your system, or provide detail about methods and data structures that are not trivial. Do not spend time on long lists of trivial items and repetitive descriptions. If in doubt about what is appropriate, speak to your supervisor. You should also identify any support tools that you used. You should discuss your choice of implementation tools - programming language, compilers, database management system, program development environment, etc.Some example sub-sections may be as follows, but the specific sections are for you to define.
