@@ -1,9 +1,18 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  5 APR 2015 14:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.29)  5 APR 2015 14:27
 entering extended mode
-**C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
-(C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
+**C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
+(C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for loaded.
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
@@ -22,7 +31,7 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\mmp.sty
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\mmp.sty
 Package: mmp 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
@@ -134,7 +143,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip46
 \subfigcapskip=\skip47
@@ -150,7 +159,7 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip50
 \subfig@bottom=\skip51
 )
@@ -165,7 +174,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip52
 \f@ncyO@elh=\skip53
 \f@ncyO@erh=\skip54
@@ -176,14 +185,14 @@ Package: times 2005/04/12 PSNFSS-v9.2a (SPQR)
 \f@ncyO@olf=\skip59
 \f@ncyO@orf=\skip60
 )
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\lastpage\lastpage.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
 Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ))
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
 Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
@@ -202,7 +211,7 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count108
 \calc@Cskip=\skip63
 )
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
 Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
@@ -212,7 +221,7 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 ))
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
@@ -229,7 +238,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
 File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box33
@@ -240,35 +249,35 @@ File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\cleveref\cleveref.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty"
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 )
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.aux
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\cover.aux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\declaration.aux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\acknowledgements.au
-x) (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\abstract.aux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter1/chapter1.a
-ux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.a
-ux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.a
-ux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.a
-ux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter5/chapter5.a
-ux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1
-.aux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2
-.aux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3
-.aux))
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.aux
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\cover.aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\declaration.aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\acknowledgements.aux
+) (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\abstract.aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter1/chapter1.au
+x)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.au
+x)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.au
+x)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.au
+x)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter5/chapter5.au
+x)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1.
+aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2.
+aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3.
+aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
@@ -285,7 +294,7 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
 \scratchdimen=\dimen118
@@ -307,7 +316,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
 (lastpage)             ! on input line 37.
 \AtBeginShipoutBox=\box36
- (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\cover.tex
+ (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\cover.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
 LaTeX Font Info:    Try loading font information for U+msa on input line 28.
@@ -322,8 +331,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [0
 
 
-{C:/Users/Craig/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\declaration.tex
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\declaration.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
 
@@ -350,33 +359,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
 
 ]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\acknowledgements.te
-x) [2
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\acknowledgements.tex
+) [2
 
 
-] (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\abstract.tex) [3
+] (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\abstract.tex)
+[3
 
 
-]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.toc
+] (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 )
 \tf@toc=\write3
-
-[1
+ [1
 
 ]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.lof)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.lof)
 \tf@lof=\write4
 
-[2]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.lot)
+[2] (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.lot
+)
 \tf@lot=\write5
-
-[3]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter1/chapter1.t
-ex
+ [3]
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter1/chapter1.te
+x
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
@@ -398,8 +405,8 @@ File: images/notes.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/notes.jpg used on input line 15.
 (pdftex.def)             Requested size: 213.39566pt x 160.02225pt.
 
-[2 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/notes.jpg
->]
+[2 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/notes.jpg>
+]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
  [3] [4]
@@ -411,24 +418,24 @@ Overfull \hbox (2.08116pt too wide) in paragraph at lines 91--105
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5] [6]) [7]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.t
-ex
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.te
+x
 Chapter 2.
 [8
 
 
 
 ]) [9]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.t
-ex
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.te
+x
 Chapter 3.
 ) [10
 
 
 
 ]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.t
-ex
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.te
+x
 Chapter 4.
 Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¿ in font ptmr7t!
@@ -441,8 +448,8 @@ Missing character: There is no ½ in font ptmr7t!
 
 
 ]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter5/chapter5.t
-ex
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter5/chapter5.te
+x
 Chapter 5.
 ) [12
 
@@ -452,8 +459,8 @@ Chapter 5.
 
 
 ]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1
-.tex
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1.
+tex
 Appendix A.
 [14
 
@@ -471,8 +478,8 @@ Overfull \hbox (2.8394pt too wide) in paragraph at lines 10--11
 
 [15
 
- <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/first.png>]
- <images/init.pdf, id=80, page=1, 614.295pt x 794.97pt>
+ <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/first.png>] 
+<images/init.pdf, id=80, page=1, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 1>
@@ -500,9 +507,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [16
 
 
- <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf>] 
-[17 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf
->] <images/eval.pdf, id=114, page=1, 597.55246pt x 845.07718pt>
+ <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/init.pdf>] [
+17 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/init.pdf>]
+ <images/eval.pdf, id=114, page=1, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 1>
@@ -574,17 +581,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18
 
-] [19 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.p
-df>] [20 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eva
-l.pdf>] [21 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/
-eval.pdf>] [22 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/imag
-es/eval.pdf>] [23 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/i
-mages/eval.pdf>] [24
+] [19 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/eval.pd
+f>] [20 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/eval.
+pdf>] [21 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/eva
+l.pdf>] [22 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/e
+val.pdf>] [23 <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images
+/eval.pdf>] [24
 
-]
-<images/second.png, id=181, 1029.8475pt x 411.03563pt>
+] <images/second.png, id=181, 1029.8475pt x 411.03563pt>
 File: images/second.png Graphic file (type png)
- <use images/second.png>
+
+<use images/second.png>
 Package pdftex.def Info: images/second.png used on input line 58.
 (pdftex.def)             Requested size: 654.43304pt x 170.71458pt.
 
@@ -594,10 +601,10 @@ Overfull \hbox (2.86494pt too wide) in paragraph at lines 58--59
 
 [25
 
- <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/second.png>
-])
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2
-.tex
+ <C:/Users/dell/Documents/GitHub/Dissertation__Final_Report/images/second.png>]
+)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2.
+tex
 Appendix B.
 Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¿ in font ptmr7t!
@@ -619,8 +626,8 @@ LaTeX Warning: Citation `apache_license' on page 26 undefined on input line 13.
 
 
 ]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3
-.tex
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3.
+tex
 Appendix C.
 
 LaTeX Warning: Citation `NumericalRecipes' on page 27 undefined on input line 5
@@ -635,58 +642,58 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 ] [28])
 [29]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.bbl
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.bbl
 [30
 
 
 ]) 
 AED: lastpage setting LastPage
 [31]
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.aux
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\cover.aux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\declaration.aux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\acknowledgements.au
-x) (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\abstract.aux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter1/chapter1.a
-ux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.a
-ux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.a
-ux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.a
-ux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter5/chapter5.a
-ux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1
-.aux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2
-.aux)
-(C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3
-.aux))
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\dissertation.aux
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\cover.aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\declaration.aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\acknowledgements.aux
+) (C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\abstract.aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter1/chapter1.au
+x)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.au
+x)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.au
+x)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.au
+x)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Chapter5/chapter5.au
+x)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1.
+aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2.
+aux)
+(C:\Users\dell\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3.
+aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5743 strings out of 495352
- 95334 string characters out of 3183046
- 172792 words of memory out of 3000000
- 8708 multiletter control sequences out of 15000+200000
+ 5741 strings out of 493921
+ 94863 string characters out of 3144879
+ 174627 words of memory out of 3000000
+ 8830 multiletter control sequences out of 15000+200000
  26005 words of font info for 57 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 37i,11n,45p,1691b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 841 hyphenation exceptions out of 8191
+ 37i,11n,45p,1690b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cr
-aig/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/Cra
-ig/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/urw/palatino/uplri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times
-/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (38 pages, 3704163 bytes).
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/pal
+atino/uplri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb
+8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dissertation.pdf (38 pages, 3704213 bytes).
 PDF statistics:
  234 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

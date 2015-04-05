@@ -3,28 +3,39 @@
 On completion of my analysis and background planning for the project, I can now look at more detailed design for the application overview, and the individual component it comprises of. Becuase my application will present both a front-end GUI and back-end Javascript and WebGl, I will split my design into two sections. The reasoning for this is becuase I would prefer to have the GUI and logic of the application to be decoupled, so that the code can be changed in the Javascript easily without having to affect the user interface. Other than planning the application itself, it is also important I plan what key assisting services I use, such as how I intend on versioning my code, to how I will deploy my code.
 
 \section{Overall Architecture}
+As a summary of the architecture of my planned application, the best way to design in more detail is to lay out a primary design pattern. For the purpose of an application which will allow for user interaction, which will be processed by code in the back-end, I have decided to go ahead with a Model-view-controller approach. Using the MVC pattern means I can separate the GUI from the logic code as I wanted to, and have the GUI exists without knowledge of the back-end. This is also the same with the model, where the primary code for calculating manoeuvre movements and animations should be possible without knowledge of the view, but instead use the controller as a intermediary.
+
+Because I have already chosen three.js as library of choice for creating any graphics and physics objects, these will already form my model or models. Each manoeuvre for instance will be reflected as a set of vectors which will form the shapes of the Aresti flight paths, and should be accessible and changeable through the controller to the view(in this case the canvas in my GUI).
+
+The controller will be the most crucial part I implement, and I will be considering a range of inner-design patterns to  \\
+\\
+\\
+BLAHH
+\\
+\\
 
 \section{Back-end logic and design}
-The first of the two design categories concentrates on the Javascript that will act as the functions to run each of the proposed features of the applocation. The code on this side will be responsible for mainting contact with the GUI, and more importanly the WebGL canvas on the webpage. To make the code be as maintainable and run effectivly as possible, I will look into a variety of design patterns.
+The first of the two design categories concentrates on the JavaScript that will act as the functions to run each of the proposed features of the application. The code on this side will be responsible for maintaining contact with the GUI, and more importantly the WebGL canvas on the web page. To make the code be as maintainable and run effectively as possible, I will look into a variety of design patterns.
 
 \subsection{Design patterns}
-
+Because I am using a hybrid of waterfall and FDD at this stage of the project, using a range of design patterns for my JavaScript and GUI architecture is important.
 %Talk about rejected design patterns
 
 \subsection{Module diagram}
-Becuase much of the code I will be implimenting will hold various Three.Js objects, I have decided that modulating methods and objects will be better than simulating classes seeing as Javascript is a class-less language. This is a pattern known as the module pattern. Although this may appear less object orientated, modules allow for more robust archetecture where units of code can be seperated and organised. Modules are slightly similar to classes in the way they can hide code that should not be accessable to other modules by encapsulates privacy. When code is modulated, and then that module is called upon by another, only a public API is returned, and other methods in that module are kept private from being used in other parts of the application. These private methods are good for use as supporting methods, holding such things as calculations, or private variables for getters and setters. Again, this is a similar case to the traditional class diagram.
+Because much of the code I will be implementing will hold various Three.Js objects, I have decided that modulating methods and objects will be better than simulating classes seeing as JavaScript is a class-less language. This is a pattern known as the module pattern. Although this may appear less object orientated, modules allow for more robust archetecture where units of code can be separated and organised. Modules are slightly similar to classes in the way they can hide code that should not be accessable to other modules by encapsulates privacy. When code is modulated, and then that module is called upon by another, only a public API is returned, and other methods in that module are kept private from being used in other parts of the application. These private methods are good for use as supporting methods, holding such things as calculations, or private variables for getters and setters. Again, this is a similar case to the traditional class diagram.
 
 In order to create a basis for modulating code, I should first look to seperate the features I listed in the analysis section of this report into categories. These categories will then help me to determine how I could structure my application in as best object orientated way as possible.
 
 The categories I have been able to come to are:
 \begin{itemize}
   \item Main- initiating other modules, beginning the application.
-  \item
-  \item
-  \item
-  \item
+  \item Animation- Playing, and controlling speed, physics of animation.
+  \item Loading manoeuvres at start of application.
+  \item Saving and loading animations
+  \item Cameras- Creating and controlling cameras movements
+  \item GUI controlling- control and edit GUI controls, and appearence from back-end. Also including the possible movie reel live animatiion.
+  \item Canvas controls- Allowing the user to move along the canvas, and zoom.
 \end{itemize}
-http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript
 
 \subsection{Object and storage formatting}
 
