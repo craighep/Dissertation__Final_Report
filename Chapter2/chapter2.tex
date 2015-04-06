@@ -24,31 +24,38 @@ The first of the two design categories concentrates on the JavaScript that will 
 \subsection{Design patterns}
 Because I am using a hybrid of waterfall and FDD at this stage of the project, using a changing range of design patterns for my JavaScript and GUI architecture is possible. Through the implimentation stage of this report, some of these may patterns mentioned may not be used anymore and replaced for different ones depending on changing requirements and progress. Using the implement, refactor and test iteration approach should allow for this.
 
-Starting by looking at 
+The first design pattern that would be good useful relating to the controller is known as an observer pattern. The observer pattern means to listen on an event or events in an application, and then call the relevent action. The JQuery library, which I plan to use throughout any GUI related tasks will be of a great use here. This library will allow me to add simple listeners on elements on the web page, and set methods to be called on any click, hover or other events. In terms of how I will place this pattern in my archetecture, a standalone file will be responsible for listening to any options or menu changes, whilst another JavaScript file will be repsonsible for listening to the canvas events such as rotation or zoom.
+
+The next design pattern I plan on implementing into my application relates again to the MVC archetecture I will be using. The builder pattern will allow me to append and edit any HTML on the page(such as options, checkboxes, loading content back into the OLAN input box) easily with data retreieved from the model. JQuery again should help to provide a means of changing content, becuase of more built-in method it comes with. There should be a handler class in my application specifically for controlling the page content.
+
+A third design pattern which will be important when it comes to loading up the application will ensure that all the data nessecary to run the application is ready before the user can perform any actions. Known as the Lazy initialisation pattern, this is a style of coding that means whenever files or data is being loaded, the rest of the application should either wait, or prevent other relying features from being initialised. One motivation for the need for this pattern in my program is becuase of the vast amount of manoeuvre data, and model data for terrain or for aircrafts means that functionality such as animating and drawing flight paths on the canvas may be already ready for use from the user before all the data is ready. In this case, it could cause errors and even crash the application. Therefore, making sure that the application does not progress loading before data is ready is of great importance.
+
+Although the previous design patterns have been chosen, others were considered when planning the application but were not suitible or better options were availible. One such pattern, the Mixin pattern allows JavaScript functions to be inherited from other classes or inner functions. For instance, these would be useful as a means of decreasing repition of functions. In my proposed application, I thoguht about the possibility of using a Mixin style architecture to allow functions that would draw both the manouevres on the canvas, and the manoeuvres on the movie-reel. The reason I have decided not to use this pattern falls to the issue that by making an object extend and hold code from elsewhere could make it harder to maintain, see where the function comes from, and uncertainty of location of any bugs I may come across while developing.
+
 %Talk about rejected design patterns
 
 \subsection{Module diagram}
 Because much of the code I will be implementing will hold various Three.Js objects, I have decided that modulating methods and objects will be better than simulating classes seeing as JavaScript is a class-less language. This is a pattern known as the module pattern. Although this may appear less object orientated, modules allow for more robust archetecture where units of code can be separated and organised. Modules are slightly similar to classes in the way they can hide code that should not be accessable to other modules by encapsulates privacy. When code is modulated, and then that module is called upon by another, only a public API is returned, and other methods in that module are kept private from being used in other parts of the application. These private methods are good for use as supporting methods, holding such things as calculations, or private variables for getters and setters. Again, this is a similar case to the traditional class diagram.
 
-There are currently a selection of libraries that allow for modules in JavaScript. The most promininent, and the one I would like to use is called RequireJS, which promises the increase in speed and quality of code. RequireJS works by dynamically loading JavaScript files on the fly, where the code has from the other module is usable once loaded into the module calling it. Once modules are loaded into an object form in whatever the developer needs to name it, its public variables and methods can then be accessed. See figure ~\ref{fig:module} on how modules are used. In my case, modules would be useful in enforcing the MVC pattern in the way that it 
+There are currently a selection of libraries that allow for modules in JavaScript. The most promininent, and the one I would like to use is called RequireJS, which promises the increase in speed and quality of code. RequireJS works by dynamically loading JavaScript files on the fly, where the code has from the other module is usable once loaded into the module calling it. Once modules are loaded into an object form in whatever the developer needs to name it, its public variables and methods can then be accessed. See figure ~\ref{fig:module} on how modules are used. In my case, modules would be useful in enforcing the MVC pattern in the way that it will help towards hiding code between the view and the model. 
 
 \lstset{language=JavaScript}
 \medskip
 \begin{lstlisting}[caption=Example showing how RequireJS loads in another module or Javascript file which in this case is loading up the util javascript module and naming it as object 'util' for use in the code]
 require(["helper/util"], function(util) { 
 	
+	// This function can not be called by another module
 	function private_function(){
-		// only accessable from in this module
+		util.Method() // Can call public methods in the util file
 	}
 	return {
 		public_function: function(){
-			// can be called if this module is loaded into another module
+			// can be called if this module is loaded into another
 		}
 	}
-}
+});
 \end{lstlisting}
 \label{fig:module}
-
 
 In order to create a basis for modulating code, I should first look to seperate the features I listed in the analysis section of this report into categories. These categories will then help me to determine how I could structure my application in as best object orientated way as possible.
 
@@ -75,8 +82,10 @@ Now I have a stable list of categoried features, I am able to create a diagram t
 The module diagram shows a number of things...
 
 \subsection{Object and storage formatting}
+It is imperative that the structure of data, espeically the OLAN instructions for construction of each manoeuvre is organised effiecently and be as accessable as possible, to consider the speed of the application running in a user's browser. 
 
 \subsection{Naming conventions}
+
 
 \section{User Interface}
 

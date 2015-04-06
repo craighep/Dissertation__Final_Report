@@ -8,31 +8,31 @@
 \contentsline {section}{\numberline {2.1}Overall Architecture}{8}
 \contentsline {section}{\numberline {2.2}Back-end logic and design}{9}
 \contentsline {subsection}{\numberline {2.2.1}Design patterns}{9}
-\contentsline {subsection}{\numberline {2.2.2}Module diagram}{9}
+\contentsline {subsection}{\numberline {2.2.2}Module diagram}{10}
 \contentsline {subsection}{\numberline {2.2.3}Object and storage formatting}{11}
-\contentsline {subsection}{\numberline {2.2.4}Naming conventions}{11}
-\contentsline {section}{\numberline {2.3}User Interface}{11}
-\contentsline {subsection}{\numberline {2.3.1}GUI Use-case}{11}
-\contentsline {subsection}{\numberline {2.3.2}CSS and wireframe design}{11}
-\contentsline {section}{\numberline {2.4}Planned use of services}{11}
-\contentsline {chapter}{\numberline {3}Implementation}{12}
-\contentsline {chapter}{\numberline {4}Testing}{13}
-\contentsline {section}{\numberline {4.1}Overall Approach to Testing}{13}
-\contentsline {section}{\numberline {4.2}Automated Testing}{13}
-\contentsline {subsection}{\numberline {4.2.1}Unit Tests}{13}
-\contentsline {subsection}{\numberline {4.2.2}User Interface Testing}{13}
-\contentsline {subsection}{\numberline {4.2.3}Stress Testing}{13}
-\contentsline {subsection}{\numberline {4.2.4}Other types of testing}{13}
-\contentsline {section}{\numberline {4.3}Integration Testing}{13}
-\contentsline {section}{\numberline {4.4}User Testing}{13}
-\contentsline {chapter}{\numberline {5}Evaluation}{14}
-\contentsline {chapter}{Appendices}{15}
-\contentsline {chapter}{\numberline {A}Background research and analysis}{16}
-\contentsline {section}{\numberline {1.1}Initial project Gantt chart}{16}
-\contentsline {section}{\numberline {1.2}Inital requirements analysis}{18}
-\contentsline {section}{\numberline {1.3}OLAN understandings}{20}
-\contentsline {section}{\numberline {1.4}Revised FDD Gantt chart}{26}
-\contentsline {chapter}{\numberline {B}Third-Party Code and Libraries}{28}
-\contentsline {chapter}{\numberline {C}Code samples}{29}
-\contentsline {section}{\numberline {3.1}Random Number Generator}{29}
-\contentsline {chapter}{Annotated Bibliography}{32}
+\contentsline {subsection}{\numberline {2.2.4}Naming conventions}{12}
+\contentsline {section}{\numberline {2.3}User Interface}{12}
+\contentsline {subsection}{\numberline {2.3.1}GUI Use-case}{12}
+\contentsline {subsection}{\numberline {2.3.2}CSS and wireframe design}{12}
+\contentsline {section}{\numberline {2.4}Planned use of services}{12}
+\contentsline {chapter}{\numberline {3}Implementation}{13}
+\contentsline {chapter}{\numberline {4}Testing}{14}
+\contentsline {section}{\numberline {4.1}Overall Approach to Testing}{14}
+\contentsline {section}{\numberline {4.2}Automated Testing}{14}
+\contentsline {subsection}{\numberline {4.2.1}Unit Tests}{14}
+\contentsline {subsection}{\numberline {4.2.2}User Interface Testing}{14}
+\contentsline {subsection}{\numberline {4.2.3}Stress Testing}{14}
+\contentsline {subsection}{\numberline {4.2.4}Other types of testing}{14}
+\contentsline {section}{\numberline {4.3}Integration Testing}{14}
+\contentsline {section}{\numberline {4.4}User Testing}{14}
+\contentsline {chapter}{\numberline {5}Evaluation}{15}
+\contentsline {chapter}{Appendices}{16}
+\contentsline {chapter}{\numberline {A}Background research and analysis}{17}
+\contentsline {section}{\numberline {1.1}Initial project Gantt chart}{17}
+\contentsline {section}{\numberline {1.2}Inital requirements analysis}{19}
+\contentsline {section}{\numberline {1.3}OLAN understandings}{21}
+\contentsline {section}{\numberline {1.4}Revised FDD Gantt chart}{27}
+\contentsline {chapter}{\numberline {B}Third-Party Code and Libraries}{29}
+\contentsline {chapter}{\numberline {C}Code samples}{30}
+\contentsline {section}{\numberline {3.1}Random Number Generator}{30}
+\contentsline {chapter}{Annotated Bibliography}{33}
