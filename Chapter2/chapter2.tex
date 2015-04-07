@@ -33,6 +33,7 @@ A third design pattern which will be important when it comes to loading up the a
 Although the previous design patterns have been chosen, others were considered when planning the application but were not suitible or better options were availible. One such pattern, the Mixin pattern allows JavaScript functions to be inherited from other classes or inner functions. For instance, these would be useful as a means of decreasing repition of functions. In my proposed application, I thoguht about the possibility of using a Mixin style architecture to allow functions that would draw both the manouevres on the canvas, and the manoeuvres on the movie-reel. The reason I have decided not to use this pattern falls to the issue that by making an object extend and hold code from elsewhere could make it harder to maintain, see where the function comes from, and uncertainty of location of any bugs I may come across while developing.
 
 \subsection{Module diagram}
+\label{sec:module}
 Because much of the code I will be implementing will hold various Three.Js objects, I have decided that modulating methods and objects will be better than simulating classes seeing as JavaScript is a class-less language. This is a pattern known as the module pattern. Although this may appear less object orientated, modules allow for more robust archetecture where units of code can be separated and organised. Modules are slightly similar to classes in the way they can hide code that should not be accessable to other modules by encapsulates privacy. When code is modulated, and then that module is called upon by another, only a public API is returned, and other methods in that module are kept private from being used in other parts of the application. These private methods are good for use as supporting methods, holding such things as calculations, or private variables for getters and setters. Again, this is a similar case to the traditional class diagram.
 
 There are currently a selection of libraries that allow for modules in JavaScript. The most promininent, and the one I would like to use is called RequireJS, which promises the increase in speed and quality of code. RequireJS works by dynamically loading JavaScript files on the fly, where the code has from the other module is usable once loaded into the module calling it. Once modules are loaded into an object form in whatever the developer needs to name it, its public variables and methods can then be accessed. See figure ~\ref{fig:module} on how modules are used. In my case, modules would be useful in enforcing the MVC pattern in the way that it will help towards hiding code between the view and the model. 
@@ -89,13 +90,90 @@ As mentioned earlier, the HTML handler module will be the first means of contact
 
 Two other controllers that should be mentioned are the camera dna canvas modules. Both modules will be resposible for setting up their elements when the applicaton starts up (including the different sets of cameras, locations, lighting and ground effects) and for listening to evens on both of their respective related front-end sections. Whilst the canvas module will only need to listen for events on the canvas and then reflect this by modifying the canvas directly, the camera controller will need to communicate with the manoeuvre module if the user is using the on-board view to get the current location on the flight path and then place the camera there. 
 
-The final module to be highlighted in the diagram is the save and loading module, responsible for the storage of user input and flight paths. Becuase I suggested two means of saving flight paths, through JSON and through Local storage % FINISH HERRRRRRRRRRRRRRRRRRRRRRR
+The final module to be highlighted in the diagram is the save and loading module, responsible for the storage of user input and flight paths. Becuase I suggested two means of saving flight paths which were JSON and Local storage, there is the option to create a module for both of these, one for handling saving data to files, and one for in the browser. At this stage, keeping all the save and load logic in one module will suffice, as there should not be many methods required, so files would be relativly short. The module will then be able to share methods between both means of saving for preparing data. There is a trade-off currently between saving OLAN as the rendered set of vectors, or simply saving user input. The first would mean the application would be ready as soon as a flight is loaded, but would take more space to save, whilst the other way would mean slower loading but much shorter save data. I will consider both methods when implementation occurs.
 
-\subsection{Object and storage formatting}
-It is imperative that the structure of data, espeically the OLAN instructions for construction of each manoeuvre is organised effiecently and be as accessable as possible, to consider the speed of the application running in a user's browser. 
+\subsection{Object structure and storage formatting}
+It is imperative that the structure of data, espeically the OLAN instructions for construction of each manoeuvre is organised effiecently and be as accessable as possible, to consider the speed of the application running in a user's browser. As it is planned to represent each broken down manoeuvre into a JSON string of instructions, they should be easy to read, maintain and add to. The proposed structure of the file holding the JSON will be as follows:
+
+\lstset{language=JavaScript}
+\medskip
+\begin{lstlisting}[caption=A JSON means of holding break downs of manouvres with each one holding information on different varients of the move such as inverse and reverse and description of the OLAN notation]
+{
+    "catalogue": {
+        "manoeuvre": [{
+            "variant": [{
+                "component": [{
+                    "_pitch": "NIL",
+                    "_roll": "NIL",
+                    "_yaw": "NIL",
+                    "_length": "1"
+                }, {
+                    "_pitch": "POS",
+                    "_roll": "NIL",
+                    "_yaw": "NIL",
+                    "_length": "1"
+                }],
+                "_olanPrefix": "",
+                "_name": "example cuvre up"
+            }],
+            "_olan": "u"
+       	}]
+   	}
+}
+\end{lstlisting}
+\label{listing:json}
+
+The JSON example shown in listing ~\ref{listing:json} displays the planned layout of my manoeuvre breakdown. The first element labelled 'catalogue' will hold the entire list of OLAN notations (without the prefixes and postfixes for reversing or inversing moves), with each holding another array of varients. Within each varient, the data acting as instructions for the how the application draws the paths is contained. Each 'component' will hold four key pieces of data:
+
+\begin{enumerate}
+	\item Pitch - Instruct to direct the manoeuvre to fly upwards or downwards on the Y axis
+	\item Roll - To roll to the left or right on the aircraft's Z axis
+	\item Pitch - To turn left or right on the X axis
+	\item Length - length of the manoeuvre
+\end{enumerate}
+
+By using these four attributes, the manoeuvre module will be able to go one by one through each creating a new vector based on the previous vector with these effects added. As you will see in listing ~\ref{listing:json}, the value of each will either be Nil, positive or negative. This makes it simple to tell the application if the manoeuvre is for example banking up, down, or remaining on a straight flight. The length attribute will be used to tell the application how far to move along the paths current Z axis after performing a move. If pitch, roll and yaw are all nil, the plane will follow a straight line. The length attribute will be very useful for adjusting the amount a pitch up spans; if it is small, the curve upwards will be tighter, and a larger length will mean a longer less noticable curve. This will be especially useful for some requirements outlined in the analysis and feature list of the project concerning different aircraft types carrying different traits (some aircrafts may require more distance to bank to the same angle as others).
+
+As mentioned in section ~\ref{sec:module}, there are two options for the data structure of the saved data from flight plans. The first option which discussed storing the precompile vectors from OLAN entry before saving could appear as such:
+
+\lstset{language=JavaScript}
+\medskip
+\begin{lstlisting}[caption=A JSON means of holding break downs of manouvres with each one holding information on different varients of the move such as inverse and reverse and description of the OLAN notation]
+{
+	"Manouuvres":{[
+		"Move": {
+			"Vectors"{[
+				{
+					"Vector" : "2, 1, 0"
+					"Rotation" : "0"
+				},
+				{
+					"Vector" : "5, 1, 0"
+					"Rotation" : "0"
+				}
+			]},
+			"OLAN": "u"
+		}
+	]}
+}
+\end{lstlisting}
+\label{listing:json}
+
+While the second option which will be the one I will be looking to implement first with respect to time could be simply:
+
+\lstset{language=JavaScript}
+\medskip
+\begin{lstlisting}[caption=A JSON means of holding break downs of manouvres with each one holding information on different varients of the move such as inverse and reverse and description of the OLAN notation]
+{
+	"OLAN" : "o id b"
+}
+\end{lstlisting}
+\label{listing:json}
+
+Once other predecessing features have been created and time is availible to add the save/load feature, then both ooptions will be considered again. For the time being, it would be easier to choose the second option becuase functions created to build flight paths will already be there so they could be re-used to process the OLAN input again.
 
 \subsection{Naming conventions}
-
+The final considerations that need to be looked at in the back-end are namning conventions. It is important that variables, methods and moudles are named accordingly to thier function, and so that they are easily readable. For the puirpose of my application, I will be ensuring to use the Google reccomendations for naming conventions in Javascript. The guide, which can be found \textbf{here}, details variables, global variables, functions and class names that should be used when coding any system. The naming conventions in my application should all follow the same style throughout.
 
 \section{User Interface}
 
@@ -105,4 +183,3 @@ It is imperative that the structure of data, espeically the OLAN instructions fo
 
 \section{Planned use of services}
 
-%You should concentrate on the more important aspects of the design. It is essential that an overview is presented before going into detail. As well as describing the design adopted it must also explain what other designs were considered and why they were rejected.The design should describe what you expected to do, and might also explain areas that you had to revise after some investigation.Typically, for an object-oriented design, the discussion will focus on the choice of objects and classes and the allocation of methods to classes. The use made of reusable components should be described and their source referenced. Particularly important decisions concerning data structures usually affect the architecture of a system and so should be described here.How much material you include on detailed design and implementation will depend very much on the nature of the project. It should not be padded out. Think about the significant aspects of your system. For example, describe the design of the user interface if it is a critical aspect of your system, or provide detail about methods and data structures that are not trivial. Do not spend time on long lists of trivial items and repetitive descriptions. If in doubt about what is appropriate, speak to your supervisor. You should also identify any support tools that you used. You should discuss your choice of implementation tools - programming language, compilers, database management system, program development environment, etc.Some example sub-sections may be as follows, but the specific sections are for you to define.
