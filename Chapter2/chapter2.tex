@@ -32,8 +32,6 @@ A third design pattern which will be important when it comes to loading up the a
 
 Although the previous design patterns have been chosen, others were considered when planning the application but were not suitible or better options were availible. One such pattern, the Mixin pattern allows JavaScript functions to be inherited from other classes or inner functions. For instance, these would be useful as a means of decreasing repition of functions. In my proposed application, I thoguht about the possibility of using a Mixin style architecture to allow functions that would draw both the manouevres on the canvas, and the manoeuvres on the movie-reel. The reason I have decided not to use this pattern falls to the issue that by making an object extend and hold code from elsewhere could make it harder to maintain, see where the function comes from, and uncertainty of location of any bugs I may come across while developing.
 
-%Talk about rejected design patterns
-
 \subsection{Module diagram}
 Because much of the code I will be implementing will hold various Three.Js objects, I have decided that modulating methods and objects will be better than simulating classes seeing as JavaScript is a class-less language. This is a pattern known as the module pattern. Although this may appear less object orientated, modules allow for more robust archetecture where units of code can be separated and organised. Modules are slightly similar to classes in the way they can hide code that should not be accessable to other modules by encapsulates privacy. When code is modulated, and then that module is called upon by another, only a public API is returned, and other methods in that module are kept private from being used in other parts of the application. These private methods are good for use as supporting methods, holding such things as calculations, or private variables for getters and setters. Again, this is a similar case to the traditional class diagram.
 
@@ -70,16 +68,28 @@ The categories I have been able to come to are:
   \item Canvas controls- Allowing the user to move along the canvas, and zoom.
 \end{itemize}
 
-Now I have a stable list of categoried features, I am able to create a diagram to represent what modulated layout my applicatioon will use. Becuase of the way modules handle public and private variables, have public and have private methods, means that this is very reminiscent of a standard class diagram.
+Now I have a stable list of categoried features, I am able to create a diagram shown in figure ~\ref{fig:mod} to represent what modulated layout my applicatioon will use. Becuase of the way modules handle public and private variables, have public and have private methods, means that this is very reminiscent of a standard class diagram.
 
 \begin{figure}[h!]
   \centering
-      %\includegraphics[width=0.8\textwidth]{images/mvc.png}
+      %\includegraphics[width=0.8\textwidth]{images/mod.png}
   \caption{Module diagram displaying the various communications between modules, and how they are connected to the GUI in the MVC way.}
-  \label{fig:mvc}
+  \label{fig:mod}
 \end{figure}
 
-The module diagram shows a number of things...
+This module diagram shows what will be the communications between modules in the application, providing insight into what each module should contain in terms of important variables and methods. Ensuring that only modules that require certain peices of information from another module has sole access is important to reinforce the module pattern mentioned earlier. It should be noted here that although the diagram shows the main modules that will oversee most of the features of the application, when implementation occurs later on in the project, more modules or JavaScript files may be added to support or lighten the load of functions. This is supported by the good practice of \textbf{keeping files and functions short and concise} for easier maintenence and readability. The following descriptions have been kept brief, and key connections within the diagram discussed.
+
+The first module propsed from the diagram will be the module entitled 'Main', which will be responsible for setting up the application, and hold onto key variables such as the renderer and scene objects to allow for anything to be drawn and animated on the canvas. This module will be called from the HTML and then will begin any nessecary calls to set up the listeners for the cameras, canvas and options. The most importat call will be the call to set up the animation controller module. 
+
+Following on, the animation controller module will be one of the largest and most important parts of the overall architecture, as it will be responsible for both animating flight paths, loading up the OLAN manoeuvres at start of the application, and relating any actions from the user to do with OLAN selections or playing and pausing, as well as chaning animatiton speeds. 
+
+The animation controller module will be in communication with the manoeuvre controller, which will be a logic heavy class because of the calculations it will require to compute and construct the sets of vectors of the Aresti shapes representing each OLAN notation. As the diagram shows, the application will first get the user OLAN input from the webpage via the HTML handler module, then search via the dataParse module and create the manoeuvres array object within the manoeuvre controller holding all the calculated manoeuvres, and return this in a 'get' method to the animation module for placing on the canvas.
+
+As mentioned earlier, the HTML handler module will be the first means of contact to the user of the application, retreving input from the OLAN box, getting values of any checkboxes, and also setting any values. This module will be using the JQuery library as well as the Handlbars library as the primary way to communicate with the front-end, by diectly referencing ID's of divs on the webpage.
+
+Two other controllers that should be mentioned are the camera dna canvas modules. Both modules will be resposible for setting up their elements when the applicaton starts up (including the different sets of cameras, locations, lighting and ground effects) and for listening to evens on both of their respective related front-end sections. Whilst the canvas module will only need to listen for events on the canvas and then reflect this by modifying the canvas directly, the camera controller will need to communicate with the manoeuvre module if the user is using the on-board view to get the current location on the flight path and then place the camera there. 
+
+The final module to be highlighted in the diagram is the save and loading module, responsible for the storage of user input and flight paths. Becuase I suggested two means of saving flight paths, through JSON and through Local storage % FINISH HERRRRRRRRRRRRRRRRRRRRRRR
 
 \subsection{Object and storage formatting}
 It is imperative that the structure of data, espeically the OLAN instructions for construction of each manoeuvre is organised effiecently and be as accessable as possible, to consider the speed of the application running in a user's browser. 
@@ -95,5 +105,4 @@ It is imperative that the structure of data, espeically the OLAN instructions fo
 
 \section{Planned use of services}
 
-% word count -252 = 181
 %You should concentrate on the more important aspects of the design. It is essential that an overview is presented before going into detail. As well as describing the design adopted it must also explain what other designs were considered and why they were rejected.The design should describe what you expected to do, and might also explain areas that you had to revise after some investigation.Typically, for an object-oriented design, the discussion will focus on the choice of objects and classes and the allocation of methods to classes. The use made of reusable components should be described and their source referenced. Particularly important decisions concerning data structures usually affect the architecture of a system and so should be described here.How much material you include on detailed design and implementation will depend very much on the nature of the project. It should not be padded out. Think about the significant aspects of your system. For example, describe the design of the user interface if it is a critical aspect of your system, or provide detail about methods and data structures that are not trivial. Do not spend time on long lists of trivial items and repetitive descriptions. If in doubt about what is appropriate, speak to your supervisor. You should also identify any support tools that you used. You should discuss your choice of implementation tools - programming language, compilers, database management system, program development environment, etc.Some example sub-sections may be as follows, but the specific sections are for you to define.
