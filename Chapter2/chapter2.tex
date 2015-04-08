@@ -176,9 +176,9 @@ Once other predecessing features have been created and time is availible to add 
 The final considerations that need to be looked at in the back-end are namning conventions. It is important that variables, methods and moudles are named accordingly to thier function, and so that they are easily readable. For the puirpose of my application, I will be ensuring to use the Google reccomendations for naming conventions in Javascript. The guide, which can be found \textbf{here}, details variables, global variables, functions and class names that should be used when coding any system. The naming conventions in my application should all follow the same style throughout.
 
 \section{User Interface}
-Moving onto the GUI design, which will provide the users a means of adding OLAN input and animating the simulator must also be designed taking into account the placement of features to maximise spce on the users screen. The canvas that holds the WebGL should be the main element on the page, and the options and menu should be placed in the most optimal location to not effect or restrict the view too much. Alongside consideratoins for this, there should also be a use case for the GUI, so that it is possible to group functions, and place options together making the application easier to use. Although the primary objective is not to concentrate too much on the front-end in this project, it should be made sure that it is attractive and well laid-out. Because FDD has been chosen, it is better to have a good looking and less functional program rather than more functions but unusable program due to the front-end.
+Moving onto the GUI design, which will provide the users a means of adding OLAN input and animating the simulator must also be designed taking into account the placement of features to maximise spce on the users screen. The canvas that holds the WebGL should be the main element on the page, and the options and menu should be placed in the most optimal location to not effect or restrict the view too much. Alongside consideratoins for this, there should also be a use case for the GUI, so that it is possible to group functions, and place options together making the application easier to use. Although the primary objective is not to concentrate too much on the front-end in this project, it should be made sure that it is attractive and well laid-out. Because FDD has been chosen, it is better to have a good looking and less functional program ratherg than more functions but unusable program due to the front-end.
 
-\subsection{GUI Use-case}
+\subsection{GUI Use-case}spot
 As mentioned earlier, use-case would be a good way to group initial front-end functionality. For my application, creating a use-case means it can then be decided which group of options go where on the site. The following use case in figure ~\ref{fig:usecase}.
 
 \begin{figure}[h!]
@@ -188,18 +188,45 @@ As mentioned earlier, use-case would be a good way to group initial front-end fu
   \label{fig:usecase}
 \end{figure}
 
-As you can see, there is the possibility of four sets of options each of which could have its own category in my GUI. By grouping them this way, it means the user could find the options much easier, and give a lessy unoragnised feel to the application. Starting with the OLAN options, there are going to be two primary functions that should be required here: entering the space seperated OLAN and paremetrs, and a drop down to allow for input from a list. The latter of which should be in its own section in the menu, whilst the first will be a simple input box at the top of the webpage about the canvas. Following this, there will be the animation controls next to the input box, to begin and pause playing the flight. I have chosen the input and play button to be at the top of the page not in a menu becuase these will be the primary elements of the application and should be quick to use.
+As you can see, there is the possibility of four sets of options each of which could have its own category in my GUI. By grouping them this way, it means the user could find the options much easier, and give a less unoragnised feel to the application. Starting with the OLAN options, there are going to be two primary functions that should be required here: entering the space seperated OLAN and paremetrs, and a drop down to allow for input from a list. The latter of which should be in its own section in the menu, whilst the first will be a simple input box at the top of the webpage about the canvas. Following this, there will be the animation controls next to the input box, to begin and pause playing the flight. I have chosen the input and play button to be at the top of the page not in a menu becuase these will be the primary elements of the application and should be quick to use.
 
-As for other menu pieces, there is the possibility that physics and animation related options will be availible, and should be listed together in a menu. These options contain some of the extra features mentioned in my analysis, such as wind and other items that will be implemented after key functionality. Therefore, although there will be a menu for these, there may no be very many options depending on what work is complete at the end of the project. The next menu that would be required, and the last one, is the saving and loading of projects. There should be four or five options here, for saving in both formats, and loading in both formats. One of which will contain a file browser for selecting JSON files that were exported from the OLAN flight input, and then a button to begin uploading and inserting into the application. An idea alongside this would be to have some form of status bar when the application loads up a flight, depending on the size of the file. If it is only implemented that 
+As for other menu pieces, there is the possibility that physics and animation related options will be availible, and should be listed together in a menu. These options contain some of the extra features mentioned in my analysis, such as wind and other items that will be implemented after key functionality. Therefore, although there will be a menu for these, there may no be very many options depending on what work is complete at the end of the project. The next menu that would be required, and the last one, is the saving and loading of projects. There should be four or five options here, for saving in both formats, and loading in both formats. One of which will contain a file browser for selecting JSON files that were exported from the OLAN flight input, and then a button to begin uploading and inserting into the application. An idea alongside this would be to have some form of status bar when the application loads up a flight, depending on the size of the file. If the save files only store OLAN input and not rendered vectors, the need for the loading information would not be required.
+
+An additional set of options, but rather extra pages will be the about and help sections. Instead of placing these alongside the other menus, these can simply sit onto the top menu bar next to the OLAN input box. Rather than options, these should be simple HTML pages that give the user some insight into the application.
+
+It was mentioned earlier in the report about using the lazy initialisation pattern, and simply disabling options could help towards this. For example, a user may try to enter OLAN and press the play button before the manoeuvres have loaded up causing an error. An idea could be to make the input box disabled by default, and then enable it form the back-end once the application is fully loaded. To help undertsand this, a flow chart in figure ~\ref{fig:flow} shows what the user should be able to at what stage in loading of the application. 
 
 \begin{figure}[h!]
   \centering
       %\includegraphics[width=0.8\textwidth]{images/mod.png}
   \caption{Flow chart showing how the application should run in accordance to loading up and then allowing the user to begin using various functions.}
-  \label{fig:usecase}
+  \label{fig:flow}
 \end{figure}
 
+As you can see from the flowchart above, the input box that allows OLAN entry will be disabled until loading of the aircraft model, manoeuvre JSON file and setting up of the various controllers. Options should already be enabled when loading up, as back-end checking can be performed seperatly to lighten the front-end. In any case, because listeners are set up last, any options in the GUI will not function until the rest of the application loads up anyway.
+
 \subsection{CSS and wireframe design}
+Following finding of all the required use cases on the application, it is now possible to create draft wireframe designs for the front-end of the application. Becuase it would be ideal that the web page works on both mobile and desktop, a CSS library could help to create this easily and quickly. After considering the two main CSS libraries used on the web \textbf{(Zurb Foundation and Twitter Bootstrap)}, it was decided that the first would be more appropriate for the application due to some built in functionality that could be useful to the application. The functionality that was found to be most useful was an off-canvas menu. This menu allowed content to be hidden to the side of the page, and then when opened pushed content on the page to the right. This is especially useful for this application where getting maximum space is best for the canvas. In addition to this, the menu allowed for stacking, so it is possible to add sub menus that also push in from the left. 
+
+Alongside the menu feature, the general appearence and flexibility of the library will give the application a more attractive and professional appearence, for example replacing checkboxes for options with sliding switches. To give a more detailed insight into the idea of what the application could look like using this library see the following wireframe in figure ~\ref{fig:wiredesktop}.
+
+\begin{figure}[h!]
+  \centering
+      %\includegraphics[width=0.8\textwidth]{images/mod.png}
+  \caption{Wireframe deisgn detailing desktop view of the application, including the open menu for the 'off canvas feature'.}
+  \label{fig:wiredesktop}
+\end{figure}
+
+As well as the desktop design of the site, a design of the proposed mobile view can be found in the following figure ~\ref{fig:wiremobile}.
+
+\begin{figure}[h!]
+  \centering
+      %\includegraphics[width=0.8\textwidth]{images/mod.png}
+  \caption{Wireframe deisgn detailing mobbile view of application with navigation bar in minified version.}
+  \label{fig:wiremobile}
+\end{figure}
+
+%colour scheme and font blah blah, accessability...
 
 \section{Planned use of services}
 
