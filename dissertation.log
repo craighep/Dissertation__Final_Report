@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  7 APR 2015 13:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  8 APR 2015 08:10
 entering extended mode
 **C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
 (C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
@@ -475,7 +475,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <9> not available
 (Font)              Font shape `OT1/pcr/b/n' tried instead on input line 44.
  [10]
-[11] [12] [13]) [14] [15]
+[11] [12] [13] [14]) [15]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.t
 ex
 Chapter 3.
@@ -724,10 +724,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7005 strings out of 495352
- 113857 string characters out of 3183046
+ 7007 strings out of 495352
+ 113888 string characters out of 3183046
  223325 words of memory out of 3000000
- 9953 multiletter control sequences out of 15000+200000
+ 9955 multiletter control sequences out of 15000+200000
  28620 words of font info for 63 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,12n,45p,1415b,1679s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -743,7 +743,7 @@ urw/palatino/uplri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
 es/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (44 pages, 3752444 bytes).
+Output written on dissertation.pdf (44 pages, 3753714 bytes).
 PDF statistics:
  259 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
