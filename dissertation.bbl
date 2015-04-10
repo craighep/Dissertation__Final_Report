@@ -1,169 +1,98 @@
 \begin{thebibliography}{10}
-\providecommand{\url}[1]{#1}
-\csname url@rmstyle\endcsname
-\providecommand{\newblock}{\relax}
-\providecommand{\bibinfo}[2]{#2}
-\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
-\providecommand\BIBentryALTinterwordstretchfactor{4}
-\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
-\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
-  \fontdimen4\font\relax}
-\providecommand\BIBforeignlanguage[2]{{%
-\expandafter\ifx\csname l@#1\endcsname\relax
-\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
-\typeout{** loaded for the language `#1'. Using the pattern for}%
-\typeout{** the default language instead.}%
-\else
-\language=\csname l@#1\endcsname
-\fi
-#2}}
 
-\bibitem{google_javascript}
-{Aaron Whyte, Bob Jervis, Dan Pupius, Erik Arvidsson, Fritz Schneider, Robby
-  Walker}, ``{Google JavaScript Style Guide},''
-  \url{https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml},
+\bibitem{Olan_Intro}
+{Michael Golan}, ``{Olan Welcome \& Support page}.''
+  \url{http://web.archive.org/web/20060927153819/http://www.aerobatics.org.il/olan/welcome.php},
+  2006.
+
+\bibitem{OpenAero_Language}
+{Ringo Massa}, ``{OpenAero figures reference guide}.''
+  \url{http://www.openaero.net/language.html}, 2012.
+
+\bibitem{OpenAero_Application}
+{Ringo Massa}, ``{OpenAero main application}.'' \url{http://www.openaero.net},
   2012.
- \begin{quotation}\noindent The Google handbook for correctly styling
-  JavaScript code, including samples. \end{quotation}
 
-\bibitem{design_patterns}
-{Addy Osmani}, ``{Learning JavaScript Design Patterns},''
-  \url{http://addyosmani.com/resources/essentialjsdesignpatterns/book/}, 2014.
- \begin{quotation}\noindent An online book detailing a wide reange of design
-  patterns that can be used with Javascript. Code examples included.
-  \end{quotation}
+\bibitem{Aresti}
+{The British Aerobatic Association Ltd}, ``{Aresti Catalogue introduction}.''
+  \url{https://www.aerobatics.org.uk/aresti}, 2015.
+
+\bibitem{Aresti_Simple}
+B.~Wegman pp.~1--9.
 
 \bibitem{GlMatrix}
-{Brandon Jones}, ``{glMatrix vector library},'' \url{http://glmatrix.net},
+{Brandon Jones}, ``{glMatrix vector library}.'' \url{http://glmatrix.net},
   2011.
- \begin{quotation}\noindent Javascript Matrix and Vector library for High
-  Performance WebGL apps \end{quotation}
 
-\bibitem{observer}
-{Carl Danley}, ``{The Observer Pattern},''
-  \url{https://carldanley.com/js-observer-pattern/}, 2014.
- \begin{quotation}\noindent Explanation of observer design pattern in
-  JavaScript, with code examples. \end{quotation}
-
-\bibitem{easyphp}
-{EasyPHP}, ``{EasyPHP | Install a local WAMP server},''
-  \url{http://www.easyphp.org/introduction.php}, 2000.
- \begin{quotation}\noindent Local server application allowing php to run on a
-  local machine. Download page and guide to using EasyPhp. \end{quotation}
-
-\bibitem{koala}
-{Ethan Lai}, ``{Koala - a gui application for LESS, Sass, Compass and
-  coffeescript},'' \url{http://koala-app.com}, 2013.
- \begin{quotation}\noindent Koala compiler download and guide site. Application
-  used for compiling sass to css. \end{quotation}
-
-\bibitem{pages}
-{Githib inc}, ``{Websites for you and your projects.}''
-  \url{https://pages.github.com}, 2015.
- \begin{quotation}\noindent Github pages instructions, showng how to make a
-  repository into a self-hosted website. Using this for hosting the
-  application. \end{quotation}
-
-\bibitem{github}
-{Github inc}, ``{Github},'' \url{https://www.github.com}, 2015.
- \begin{quotation}\noindent Github version control homepage, alongside guides
-  and instructions. \end{quotation}
-
-\bibitem{jasmine}
-{Gregg Van Hove}, ``{Behavior-Driven JavaScript},''
-  \url{http://jasmine.github.io}, 2008.
- \begin{quotation}\noindent Jasmine behaviour driven javascript library for
-  testing code. Allows writing descipion tests, and compiles with JSUnit to
-  test. Documentation found on the main site. \end{quotation}
-
-\bibitem{sass}
-{Hampton Catlin, Natalie Weizenbaum, Chris Eppstein}, ``{Sass: Syntactically
-  Awesome Style Sheets},'' \url{http://sass-lang.com}, 2006.
- \begin{quotation}\noindent Sass website providing guides to create sass files
-  and how to compile to CSS. \end{quotation}
-
-\bibitem{jsdoc}
-{Jeff Williams}, ``{@use JSDoc},'' \url{http://usejsdoc.org}, 2011.
- \begin{quotation}\noindent Javascript documentation site, providing a guide,
-  examples and descriptions of jsdoc tags. \end{quotation}
+\bibitem{ThreeJs}
+{Ricardo Cabello}, ``{The three.js library documentation}.''
+  \url{http://threejs.org/docs/}, 2010.
 
 \bibitem{Local_Storage}
 {Mark Pilgrim}, ``{The past, present and future of local storage for web
-  applications},'' \url{http://diveintohtml5.info/storage.html}, 2011.
- \begin{quotation}\noindent A thoughough guide to Javascript local storage,
-  including code examples. \end{quotation}
-
-\bibitem{lazy_initialisation}
-{Martin Fowler}, ``{LazyInitialization},''
-  \url{http://martinfowler.com/bliki/LazyInitialization.html}, 2015.
- \begin{quotation}\noindent Martin Fowler gives his opinon on the deisng
-  pattern, and gives a code example to explain how it works. \end{quotation}
-
-\bibitem{Olan_Basics}
-{Michael Golan}, ``{Olan Language Basics},''
-  \url{http://web.archive.org/web/20060927153819/http://www.aerobatics.org.il/olan/language.php},
-  2006.
- \begin{quotation}\noindent A web archive of the basics and list of OLAN
-  notations from its original creator- This page was taken off-line in 2012.
-  \end{quotation}
-
-\bibitem{Olan_Intro}
-------, ``{Olan Welcome \& Support page},''
-  \url{http://web.archive.org/web/20060927153819/http://www.aerobatics.org.il/olan/welcome.php},
-  2006.
- \begin{quotation}\noindent A web archive of the original idea of OLAN, from
-  its original creator- This page was taken off-line in 2012. \end{quotation}
-
-\bibitem{ThreeJs}
-{Ricardo Cabello}, ``{The three.js library documentation},''
-  \url{http://threejs.org/docs/}, 2010.
- \begin{quotation}\noindent Documentation for the three.js library, including
-  samples, manual, and refrences to components and objects in the library.
-  \end{quotation}
-
-\bibitem{OpenAero_Language}
-{Ringo Massa}, ``{OpenAero figures reference guide},''
-  \url{http://www.openaero.net/language.html}, 2012.
- \begin{quotation}\noindent Guide to the OpenAero language, and help with what
-  each manoeuvre means, including parameters. \end{quotation}
-
-\bibitem{OpenAero_Application}
-------, ``{OpenAero main application},'' \url{http://www.openaero.net}, 2012.
- \begin{quotation}\noindent The application allowing input of OLAN to produce
-  Aresti diagrams. Currently open source and licensed under GPL V3
-  \end{quotation}
+  applications}.'' \url{http://diveintohtml5.info/storage.html}, 2011.
 
 \bibitem{FDD}
-{Scott W. Ambler}, ``{Feature Driven Development (FDD) and Agile Modeling},''
+{Scott W. Ambler}, ``{Feature Driven Development (FDD) and Agile Modeling}.''
   \url{http://www.agilemodeling.com/essays/fdd.htm}, 2005.
- \begin{quotation}\noindent A guide to the Feature driven development life
-  cycle. Explaings in detail each stage, with annotated diagrams to show how to
-  perform each part. \end{quotation}
 
-\bibitem{Aresti}
-{The British Aerobatic Association Ltd}, ``{Aresti Catalogue introduction},''
-  \url{https://www.aerobatics.org.uk/aresti}, 2015.
- \begin{quotation}\noindent Background information on Aresti from the
-  aerobatics society. \end{quotation}
+\bibitem{observer}
+{Carl Danley}, ``{The Observer Pattern}.''
+  \url{https://carldanley.com/js-observer-pattern/}, 2014.
 
-\bibitem{travis}
-{Travis CI}, ``{Easily sync your GitHub projects with Travis CI.}''
-  \url{https://travis-ci.org}, 2015.
- \begin{quotation}\noindent Travis continuous development site, and
-  documentation on how to use Travis for github projects. \end{quotation}
+\bibitem{lazy_initialisation}
+{Martin Fowler}, ``{LazyInitialization}.''
+  \url{http://martinfowler.com/bliki/LazyInitialization.html}, 2015.
 
-\bibitem{boostrap}
-{Twitter}, ``{Bootstrap},'' \url{http://getbootstrap.com}, 2012.
- \begin{quotation}\noindent Bootsrap download page for the CSS library
-  \end{quotation}
+\bibitem{design_patterns}
+{Addy Osmani}, ``{Learning JavaScript Design Patterns}.''
+  \url{http://addyosmani.com/resources/essentialjsdesignpatterns/book/}, 2014.
 
-\bibitem{Aresti_Simple}
-B.~Wegman, pp. 1--9.
- \begin{quotation}\noindent Detailed description on Aresti figures, broken down
-  to key component explanation \end{quotation}
+\bibitem{google_javascript}
+{Aaron Whyte, Bob Jervis, Dan Pupius, Erik Arvidsson, Fritz Schneider, Robby
+  Walker}, ``{Google JavaScript Style Guide}.''
+  \url{https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml},
+  2012.
 
 \bibitem{foundation}
-{ZURB Inc.}, ``{Foundation},'' \url{http://foundation.zurb.com}, 1998.
- \begin{quotation}\noindent Foundation CSS library homepage \end{quotation}
+{ZURB Inc.}, ``{Foundation}.'' \url{http://foundation.zurb.com}, 1998.
+
+\bibitem{github}
+{Github inc}, ``{Github}.'' \url{https://www.github.com}, 2015.
+
+\bibitem{pages}
+{Githib inc}, ``{Websites for you and your projects.}.''
+  \url{https://pages.github.com}, 2015.
+
+\bibitem{travis}
+{Travis CI}, ``{Easily sync your GitHub projects with Travis CI.}.''
+  \url{https://travis-ci.org}, 2015.
+
+\bibitem{jasmine}
+{Gregg Van Hove}, ``{Behavior-Driven JavaScript}.''
+  \url{http://jasmine.github.io}, 2008.
+
+\bibitem{jsdoc}
+{Jeff Williams}, ``{@use JSDoc}.'' \url{http://usejsdoc.org}, 2011.
+
+\bibitem{sass}
+{Hampton Catlin, Natalie Weizenbaum, Chris Eppstein}, ``{Sass: Syntactically
+  Awesome Style Sheets}.'' \url{http://sass-lang.com}, 2006.
+
+\bibitem{koala}
+{Ethan Lai}, ``{Koala - a gui application for LESS, Sass, Compass and
+  coffeescript}.'' \url{http://koala-app.com}, 2013.
+
+\bibitem{easyphp}
+{EasyPHP}, ``{EasyPHP | Install a local WAMP server}.''
+  \url{http://www.easyphp.org/introduction.php}, 2000.
+
+\bibitem{Olan_Basics}
+{Michael Golan}, ``{Olan Language Basics}.''
+  \url{http://web.archive.org/web/20060927153819/http://www.aerobatics.org.il/olan/language.php},
+  2006.
+
+\bibitem{boostrap}
+{Twitter}, ``{Bootstrap}.'' \url{http://getbootstrap.com}, 2012.
 
 \end{thebibliography}

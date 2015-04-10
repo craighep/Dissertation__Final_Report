@@ -15,17 +15,13 @@
 \contentsline {subsection}{\numberline {2.3.1}GUI Use-case}{16}
 \contentsline {subsection}{\numberline {2.3.2}CSS and wire-frame design}{18}
 \contentsline {section}{\numberline {2.4}Planned use of services}{20}
-\contentsline {chapter}{\numberline {3}Implementation}{22}
-\contentsline {chapter}{\numberline {4}Testing}{23}
-\contentsline {section}{\numberline {4.1}Overall Approach to Testing}{23}
-\contentsline {section}{\numberline {4.2}Automated Testing}{23}
-\contentsline {subsection}{\numberline {4.2.1}Unit Tests}{23}
-\contentsline {subsection}{\numberline {4.2.2}User Interface Testing}{23}
-\contentsline {subsection}{\numberline {4.2.3}Stress Testing}{23}
-\contentsline {subsection}{\numberline {4.2.4}Other types of testing}{23}
-\contentsline {section}{\numberline {4.3}Integration Testing}{23}
-\contentsline {section}{\numberline {4.4}User Testing}{23}
-\contentsline {chapter}{\numberline {5}Evaluation}{24}
+\contentsline {chapter}{\numberline {3}Implementation \& Testing}{22}
+\contentsline {section}{\numberline {3.1}FDD project approach}{22}
+\contentsline {subsection}{\numberline {3.1.1}Iterative Implimentation}{23}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Feature 1- Create a basic GUI}{23}
+\contentsline {section}{\numberline {3.2}Final status and progress}{23}
+\contentsline {subsection}{\numberline {3.2.1}Implementation and testing review}{23}
+\contentsline {chapter}{\numberline {4}Evaluation}{24}
 \contentsline {chapter}{Appendices}{25}
 \contentsline {chapter}{\numberline {A}Background research and analysis}{26}
 \contentsline {section}{\numberline {1.1}Initial project Gantt chart}{26}
