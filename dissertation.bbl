@@ -18,17 +18,86 @@
 \fi
 #2}}
 
+\bibitem{google_javascript}
+{Aaron Whyte, Bob Jervis, Dan Pupius, Erik Arvidsson, Fritz Schneider, Robby
+  Walker}, ``{Google JavaScript Style Guide},''
+  \url{https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml},
+  2012.
+ \begin{quotation}\noindent The Google handbook for correctly styling
+  JavaScript code, including samples. \end{quotation}
+
+\bibitem{design_patterns}
+{Addy Osmani}, ``{Learning JavaScript Design Patterns},''
+  \url{http://addyosmani.com/resources/essentialjsdesignpatterns/book/}, 2014.
+ \begin{quotation}\noindent An online book detailing a wide reange of design
+  patterns that can be used with Javascript. Code examples included.
+  \end{quotation}
+
 \bibitem{GlMatrix}
 {Brandon Jones}, ``{glMatrix vector library},'' \url{http://glmatrix.net},
   2011.
  \begin{quotation}\noindent Javascript Matrix and Vector library for High
   Performance WebGL apps \end{quotation}
 
+\bibitem{observer}
+{Carl Danley}, ``{The Observer Pattern},''
+  \url{https://carldanley.com/js-observer-pattern/}, 2014.
+ \begin{quotation}\noindent Explanation of observer design pattern in
+  JavaScript, with code examples. \end{quotation}
+
+\bibitem{easyphp}
+{EasyPHP}, ``{EasyPHP | Install a local WAMP server},''
+  \url{http://www.easyphp.org/introduction.php}, 2000.
+ \begin{quotation}\noindent Local server application allowing php to run on a
+  local machine. Download page and guide to using EasyPhp. \end{quotation}
+
+\bibitem{koala}
+{Ethan Lai}, ``{Koala - a gui application for LESS, Sass, Compass and
+  coffeescript},'' \url{http://koala-app.com}, 2013.
+ \begin{quotation}\noindent Koala compiler download and guide site. Application
+  used for compiling sass to css. \end{quotation}
+
+\bibitem{pages}
+{Githib inc}, ``{Websites for you and your projects.}''
+  \url{https://pages.github.com}, 2015.
+ \begin{quotation}\noindent Github pages instructions, showng how to make a
+  repository into a self-hosted website. Using this for hosting the
+  application. \end{quotation}
+
+\bibitem{github}
+{Github inc}, ``{Github},'' \url{https://www.github.com}, 2015.
+ \begin{quotation}\noindent Github version control homepage, alongside guides
+  and instructions. \end{quotation}
+
+\bibitem{jasmine}
+{Gregg Van Hove}, ``{Behavior-Driven JavaScript},''
+  \url{http://jasmine.github.io}, 2008.
+ \begin{quotation}\noindent Jasmine behaviour driven javascript library for
+  testing code. Allows writing descipion tests, and compiles with JSUnit to
+  test. Documentation found on the main site. \end{quotation}
+
+\bibitem{sass}
+{Hampton Catlin, Natalie Weizenbaum, Chris Eppstein}, ``{Sass: Syntactically
+  Awesome Style Sheets},'' \url{http://sass-lang.com}, 2006.
+ \begin{quotation}\noindent Sass website providing guides to create sass files
+  and how to compile to CSS. \end{quotation}
+
+\bibitem{jsdoc}
+{Jeff Williams}, ``{@use JSDoc},'' \url{http://usejsdoc.org}, 2011.
+ \begin{quotation}\noindent Javascript documentation site, providing a guide,
+  examples and descriptions of jsdoc tags. \end{quotation}
+
 \bibitem{Local_Storage}
 {Mark Pilgrim}, ``{The past, present and future of local storage for web
   applications},'' \url{http://diveintohtml5.info/storage.html}, 2011.
  \begin{quotation}\noindent A thoughough guide to Javascript local storage,
   including code examples. \end{quotation}
+
+\bibitem{lazy_initialisation}
+{Martin Fowler}, ``{LazyInitialization},''
+  \url{http://martinfowler.com/bliki/LazyInitialization.html}, 2015.
+ \begin{quotation}\noindent Martin Fowler gives his opinon on the deisng
+  pattern, and gives a code example to explain how it works. \end{quotation}
 
 \bibitem{Olan_Basics}
 {Michael Golan}, ``{Olan Language Basics},''
@@ -77,9 +146,24 @@
  \begin{quotation}\noindent Background information on Aresti from the
   aerobatics society. \end{quotation}
 
+\bibitem{travis}
+{Travis CI}, ``{Easily sync your GitHub projects with Travis CI.}''
+  \url{https://travis-ci.org}, 2015.
+ \begin{quotation}\noindent Travis continuous development site, and
+  documentation on how to use Travis for github projects. \end{quotation}
+
+\bibitem{boostrap}
+{Twitter}, ``{Bootstrap},'' \url{http://getbootstrap.com}, 2012.
+ \begin{quotation}\noindent Bootsrap download page for the CSS library
+  \end{quotation}
+
 \bibitem{Aresti_Simple}
 B.~Wegman, pp. 1--9.
  \begin{quotation}\noindent Detailed description on Aresti figures, broken down
   to key component explanation \end{quotation}
+
+\bibitem{foundation}
+{ZURB Inc.}, ``{Foundation},'' \url{http://foundation.zurb.com}, 1998.
+ \begin{quotation}\noindent Foundation CSS library homepage \end{quotation}
 
 \end{thebibliography}
