@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  10 APR 2015 23:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  11 APR 2015 14:19
 entering extended mode
 **C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
 (C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
@@ -296,7 +296,14 @@ LaTeX Warning: Label `listing:json@cref' multiply defined.
 
 )
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.a
-ux)
+ux
+
+LaTeX Warning: Label `fig:mod' multiply defined.
+
+
+LaTeX Warning: Label `fig:mod@cref' multiply defined.
+
+)
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.a
 ux)
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1
@@ -524,25 +531,77 @@ Chapter 3.
 
 
 
-]) [23]
+]
+
+LaTeX Warning: Reference `fig:newgui' on page 23 undefined on input line 35.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23]
+Overfull \hbox (22.21964pt too wide) in paragraph at lines 46--47
+\OT1/ptm/m/n/10.95 lines of JavaScrip-t was need-ed. To cre-ate it, a ren-der-e
+r was cre-at-ed us-ing the 'THREE.WebGLRenderer'
+ []
+
+
+LaTeX Warning: Reference `test:canvas' on page 24 undefined on input line 48.
+
+
+Overfull \hbox (17.49753pt too wide) in paragraph at lines 51--57
+[][] 
+ []
+
+
+LaTeX Warning: Reference `code:jsonmoves' on page 24 undefined on input line 62
+.
+
+
+LaTeX Warning: Reference `code:requireJS' on page 24 undefined on input line 66
+.
+
+
+LaTeX Warning: Reference `code:jsonmovesJS' on page 24 undefined on input line 
+66.
+
+
+LaTeX Warning: Reference `test:jsonmvoes' on page 24 undefined on input line 68
+.
+
+[24]
+Underfull \hbox (badness 1325) in paragraph at lines 76--76
+[]\OT1/ptm/m/n/10.95 JSON cre-at-ed to rep-re-sen-t most ma-noeu-
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 76--76
+\OT1/ptm/m/n/10.95 progress. JavaScrip-t code and Re-quire-jS
+ []
+
+
+Overfull \hbox (17.49753pt too wide) in paragraph at lines 73--79
+[][] 
+ []
+
+) [25]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.t
 ex
 Chapter 4.
-) [24
+) [26
 
 
 
-] [25
+] [27
 
 
 ]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1
 .tex
 Appendix A.
-[26
+[28
 
 
-] <images/first.png, id=127, 1312.905pt x 248.42813pt>
+] <images/first.png, id=133, 1312.905pt x 248.42813pt>
 File: images/first.png Graphic file (type png)
 
 <use images/first.png>
@@ -553,10 +612,10 @@ Overfull \hbox (2.8394pt too wide) in paragraph at lines 10--11
  [][] 
  []
 
-[27
+[29
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/first.png>]
- <images/init.pdf, id=132, page=1, 614.295pt x 794.97pt>
+ <images/init.pdf, id=138, page=1, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 1>
@@ -567,7 +626,7 @@ Overfull \hbox (85.3886pt too wide) in paragraph at lines 19--20
 [][] 
  []
 
-<images/init.pdf, id=133, page=2, 614.295pt x 794.97pt>
+<images/init.pdf, id=139, page=2, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 2>
@@ -581,12 +640,12 @@ Overfull \hbox (85.3886pt too wide) in paragraph at lines 23--24
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28
+[30
 
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf>] 
-[29 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf
->] <images/eval.pdf, id=166, page=1, 597.55246pt x 845.07718pt>
+[31 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf
+>] <images/eval.pdf, id=173, page=1, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 1>
@@ -600,7 +659,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 32--33
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=167, page=2, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=174, page=2, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 2>
@@ -614,7 +673,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 36--37
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=168, page=3, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=175, page=3, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 3>
@@ -628,7 +687,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 40--41
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=169, page=4, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=176, page=4, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 4>
@@ -642,7 +701,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 44--45
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=170, page=5, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=177, page=5, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 5>
@@ -656,17 +715,17 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 48--49
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30
+[32
 
-] [31 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.p
-df>] [32 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eva
-l.pdf>] [33 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/
-eval.pdf>] [34 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/imag
-es/eval.pdf>] [35 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/i
-mages/eval.pdf>] [36
+] [33 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.p
+df>] [34 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eva
+l.pdf>] [35 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/
+eval.pdf>] [36 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/imag
+es/eval.pdf>] [37 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/i
+mages/eval.pdf>] [38
 
 ]
-<images/second.png, id=233, 1029.8475pt x 411.03563pt>
+<images/second.png, id=239, 1029.8475pt x 411.03563pt>
 File: images/second.png Graphic file (type png)
  <use images/second.png>
 Package pdftex.def Info: images/second.png used on input line 58.
@@ -676,7 +735,7 @@ Overfull \hbox (2.86494pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-[37
+[39
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/second.png>
 ])
@@ -690,13 +749,13 @@ Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¿ in font ptmr7t!
 Missing character: There is no ½ in font ptmr7t!
 
-LaTeX Warning: Citation `apache_poi' on page 38 undefined on input line 12.
+LaTeX Warning: Citation `apache_poi' on page 40 undefined on input line 12.
 
 
-LaTeX Warning: Citation `apache_license' on page 38 undefined on input line 13.
+LaTeX Warning: Citation `apache_license' on page 40 undefined on input line 13.
 
 
-) [38
+) [40
 
 
 
@@ -706,15 +765,11 @@ LaTeX Warning: Citation `apache_license' on page 38 undefined on input line 13.
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3
 .tex
 Appendix C.
-
-LaTeX Warning: Citation `NumericalRecipes' on page 39 undefined on input line 5
-.
-
-[39
+) [41
 
 
 
-] [40]) [41]
+]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 $\OT1/pcr/m/n/10.95 20060927153819 / http : / / www . aerobatics . org . il / o
@@ -778,10 +833,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7038 strings out of 495352
- 113944 string characters out of 3183046
- 220325 words of memory out of 3000000
- 9991 multiletter control sequences out of 15000+200000
+ 7063 strings out of 495352
+ 114222 string characters out of 3183046
+ 267325 words of memory out of 3000000
+ 10016 multiletter control sequences out of 15000+200000
  28620 words of font info for 63 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,12n,45p,1415b,1645s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -797,7 +852,7 @@ urw/palatino/uplri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
 es/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (50 pages, 3942281 bytes).
+Output written on dissertation.pdf (50 pages, 3949011 bytes).
 PDF statistics:
  288 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

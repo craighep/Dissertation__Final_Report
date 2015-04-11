@@ -19,8 +19,66 @@ It should also be noted that once the duration of the time in the project for th
 Before the iterations begin, it should be mentioned that although the order of features to be implemented were decided in the analysis, in order to impliment any back end things and allow for proper testing (usability testing), some basic GUI must be created first. Becuase of this, this will be the first iteration, followed by creation of the JSON manoeuvres. Following these iterations, it will then be much easier to test future features created. Without a basic GUI and canvas, it will be impossible to see the effects created whilst adding features such as drawing flight paths or moving cameras. After these two moved features are complete, the prioritised list will run as planned initially.
 
 \subsubsection{Feature 1- Create a basic GUI}
+The first feature that was to be implemented was less of a feature but more a requirement so the other features could be then created. The GUI or front-end of the application is important to be created, otherwise testing future WebGL features will not be possible. The requirements of the front end were:
 
+\begin{itemize}
+\item A responsive front-end that is mobile compatible
+\item Have hidden menus that can push in from the left
+\item Have basic inputs such as the OLAN input, and menu options
+\item Provide a help and about page that overlays the application web page
+\end{itemize}
 
+The first task that was performed to create this task was to create a minimulistic layout matching the wireframes designed in chapter 2 of this report. The first action performed was to get the latest Foundation \cite{foundation} css library file, and then to create a layout using the features from the library. The navigation was made using the 'navbar' markup, which helps stick the navbar to the top of the page, alongside automatically changing into a mobile pull down menu once the screen size reaches a certain amount. Then using other mark-ups provided by Foundation I was able to float the various navigation bar buttons to their respective sides. 
+
+The most important part of the GUI which has now been implimented is the off-canvas feature menus. The code for this can be seen in section~\ref{code:canvas} of appendix C. The way that Foundation helps create this off cnvas option is by wrapping everything in one div, then seperating the menu and content in half. When a user then pushes the designated button with the wrapper id, the entirety of the wrapper is pushed to the right to display the menu and less of the content. The about and help pages were also added successfully, with the addition of another library called Modernizer. This library allowed for a clean effect to overlay the information on top of the webpage.
+
+Once the basic HTML elements with relevent ID tags were added to the index page of the application, it was then possible to add some custom style to the page. As mentioned in the design stage, it was possible to download Foundation modified with the colour scheme designed for the application. Changing backgrounds to black and text to white was very easy, and then added to the site. The colour and design of the page can be seen below in figure~\ref{fig:newgui}.
+
+\begin{figure}[h]
+  \centering
+      %\includegraphics[width=1\textwidth]{images/newgui.png}
+  \caption{Screenshot of GUI created with Foundation, JQyery and HTML markup.}
+  \label{fig:mod}
+\end{figure}
+
+As planned, Sass was used to style specific elements of the page, such as the width of the OLAN input box, and to change text placement on the help and about pages. Setting up the Sass with Koala was easy, and upon each save of the file, CSS was compiled. 
+
+One final mention goes to the creation of the WebGL canvas. To create the basic canvas, only a few lines of JavaScript was needed. To create it, a renderer was created using  the 'THREE.WebGLRenderer' object. Becuase this is early in the implementation stage, it was created without RequireJS as the archetcure is only one JS file. Once the object is created, JQuery appends the '.domElement' of this object to the container div created in the basic HTML. For future features, the WebGLRenderer object with be where any objects such as flight paths are added to.
+
+As for testing this feature, becuase very little JavaScript was required to be coded here, usability testing was the only way to check for the completion of what was required. The test results can be found in Appendix D under section~\ref{test:canvas}. Overall, this feature has been made to 100\% of the requirements laid out, and matches the deisgn very well. Therefore, the progress tracker for this feature can be shown as:
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|p{7cm}|}
+\hline
+\textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
+09-03-2015     & 10-03-2015   & 2 Days            & 100\%             & Complete, though once new features are under way, RequireJS will be utalised and the WebGL Canvas code will be moved. \\ \hline
+11-03-2015     & 11-03-2015   & 1 Day            & 100\%             & Testing complete, usability table created and tested on mobile and desktop devices.\\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Feature overall progress: 100\%}
+
+\subsubsection{Feature 2- Convert OLAN and Aresti to JSON form}
+The second feature, which was of high importance to the rest of the application was to create OLAN interpreted JSON which would give instrctions on how to construct each manoeuvre. Becuase this was quite thoughroughly planned and then designed how each instruction was going to broken down, the time designated for this task felt generous. Simply using the template created in the design, it was possible to fill in each instrction part by part through each OLAN manoeuvre. An example of some instructions can be seen in Appendix C in section~\ref{code:jsonmoves}.
+
+The only time consuming part of this feature was the shear amount of different manoeuvres that had to be converted. For this reason, not every OLAN letter was created. The reason for this is becuase some moves are possible to be created from others, so further in development, more will be possible to be added. 
+
+To support this feature, more JavaScript code had to be added to allow the JSON to be read into an object to begin drawing moves onto the canvas. Becuase the code would be in a different module to the WebGL canvas that was created in the previous feature, RequireJS now had to be added to the source code. To do this, the RequireJS library was added and initiated in the HTML page of the application as shown here in Appendix C section~\ref{code:requireJS}. Then a new module was created, named 'Dataparser' as designated in the design. The method for converting the JSON can also be found in the data parser module shown again in the appendix under section~\ref{code:jsonmovesJS}.
+
+Once the coding and converting to JSON was complete, testing the code that performed the conversion to an object was required. By using JSUnit, it was possible to call the method that was created to instantiate the manoeuvres array, and pass in some raw JSON string, then compare to what the result should be. The JSUnit code can be found in appendix D, section~\ref{test:jsonmvoes}.
+
+Like the last feature, no changes from the original design were performed, resulting in a good standing of time compared to the Gantt chart for the project. The feature progress can be expressed as percentages and final comments added again.
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|p{7cm}|}
+\hline
+\textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
+12-03-2015     & 16-03-2015   & 5 Days            & 80\%             & JSON created to represent most manoeuvres, for that reason it is not an exact 100\& progress. JavaScript code and RequirejS functionality added to support the rest of the application. \\ \hline
+17-03-2015     & 18-03-2015   & 2 Days            & 100\%             & JSUnit tests created and passed successfully, showing JSON matches up with manouvre array object.\\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Feature overall progress: 90\%}
 
 \section{Final status and progress}
 \subsection{Implementation and testing review}
