@@ -103,19 +103,37 @@ The final predessing feature before the creation of OLAN paths that was decided 
 
 To start, another module was created for the 'CameraController'. Becuase it was best to keep the cameras completely seperated from other parts of the application to reduce decoupling, both camera objects were stored in this module and provided get and set methods for calls from other modules. An inititiator method was created for use from the main module, to create both camera objects at start up. Both these objects were again availible from the three.js library as 'THREE.PerspectiveCamera'. Then by passing the module around to any other modules, it will then be possible to update and retreive each camera object again. Alongside the camera creation, a controller for changing the angle of view, zoom and co-ordiantes was created as another module. 
 
-This module, which has been called 'CanvasController' as designed in the module diagram, adds event listeners for dragging the mouse around the canvas, keyboard presses to move up and down, and scroll for zooming.
+This module, which has been called 'CanvasController' as designed in the module diagram, adds event listeners for dragging the mouse around the canvas, keyboard presses to move up and down, and scroll for zooming. Then by getting the new updated values of view-point angles, these are passed back to the camera controller which updates the values of each camera. By repeating this in a render loop in the main module, the updating of cameras is done several times a second, to make movements appear fluid. To help this, the code was refeactored several times to ensure that the amount of work done by the browser is as little as possible on each loop of the animation.
+
+As for testing, alike the first feature where usability testing was the primary and sole means of checking the implementation fulfills the feature, JSUnit testing was not used. Usability testing was found the best option here, and results can be found in appendix D section~\ref{test:cameras}. During testing, it was found that there was an issue that when rotating the camera around the canvas, it seemed to always rotate around the point (0,0,0). This meant that navigating the canvas was slightly harder than it should have been. This was fixed though, by simply moving the camera rather than the scene in the canvas. As for the camera that was designed to be as on board view, a model airplane was added to represent the camera so it could be seen on the canvas. Although it does not move yet, the plane loads up at the start of the application and can be placed anywhere on the scene. You can see the plan on the canvas at point (0,0,0) below in figure~\ref{fig:plane}. The plane model is constrcuted from a JSON file from a page on the web with thousands of free models.
+
+\clearpage
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.6\textwidth]{images/plane.png}
+  \caption{Model of plane loaded up using JSON and three.js object loader. This plane will represent the onboard camera, and fill be the object that will be assigned locations along an OLAN path to show flying the flight plans entered by users.}
+  \label{fig:plane}
+\end{figure}
+
+The progress of the task is shown below. This feature was done exactly to its requirements in the design, and the modulation of code is still being followed.
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|p{7cm}|}
+\hline
+\textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
+21-03-2015     & 23-03-2015   & 3 Days            & 100\%             &  Both cameras now usable, with constructer methods, and update methods. On board camera ready but not linkable to rest of application until animation of flight paths is ready.\\ \hline
+24-03-2015     & 24-03-2015   & 1 Day            & 100\%             &  Usability tests complete, one change made to code following a failed test. \\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Feature overall progress: 100\%}
+
+\subsubsection{Feature 5- Construction of 3D paths from OLAN}
+The most important feature, drawing shapes onto the canvas using the instrctions read in from JSON files was next to be implemented. The main requirement here was to draw smooth shapes that match the Aresti shapes as accuratly as possible, also bearing in mind that they should be linkable.
 
 \section{Final status and progress}
 \subsection{Implementation and testing review}
 %The implementation should look at any issues you encountered as you tried to implement your design. During the work, you might have found that elements of your design were unnecessary or overly complex; perhaps third party libraries were available that simplified some of the functions that you intended to implement. If things were easier in some areas, then how did you adapt your project to take account of your findings?It is more likely that things were more complex than you first thought. In particular, were there any problems or difficulties that you found during implementation that you had to address? Did such problems simply delay you or were they more significant? You can conclude this section by reviewing the end of the implementation stage against the planned requirements. 
 
 %Detailed descriptions of every test case are definitely not what is required here. What is important is to show that you adopted a sensible strategy that was, in principle, capable of testing the system adequately even if you did not have the time to test the system fully.Have you tested your system on �real users�? For example, if your system is supposed to solve a problem for a business, then it would be appropriate to present your approach to involve the users in the testing process and to record the results that you obtained. Depending on the level of detail, it is likely that you would put any detailed results in an appendix.The following sections indicate some areas you might include. Other sections may be more appropriate to your project. 
-
-%\section{Overall Approach to Testing}
-%\section{Automated Testing}
-%\subsection{Unit Tests}
-%\subsection{User Interface Testing}
-%\subsection{Stress Testing}
-%\subsection{Other types of testing}
-%\section{Integration Testing}
-%\section{User Testing}
