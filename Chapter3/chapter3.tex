@@ -80,6 +80,31 @@ Like the last feature, no changes from the original design were performed, resul
 
 \textbf{Feature overall progress: 90\%}
 
+\subsubsection{Feature 3- Creating a scene with terrain and lighting}
+The third feature, which is another to be brought forward ahead of flight path creation is the terrain and lighting effects. The reason for creating this before the OLAN construction is the same as creating the canvas, becuase without an area to see where the paths are drawn onto, the effects of that feature will be hard to test if it is working. Especially terrain, where the need for this is to see where the X axis of 0 will be. Without this, when implementing checks such as if the path would hit the ground would be harder to test. Again, the three.js library was of great use here, especially with built in methods to allow for lighting to be added.
+
+In order to have started this feature, another module was added to the archetecture named 'TerrainHandler', which was where both lighting and ground was to then have their methods of adding to the canvas. This feature was found to be the shortest of the features, as it only required two simple methods. Rather than passing the renderer canvas object to this module to add the ground and lighting, it was decided to simply make both methods like factories to return the ground and lighting objects to where they were called from. In the case of where this module was called from, the main class where the canvas was created seemed the best place to call each method, as everything to do with setting up the scene could remain together and be easily understood or developed further.
+
+As for testing, by keeping the terrain and lighting in their own module also helped towards testing the new methods. Two very simple tests were made using JSUnit to check the returns of each method, and both were added to the Jasmine instructions under each Github commit through the Travis builds. As with other tests, the test cases can be found in the appendices under appendix D section~\ref{test:lights}. This feature was fairly straight forward to implement and test with help from the three.js documentation site, therefore teh feature was done in less time than originally planned.
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|p{7cm}|}
+\hline
+\textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
+19-03-2015     & 20-03-2015   & 1 Day            & 100\%             &  Completed module for terrain and lighting, linked up to main module.\\ \hline
+20-03-2015     & 20-03-2015   & 1 Day            & 100\%             &  Two JSUnit tests created, and passing successfully.\\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Feature overall progress: 100\%}
+
+\subsubsection{Feature 4- Cameras}
+The final predessing feature before the creation of OLAN paths that was decided should be ready were the various cameras that will look around the canvas. The initial requirements for cameras was to have two different views: one for navigating around the canvas, and the other for being onboard the flight path. At this stage of the project, creating the second was only possible to a certain extent, becuase without the construction of the paths yet, getting the location of where the onboard camera should be is not possible. Therefore, for this requirement both cameras were created, with the exception of the onboard camera where functionality is currently restricted. 
+
+To start, another module was created for the 'CameraController'. Becuase it was best to keep the cameras completely seperated from other parts of the application to reduce decoupling, both camera objects were stored in this module and provided get and set methods for calls from other modules. An inititiator method was created for use from the main module, to create both camera objects at start up. Both these objects were again availible from the three.js library as 'THREE.PerspectiveCamera'. Then by passing the module around to any other modules, it will then be possible to update and retreive each camera object again. Alongside the camera creation, a controller for changing the angle of view, zoom and co-ordiantes was created as another module. 
+
+This module, which has been called 'CanvasController' as designed in the module diagram, adds event listeners for dragging the mouse around the canvas, keyboard presses to move up and down, and scroll for zooming.
+
 \section{Final status and progress}
 \subsection{Implementation and testing review}
 %The implementation should look at any issues you encountered as you tried to implement your design. During the work, you might have found that elements of your design were unnecessary or overly complex; perhaps third party libraries were available that simplified some of the functions that you intended to implement. If things were easier in some areas, then how did you adapt your project to take account of your findings?It is more likely that things were more complex than you first thought. In particular, were there any problems or difficulties that you found during implementation that you had to address? Did such problems simply delay you or were they more significant? You can conclude this section by reviewing the end of the implementation stage against the planned requirements. 
