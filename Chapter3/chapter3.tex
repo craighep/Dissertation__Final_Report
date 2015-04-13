@@ -132,7 +132,142 @@ The progress of the task is shown below. This feature was done exactly to its re
 \subsubsection{Feature 5- Construction of 3D paths from OLAN}
 The most important feature, drawing shapes onto the canvas using the instrctions read in from JSON files was next to be implemented. The main requirement here was to draw smooth shapes that match the Aresti shapes as accuratly as possible, also bearing in mind that they should be linkable.
 
+Using the array of maneouvre objects inported from JSON in the first feature implemented, creating shapes based on these was a matter of building up an array of vectors with each new vector being copied from the previous and then having the next instruction take effect on it. To do this, under a new module 'ManouevreController', a method was created that firstly found whih manouvre was to be built, then loop through the instructions of that manouevre creating it vector-by-vector. An example of how vectors were calculated is shown below in figure~\ref{fig:vectors}.
+
+\begin{figure}[h]
+  \centering
+      %\includegraphics[width=1\textwidth]{images/vectors.png}
+  \caption{Flow chart of how vectors were used to construct the spline shape.}
+  \label{fig:vectors}
+\end{figure}
+
+As you can see, once vectors were created, they were passed to a three.js object which was a spline curve. A spline curve is one that interpolates along all its points to create a smooth shape. Once points are added to this object, it can then be added to the canvas. Upon initial usability testing of this, it was found that many of the joins between points were well-off center, due to the interpolation being too large. This was down to the fact that with each turn instruction being a 45 degree angle, meant that the change was too sharp from a straight to curved line, so the straight line was affected too much. To fix this, by dividing up the 45 degree into smaller pieces meant that interpolation was needed much less, therefore the curves appeared smoother and had much less effect on any predecessing straight lines.
+
+Another big issue that appeared during testing was that any manoeuvres that had a change in angle through a turn always seemed to revert back to a straight line, meaning the rest of the manoeuvre was out of sync and did not look correct. This was an especially time-consuming bug, and a example of it can be seen in figure~\ref{fig:issue}. Becuase finding out the problem and attempting to fix it was eating away at other feature time, the issue was left for the time being, in order to complete other key features outlined in the requirments. In order to ensure this issue would not remain at the end of the project, a strict time limit was set on the next features to allow for a good amount of time to fix the issue here.
+
+\begin{figure}[h]
+  \centering
+      %\includegraphics[width=1\textwidth]{images/vectors.png}
+  \caption{Flow chart of how vectors were used to construct the spline shape.}
+  \label{fig:vectors}
+\end{figure}
+
+At the end of the iterations in this report, this issue will be re-evaluated once the fix is in place. Other than this issue, the rest of the feature was implemented well, and entering OLAN now drew fairly accurate shapes. Again with testing, usability was the primary case here, becuase checking for correct spline curves created would be too time consuming and difficult with the use of JSUnit. The overall progress of the task at this point of the project is as follows:
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|p{7cm}|}
+\hline
+\textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
+25-03-2015     & 05-04-2015   & 2 Weeks            & 75\%             &  Although OLAN now is represnted by shapes and they link up correctly, the issue mentioned os straight lines being drawn on change of angle remains. This will be fixed fully after implementtaion of other tasks.\\ \hline
+06-03-2015     & 08-03-2015   & 2 Days            & 75\%             &  Usability tests complete, changed step of angles from 45 to 15 to get smoother interpolation. More tests will be required after fixing the issue.\\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Feature overall progress: 75\%}
+
+\subsubsection{Feature 6- Animate OLAN flight path}
+Although there was an issue imnplementing the drawing of flight paths in the previous feature, the functionality that was complete allowed for the animation feature to be done. Three.js provided a good means of getting points along the spline curves to a percentage of the length of the shape. For example, by using the method 'getPointAt' with 50 as the paramter value gave the return vector value of the point on the line halfway. By doing this iterativly using the render loop used in the cameras meant a value could be incremented over time, thus getting points along each curve. Each time a point was received, the on-board camera could then be set to the position of it, and by doing this as fast as the render loop meant that a smooth animation was created. Again, a new module was created 'AnimationController' with various methods for playing and pausing the animation, and setting the distance of time between each point recieved in order to speed up or slow down the animation.
+
+With each curve being stored in an array object, meant if linked up manoeuvres were being animated along, once one manoeuvre had reach 100\% for getting points along its line, the next manoeuvre would be selected from the array and the get-point percentage reset back to 0. By doing this, a flawless smooth cross between manoeuvres has been achieved.
+
+As for testing this feature, more JSUnit was used, but mainly for the getters and setters of the controller. For instance, checking that the pause, play and speed setters worked correctly required simple test cases that checked the private variables holding the values were correct. Alongside these tests, usability tests were also completed becuase of the new buttons in the GUI representing the play/pause and speed options. Both tests can be found in the appendices under section~\ref{test:animation}. Following the completion of this feature, the progress can be reported on. 
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|p{7cm}|}
+\hline
+\textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
+09-04-2015     & 10-04-2015   & 2 Days            & 100\%             &  Animation is now possible through all manoeuvres in a flight, alongside options to pause, play and change speed.\\ \hline
+11-04-2015     & 11-04-2015   & 1 Day            & 100\%             &  Simple JSUnit and usability tests performed to check values from GUI are being sent to the back-end correctly.\\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Feature overall progress: 100\%}
+
+\subsubsection{Feature 7- Exporting and importing routines}
+The last of the primary features planned for the applicatoin was the saving and loading of flight plans. Because up to this stage the project time was behind, and time was required to fix other issues, it was decided that the initial format of saving the OLAN input directly would be quicker top implement than the rendered vector values. 
+
+To start this, a final module was created for the handling of JSON files and local storage, adn this was then linked up to the HTML handler module to get the user's current OLAN input value. Four methods were required for this:
+\begin{enumerate}
+	\item Exporting to JSON- This method makes a simple JSON file with one object contained ("OLAN" : olan string)
+	\item Importing from JSON- Allowing selection of a user file from the browser, and selecting the OLAN from it, then entering this into the input box to be rendered.
+	\item Exporting to local storage- The same format as the JSON, but saving in the browser. See appendix C section~\ref{code:localstorage}.
+	\item Importing from local storage- same, should be automatic when application loads up
+\end{enumerate}
+
+In addition to the requirements that were implemented, it was decided that user should be able to choose whether automatic backup of the entered OLAN would load up at the start of the application. Becuase of the observer pattern that is being used throughout implementation, it took a very short space of time to add this feature to the HTML handler listener.
+
+Testing involved some JSUnit again, where test data was entered and checked against the reuslting JSON and local storage objects. The tests can be seen in appendix D section~\ref{test:save}. Up to this point and for future tests, it was ensured that the Travis builds were passing when running all the JSUnit tests through Jasmine. This feature was completed quicker than the allocated time due to the research into Local storage previously, and therfore helped gain back some valuable time for other features.
+
+As for any future development, it was mentioned that it could have been better to export the vectors directly, but the space in files and in time was considerable here therefore helping towards effiency in this part of the project. The ending progress of this feature follows in the table below.
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|p{7cm}|}
+\hline
+\textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
+12-04-2015     & 14-04-2015   & 3 Days            & 100\%             &  Both importing and exporting of JSON and local storage complete, with an additional feature of giving the user the option to auto save when they enter any OLAN.\\ \hline
+14-04-2015     & 15-04-2015   & 2 Days            & 100\%             &  Implemented JSUnit tests linked to the Travis build, testing the format and content of exported flight plans.\\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Feature overall progress: 100\%}
+
+\subsubsection{Feature 8- Adding further GUI options}
+By this point, quite a few of the features installed into the application had the possibility of allowing the user to interact with a range of different paramters and options. For example, with the spline curves, there was options such as the smoothness of interpolation (the number of extrusion segments), options to switch between cameras, and the scale of flight paths amongst others. As with other options that had been added along the way with some features such as speed and auto-save, linking each to the GUI was fairly straight foward, with all that being required was to create an ID for the HTML element to be an option, and then listen for a change or click using the HTML handler, finally calling its respected method.  
+
+The options that were added can be shown in a comprehensive list with reasonings for each.
+\begin{itemize}
+	\item Extrusion segments- The smoothness of paths, where the more the user chooses the more segments each curve is made of. This can help users with less powerful systems, as there is less to render with less segments.
+	\item Onboard view- an option that changes the current camera view to one where the user will view the canvas enviromnent from the point of the view of the front of the aircraft. This gives the feel of actualyl flying the OLAN path, which could be helpful to users such as pilots who may want to learn a routine from the inside of a cockpit.
+	\item Scale- The scale of all the OLAN paths drawn, defaulted at 1, but can be increased in multiples. Useful if the user wants to fit more onto the canvas, or wants to get a larger better view of a move.
+	\item Radius segments- The initial line that is drawn to show the manouevre may be changed to have more sides. For example, the default being 2 means a flat ribbon is drawn. 1 would be a single line, whilst 0 would make the path invisible. This would then allow the user to have an aircraft fly the path without any shapes behind it.
+\end{itemize}
+
+An addtional GUI feature that was added here was the check for the loading of the OLAN JSON file before activating the input box in the navigation bar. As mentioned in design, this box shuold not be editable until the application is fully loaded, so a method was created in the HTML handler to activate the box when needed. This method was called by the camera controller module once the model aircraft was loaded, as this was the last and largest file to load.
+
+As with any GUI interface features, usablity testing was the best option here, and therefore each new option added was tested after being created. The tests checked if the proper function was called and had an effect on the application as was planned. The tests follow the previous ones in appendix D under section~\ref{test:options}. It should be noted that the tests were done both on mobile and on desktop, to keep up with the added requirement that the application should be usable on both platforms. The tests ensured that all the options worked well, and worked when they were supposed to. The following table shows this feature's progess.
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|p{7cm}|}
+\hline
+\textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
+15-04-2015     & 15-04-2015   & 1 Day            & 100\%             &  Options added to reflect changes in various aspects of the application, alongside the lazy initialisation check added to the OLAN input box.\\ \hline
+16-04-2015     & 16-04-2015   & 1 Day            & 100\%             &  Usability tests performed on desktop and mobile browsers, all passing after multiple times refactoring. \\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Feature overall progress: 100\%}
+
+\subsubsection{Feature 9- Flight 'movie reel'}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|p{7cm}|}
+\hline
+\textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
+17-04-2015     & 19-04-2015   & 3 Days            & 100\%             &  \\ \hline
+20-04-2015     & 20-04-2015   & 1 Day            & 100\%             &  \\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Feature overall progress: 100\%}
+
+\subsubsection{Feature 10- Parameterisation of OLAN input}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|p{7cm}|}
+\hline
+\textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
+21-04-2015     & 23-04-2015   & 3 Days            & 100\%             &  \\ \hline
+24-04-2015     & 24-04-2015   & 1 Day            & 100\%             &  \\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Feature overall progress: 100\%}
+
 \section{Final status and progress}
+\subsection{After-test fixes and developments}
+%fix OLAN, smoke trails too!
+\section{User testing}
+
 \subsection{Implementation and testing review}
 %The implementation should look at any issues you encountered as you tried to implement your design. During the work, you might have found that elements of your design were unnecessary or overly complex; perhaps third party libraries were available that simplified some of the functions that you intended to implement. If things were easier in some areas, then how did you adapt your project to take account of your findings?It is more likely that things were more complex than you first thought. In particular, were there any problems or difficulties that you found during implementation that you had to address? Did such problems simply delay you or were they more significant? You can conclude this section by reviewing the end of the implementation stage against the planned requirements. 
 
