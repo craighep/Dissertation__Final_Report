@@ -238,34 +238,83 @@ As with any GUI interface features, usablity testing was the best option here, a
 \textbf{Feature overall progress: 100\%}
 
 \subsubsection{Feature 9- Flight 'movie reel'}
+The movie reel feature was one that would be added if there was enough remaining time, though in this case it was decided that it would be implemented to a set time limit. The aim of the reel would be to show the user what manoeuvre is currently being flown in the animation, by having images or teh manoeuvre from the OLAN input box converted to simple 2D Aresti, and then shown along a reel with current progress across them in relation to the entire flight. To start this, it was firstly considered that using the logic from the manoeuvre controller that built flight paths could be used to the same effect for drawing the movie reel figures. 
+
+Upon starting this though, it was foudn that many aspects of the feature would take too much time to implement, and that they could cause performance issues for the user. The first of these was that if the application was going to draw mini figures at the bottom of the page in a fixed location, it would mean having to create a set of mini-canvases to interact with, rather than using the main canvas and drawing at the bottom of it. Each figure would thus need its own canvas, and after so many are added, this can dramatically affect the browser's perormance. Another issue foudn when looking how to create the reel was the complex style of Aresti figures required. For example, creating arrows to represent rolls, and for annotations to be generated in the correct places alongside curves would require detailed mechanics in the back-end in order to produce them. This and the first issue was decided would take up too much development time, thus pushing back the remaining features left to fix and implement. Therefore a compromise was made, where the reel has a range of images of the Aresti figures loaded and put in place alonside each other. These images have already been created using the OpenAero application, so saving these to a folder in the application was easy, and each was saved with the name of the OLAN letter. 
+
+The movie reel was incorparated into the HTML handler, as this was a dom-element related item and required JQuery to manipulate the space at the bottom of the canvas. Then, added to the listeners in the HTML handler file was an event where when the user enters an OLAN letter, and this is found in the manoeuvres array (to ensure it is a real OLAN notation), an image representing the Aresti figure with the letter for the filename was loaded into a div floated at the bottom of the page where it was appended. Although this means of creating the figure was not what was initially planned, due to time constraints this means of creating the feature ensured it was done as quickyl as possible, but also to a good standard of presentation that fit well with the rest of the application. It can be seen in figure~\ref{fig:movie} the reel with some figures loaded up, with the current animation progress highlighted over the manouevres.
+
+\begin{figure}[h]
+  \centering
+      %\includegraphics[width=1\textwidth]{images/movie.png}
+  \caption{Movie reel overlaying the bottom of the canvas, with some figures loaded after the user typed in a string of OLAN.}
+  \label{fig:vectors}
+\end{figure}
+
+Figure~\ref{fig:movie} also shows the animation progress, which was achieved by simply getting the current value of time which was used earlier in the 'getPointAt' method, then getting the percentage of this for the amount of moves entered. After this, a simple div was placed again using Jquery over the width of that percentage to achieve a darker coloured semi-transparent status bar. During tests of this feature (usability), one such issue was found that was caused when more than five manoeuvres were entered, the remaining Aresti figures were not present on the page, as it had been split into five sections. This means at this point of the project only the first five manoeuvres have their animation status shown. This is another feature that is hoped to be fixed before the end of the project implementation stage. 
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|p{7cm}|}
 \hline
 \textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
-17-04-2015     & 19-04-2015   & 3 Days            & 100\%             &  \\ \hline
-20-04-2015     & 20-04-2015   & 1 Day            & 100\%             &  \\ \hline
+17-04-2015     & 19-04-2015   & 3 Days            & 50\%             &  Movie-reel implemented using images rather than constructing, though they show correctly the Aresti figures when the user enters OLAN. Issue found that requires fixing, concerning havign more than five manoeuvres availible on the reel.\\ \hline
+20-04-2015     & 20-04-2015   & 1 Day            & 100\%             &  Usability tests complete, found the issue using them, and will test again once the issue is addressed.\\ \hline
 \end{tabular}
 \end{table}
 
-\textbf{Feature overall progress: 100\%}
+\textbf{Feature overall progress: 75\%}
 
 \subsubsection{Feature 10- Parameterisation of OLAN input}
+The final feature that was added to the implementation Gantt chart was the one that would allow users to enter both parameters to OLAN notation (such as roll amount, length of entry and decent or others), and to tell the manouevre controller to move the start location of the next manoeuvre so many co-ordinates along the X or Y axis. Current progress on this feature after moving on in this stage of the project was that the second part functioned, allowing users to enter elements to move the start positon of the following maneouvres. However, as with some other features being implemented, it was felt that the time required to add the various prefixes and postfixes for each and every OLAN shape was too consuming on the overall project time. As with features where it was taking too long for specific parts, this will also be left in accordance with how the Gantt chart stands for time left for implementing and testing. The function for calculating the parameters was added besides the existing method taht reads input from the OLAN box, then creating vectors to create a path between a previous and next manoeuvre.
+
+For the part of testing the half of the feature that worked, usability testing was the best approach here. In appendix D section~\ref{test:parameters} the test table can be found, and shows the feature passing for this aspect. By attempting to keep the workings of the application as similar as possible as to how OpenAreo handles parameters keeps consistancy for users across the web, and to keep consistancy in the OLAN language. While testing, it was found that the inut of the user should be heavily restricted and strictly typed, ensuring the user types the exact format that the paramaters should follow. After testing and evaluating the way that the OpenAero application handles this, it was decided the format should also be '(x,y)' where it is space seperated from other elements, and where x and y can be either negative or positive.
+
+Following the completion of this particular parametersiation, the progress of the feature can now be reviewed.
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|p{7cm}|}
 \hline
 \textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
-21-04-2015     & 23-04-2015   & 3 Days            & 100\%             &  \\ \hline
-24-04-2015     & 24-04-2015   & 1 Day            & 100\%             &  \\ \hline
+21-04-2015     & 23-04-2015   & 3 Days            & 50\%             &  Parameters for moving start positon of next manoeuvre ready, but individual OLAN maneouvre parameters not implemented yet.\\ \hline
+24-04-2015     & 24-04-2015   & 1 Day            & 50\%             &  Can only test first half of the feature up to this point, will implement tests if second half if complete.\\ \hline
 \end{tabular}
 \end{table}
 
-\textbf{Feature overall progress: 100\%}
+\textbf{Feature overall progress: 50\%}
 
 \section{Final status and progress}
+At this stage of the project, it is now possible to get a grasp of the overlal status of the application concerning implementation and testing. Using the progress reports from each feature, a general idea of the entire progress will combine all the completed features, and then 
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Feature} & \textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress}                                                                                                \\ \hline
+1 & 09-03-2015     & 11-03-2015   & 3 Days            & 100\%\\ \hline
+2 & 12-03-2015     & 18-03-2015   & 7 Days            & 90\%\\ \hline
+3 & 19-03-2015     & 20-03-2015   & 2 Days            & 100\% \\ \hline
+4 & 21-03-2015     & 24-03-2015   & 4 Days            & 100\%\\ \hline
+5 & 25-03-2015     & 08-04-2015   & 2 Weeks 2 Days    & 75\% \\ \hline
+6 & 11-04-2015     & 09-04-2015   & 3 Days            & 100\% \\ \hline
+7 & 12-04-2015     & 15-04-2015   & 5 Days            & 100\% \\ \hline
+8 & 15-04-2015     & 16-04-2015   & 2 Days            & 100\% \\ \hline
+9 & 17-04-2015     & 20-04-2015   & 4 Days            & 75\% \\ \hline
+10 & 21-04-2015     & 24-04-2015   & 4 Days            & 50\% \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+  \centering
+      \includegraphics[width=0.8\textwidth]{images/burndown.png}
+  \caption{Burndown chart of features implemented and tested fully. X axis represents number of features to implement, whilst Y axis shows the date that the features have been implemented by.}
+  \label{fig:burndown}
+\end{figure}
+
 \subsection{After-test fixes and developments}
 %fix OLAN, smoke trails too!
+%hide movie reel
+%fix reel scroll
+%parameters OLAN not done
+%check if manoeuvres fit
 \section{User testing}
 
 \subsection{Implementation and testing review}
