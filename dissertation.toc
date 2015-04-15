@@ -29,17 +29,17 @@
 \contentsline {subsubsection}{\numberline {3.1.1.9}Feature 9- Flight 'movie reel'}{31}
 \contentsline {subsubsection}{\numberline {3.1.1.10}Feature 10- Parameterisation of OLAN input}{33}
 \contentsline {section}{\numberline {3.2}Final status and progress}{33}
-\contentsline {subsection}{\numberline {3.2.1}After-test fixes and developments}{34}
-\contentsline {section}{\numberline {3.3}User testing}{34}
-\contentsline {subsection}{\numberline {3.3.1}Implementation and testing review}{34}
-\contentsline {chapter}{\numberline {4}Evaluation}{35}
-\contentsline {chapter}{Appendices}{36}
-\contentsline {chapter}{\numberline {A}Background research and analysis}{37}
-\contentsline {section}{\numberline {1.1}Initial project Gantt chart}{37}
-\contentsline {section}{\numberline {1.2}Inital requirements analysis}{39}
-\contentsline {section}{\numberline {1.3}OLAN understandings}{41}
-\contentsline {section}{\numberline {1.4}Revised FDD Gantt chart}{47}
-\contentsline {chapter}{\numberline {B}Third-Party Code and Libraries}{49}
-\contentsline {chapter}{\numberline {C}Code samples}{50}
-\contentsline {section}{\numberline {3.1}Off-canvas HTML code, showing how menus are hidden }{50}
-\contentsline {chapter}{Annotated Bibliography}{51}
+\contentsline {subsection}{\numberline {3.2.1}After-test fixes and developments}{35}
+\contentsline {section}{\numberline {3.3}User testing}{35}
+\contentsline {subsection}{\numberline {3.3.1}Implementation and testing review}{35}
+\contentsline {chapter}{\numberline {4}Evaluation}{36}
+\contentsline {chapter}{Appendices}{37}
+\contentsline {chapter}{\numberline {A}Background research and analysis}{38}
+\contentsline {section}{\numberline {1.1}Initial project Gantt chart}{38}
+\contentsline {section}{\numberline {1.2}Inital requirements analysis}{40}
+\contentsline {section}{\numberline {1.3}OLAN understandings}{42}
+\contentsline {section}{\numberline {1.4}Revised FDD Gantt chart}{48}
+\contentsline {chapter}{\numberline {B}Third-Party Code and Libraries}{50}
+\contentsline {chapter}{\numberline {C}Code samples}{51}
+\contentsline {section}{\numberline {3.1}Off-canvas HTML code, showing how menus are hidden }{51}
+\contentsline {chapter}{Annotated Bibliography}{52}

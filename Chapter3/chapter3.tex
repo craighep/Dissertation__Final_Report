@@ -283,9 +283,11 @@ Following the completion of this particular parametersiation, the progress of th
 \textbf{Feature overall progress: 50\%}
 
 \section{Final status and progress}
-At this stage of the project, it is now possible to get a grasp of the overlal status of the application concerning implementation and testing. Using the progress reports from each feature, a general idea of the entire progress will combine all the completed features, and then 
+At this stage of the project, it is now possible to get a grasp of the overlal status of the application concerning implementation and testing. Using the progress reports from each feature, a general idea of the entire progress will combine all the completed features and then allow the creation of a brun-down chart to compare the current status with projected status. Although Burn-down charts are not FDD, it was chosen that the Scrum approach here would reveal more information around what work still needs to be completed, and when by. In order to create the burndown chart, the overall percentages of progress for each task should be collected. The list of features is shown in table~\ref{tbl:features}.
 
 \begin{table}[h]
+\centering
+ \label{tbl:features}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
 \textbf{Feature} & \textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress}                                                                                                \\ \hline
@@ -300,7 +302,10 @@ At this stage of the project, it is now possible to get a grasp of the overlal s
 9 & 17-04-2015     & 20-04-2015   & 4 Days            & 75\% \\ \hline
 10 & 21-04-2015     & 24-04-2015   & 4 Days            & 50\% \\ \hline
 \end{tabular}
+\caption{Collected statuses of all features required, with their duration and percentage complete. Note: the dates shown the task was completed working on also include time done testing, and writing this stage of the report.}
 \end{table}
+
+Therefore, using the above table with dates of completion, a burndown chart up to this point can be created. The chart in figure~\ref{fig:burndown} shows the amount of features predicted remaining to implement versus the amount remaining at this time in the project. 
 
 \begin{figure}[h]
   \centering
@@ -309,15 +314,28 @@ At this stage of the project, it is now possible to get a grasp of the overlal s
   \label{fig:burndown}
 \end{figure}
 
+Although work appears to be behind schedule here, it should be noted that there is still both time remaining and some features are more than half complete. For strict purposes though and following the FDD manifesto, a feature can not be said to be complete until it is 100\% complete. 
+
+Analysing the graph further, the main problem can be seen where work was halted on feature five, the creation of manoeuvres on the canvas. Becuase issues prolonged work here, it meant other features were pushed back until it was decided that they should be completed in order to make a more whole application. Due to moving onto and completing other features first alongside writing this part of the report, considerable time has been made up. The time remaining will now allow for any completion of features that are most important, and also fixes to others if possible. 
+
 \subsection{After-test fixes and developments}
+
 %fix OLAN, smoke trails too!
 %hide movie reel
 %fix reel scroll
 %parameters OLAN not done
 %check if manoeuvres fit
+
 \section{User testing}
+Now that the alocated time for implemntation and testing has been used, testing to see how the application meets its initial requirements is important. Along with the JSUnit tests and the usability tetsts that were created, user testing is a means of testing ideal for front-end applications where the usability of the application is paramount. There are a few routes that can be taken to perform user testing, one of which is a questionnaire. Rather than allowing the user to sedn feedback through suggestions or pros and cons, a quicker and more direct way to check the applicatins fulfills its needs is to provide the user with a set of direct questions, allowing them to state if they agree or dissagree. One example could be whether the colour scheme is sutible. By getting the amount agreeing above a certain threshold percentage wise would help show that the colour scheme aspect was correctly applied.
 
-\subsection{Implementation and testing review}
-%The implementation should look at any issues you encountered as you tried to implement your design. During the work, you might have found that elements of your design were unnecessary or overly complex; perhaps third party libraries were available that simplified some of the functions that you intended to implement. If things were easier in some areas, then how did you adapt your project to take account of your findings?It is more likely that things were more complex than you first thought. In particular, were there any problems or difficulties that you found during implementation that you had to address? Did such problems simply delay you or were they more significant? You can conclude this section by reviewing the end of the implementation stage against the planned requirements. 
+The questionnaire, which can be found in the appendices under appendix D, section~\ref{test:questionnaire} provided ten agree or dissagree questions that the users had to answer. Upon creating the questionnaire, these were then handed to a pick of 10 users, in technical and none-technical backgrounds to ensure a good spread of opinion. If just technical users were chosen, they might not see the application from the aspect of GUI as much as a standard user, as some users may find it harder to find things on a page. Things such as menus for instance may not be as visible and easy to find for users who have not seen similar layouts in the past, and it is important that they application has a level of being self-documenting.
 
-%Detailed descriptions of every test case are definitely not what is required here. What is important is to show that you adopted a sensible strategy that was, in principle, capable of testing the system adequately even if you did not have the time to test the system fully.Have you tested your system on �real users�? For example, if your system is supposed to solve a problem for a business, then it would be appropriate to present your approach to involve the users in the testing process and to record the results that you obtained. Depending on the level of detail, it is likely that you would put any detailed results in an appendix.The following sections indicate some areas you might include. Other sections may be more appropriate to your project. 
+The users selected to perform the testing comprised of eight students and two none-students. It was also ensured that half the students selected were not on a computer science related degree to ensure a wider set of technological knowledge. For each test, a brief description of the application was given to the user explaining the purpose and requiurements of the project and application, followed by the user trying out different features in the GUI and canvas. 
+
+The questionnaires handed out were created using google forms, to keep the process on the internet fo easier tracking. Becuase this form of testing was not planned out originally on the Gantt chart at the start of this project, it was important that the tests were carried out as quickly as possible, so google forms were sent out and asked they could be returned a couple of days later. Indeed all ten questionnaires were returned, each of which all answers had been answered. This was very successful, as it then allowed the results to be analysed properly, and graphs created.
+
+The results of each question can be found in appendix D section~\ref{test:questions}. Looking at the results, it can be assumed that... %TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+\section{Implementation and testing review}
+On completion of the process of the tests of the final application, a short review of
