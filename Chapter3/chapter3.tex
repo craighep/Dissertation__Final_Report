@@ -36,9 +36,9 @@ Once the basic HTML elements with relevent ID tags were added to the index page 
 
 \begin{figure}[h]
   \centering
-      %\includegraphics[width=1\textwidth]{images/newgui.png}
+      \includegraphics[width=0.6\textwidth]{images/desktopProgress.png}
   \caption{Screenshot of GUI created with Foundation, JQyery and HTML markup.}
-  \label{fig:mod}
+  \label{fig:newgui}
 \end{figure}
 
 As planned, Sass was used to style specific elements of the page, such as the width of the OLAN input box, and to change text placement on the help and about pages. Setting up the Sass with Koala was easy, and upon each save of the file, CSS was compiled. 
@@ -190,7 +190,7 @@ To start this, a final module was created for the handling of JSON files and loc
 \begin{enumerate}
 	\item Exporting to JSON- This method makes a simple JSON file with one object contained ("OLAN" : olan string)
 	\item Importing from JSON- Allowing selection of a user file from the browser, and selecting the OLAN from it, then entering this into the input box to be rendered.
-	\item Exporting to local storage- The same format as the JSON, but saving in the browser. See appendix C section~\ref{code:localstorage}.
+	\item Exporting to local storage- The same format as the JSON, but saving in the browser. See appendix C section~\ref{code:localStorage}.
 	\item Importing from local storage- same, should be automatic when application loads up
 \end{enumerate}
 
@@ -318,7 +318,14 @@ Although work appears to be behind schedule here, it should be noted that there 
 
 Analysing the graph further, the main problem can be seen where work was halted on feature five, the creation of manoeuvres on the canvas. Becuase issues prolonged work here, it meant other features were pushed back until it was decided that they should be completed in order to make a more whole application. Due to moving onto and completing other features first alongside writing this part of the report, considerable time has been made up. The time remaining will now allow for any completion of features that are most important, and also fixes to others if possible. 
 
-In addition to the graph shown, the features can be expressed as feature sets in the traditional FDD progress report way, by creating
+In addition to the graph shown, the features can be expressed as feature sets in traditional FDD progress reports. The progress reports using the due dates, and current progress are highlighted in figure~\ref{fig:featureprogress}, where the name of the feature set is shown, followed by how many parts the feature set contains, and the percentage. Where the background is green, the feature set is complete, orange means it is currently ongoing, and red means the feature set is behind schedule. It expands on the tasks that need to be done more proptly, so for this project the main issue that will be addressed first is the OLAN to flight path creation.
+
+\begin{figure}[h]
+  \centering
+      \includegraphics[width=1\textwidth]{images/featureProgress.png}
+  \caption{Feature progress reports for each of the feature sets implemted up to this point in time. The predicted month of completion is shown at the bottom, and tasks where they are not complete and tested fully are ones without a green background.}
+  \label{fig:featureprogress}
+\end{figure}
 
 \subsection{After-test fixes and developments}
 

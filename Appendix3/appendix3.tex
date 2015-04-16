@@ -2,6 +2,8 @@
 
 \section{Off-canvas HTML code, showing how menus are hidden }
 \label{code:canvas}
+\begin{figure}[h!]
+\caption{HTML code showing the page is divided into two, one for the canvas, and one for the menu. The 'off-canvas-list' has sub menus that allow more menus to be hidden to the left.}
 \begin{lstlisting}
  <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
@@ -26,16 +28,114 @@
             </footer>
         </aside>
         <div id="container">
-            <div id="aboutModal" class="reveal-modal xlarge text" data-reveal>                        
-                <a class="close-reveal-modal">&#215;</a>
-            </div>
-            <div id="helpModal" class="reveal-modal xlarge text" data-reveal>
-                <a class="close-reveal-modal">&#215;</a>
-            </div>
+            
         </div>
         <a class="exit-off-canvas"></a>
     </div>
 </div>
- 
 \end{lstlisting}
+\end{figure}
 
+\section{JSON OLAN instructions example}
+\label{code:jsonmoves}
+\begin{figure}[h!]
+\caption{JSON code showing a vertical upline defined by JSON instructions.}
+\begin{lstlisting}
+ {
+            "variant": [{
+                "component": [{
+                    "_pitch": "NIL",
+                    "_roll": "NIL",
+                    "_yaw": "NIL",
+                    "_length": "10"
+                },
+                {
+                    "_pitch": "POS",
+                    "_roll": "NIL",
+                    "_yaw": "NIL",
+                    "_length": "1"
+                } ,
+                {
+                    "_pitch": "POS",
+                    "_roll": "NIL",
+                    "_yaw": "NIL",
+                    "_length": "1"
+                }],
+                "_olanPrefix": "",
+                "_name": "Vertical up line"
+            }],
+            "_olan": "q"
+        },
+\end{lstlisting}
+\end{figure}
+
+\section{RequireJS setup code}
+\label{code:requireJS}
+\begin{figure}[h!]
+\caption{Snippet of code showing how RequireJS starts the application. The RequireJS library is loaded onto the page, the configuration telling the library the base of the application JavaScript files is set, and then is told to start by running the main.js file.}
+\begin{lstlisting}
+<script>
+    require.config({
+        baseUrl: 'js',
+    });
+    require(["main"]);
+</script>
+\end{lstlisting}
+\end{figure}
+
+\clearpage
+
+\section{Converting JSON representations into vectors}
+\label{code:jsonmovesJS}
+\begin{figure}[h!]
+\caption{}
+\begin{lstlisting}
+for (m in values) {
+
+    var components = values[m]["components"];
+
+    for (var i = 0; i < components.length; i++) {
+        var component = components[i];
+        var prevVector = new THREE.Vector3(0, 0, 0);
+
+        if (linePoints.length > 0)
+            prevVector.copy(linePoints[linePoints.length - 1]);
+
+        if (component.PITCH == 0 && component.YAW == 0 && component.ROLL == 0) {
+            prevVector.setZ(prevVector.z + (component.LENGTH * 10));
+            linePoints.push(prevVector);
+        } else {
+            var axis = new THREE.Vector3(1, 0, 0);
+            var angle = Math.PI / 180 * angleDiv * -component.PITCH;
+            prevVector.applyAxisAngle(axis, angle);
+
+            var axis = new THREE.Vector3(0, 1, 0);
+            var angle = Math.PI / 180 * angleDiv * component.YAW;
+            prevVector.applyAxisAngle(axis, angle);
+
+            prevVector.setZ(prevVector.z + (component.LENGTH * 10));
+            linePoints.push(prevVector);
+        }
+    }
+    var startVector = new THREE.Vector3(0, 0, 0);
+    startVector.copy(prevVector);
+    linePoints.push(startVector);
+}
+\end{lstlisting}
+\end{figure}
+
+\section{Using local storage to export scenarios}
+\label{code:localStorage}
+\begin{figure}[h!]
+\caption{}
+\begin{lstlisting}
+exportToLocalStorage: function(manoeuvres) {
+    if (checkLocalStoragePermitted()) {
+        if (!localStorage.getItem("autoLoad"))
+            return;
+        // Store
+        localStorage.setItem("manoeuvres", manoeuvres);
+    }
+}
+\end{lstlisting}
+\end{figure}

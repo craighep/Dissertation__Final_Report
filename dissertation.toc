@@ -19,27 +19,40 @@
 \contentsline {section}{\numberline {3.1}FDD project approach}{22}
 \contentsline {subsection}{\numberline {3.1.1}Iterative Implimentation}{23}
 \contentsline {subsubsection}{\numberline {3.1.1.1}Feature 1- Create a basic GUI}{23}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Feature 2- Convert OLAN and Aresti to JSON form}{24}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Feature 2- Convert OLAN and Aresti to JSON form}{25}
 \contentsline {subsubsection}{\numberline {3.1.1.3}Feature 3- Creating a scene with terrain and lighting}{25}
 \contentsline {subsubsection}{\numberline {3.1.1.4}Feature 4- Cameras}{26}
-\contentsline {subsubsection}{\numberline {3.1.1.5}Feature 5- Construction of 3D paths from OLAN}{27}
-\contentsline {subsubsection}{\numberline {3.1.1.6}Feature 6- Animate OLAN flight path}{28}
-\contentsline {subsubsection}{\numberline {3.1.1.7}Feature 7- Exporting and importing routines}{29}
-\contentsline {subsubsection}{\numberline {3.1.1.8}Feature 8- Adding further GUI options}{30}
-\contentsline {subsubsection}{\numberline {3.1.1.9}Feature 9- Flight 'movie reel'}{31}
-\contentsline {subsubsection}{\numberline {3.1.1.10}Feature 10- Parameterisation of OLAN input}{33}
-\contentsline {section}{\numberline {3.2}Final status and progress}{33}
-\contentsline {subsection}{\numberline {3.2.1}After-test fixes and developments}{35}
-\contentsline {section}{\numberline {3.3}User testing}{35}
-\contentsline {section}{\numberline {3.4}Implementation and testing review}{35}
-\contentsline {chapter}{\numberline {4}Evaluation}{37}
-\contentsline {chapter}{Appendices}{38}
-\contentsline {chapter}{\numberline {A}Background research and analysis}{39}
-\contentsline {section}{\numberline {1.1}Initial project Gantt chart}{39}
-\contentsline {section}{\numberline {1.2}Inital requirements analysis}{41}
-\contentsline {section}{\numberline {1.3}OLAN understandings}{43}
-\contentsline {section}{\numberline {1.4}Revised FDD Gantt chart}{49}
-\contentsline {chapter}{\numberline {B}Third-Party Code and Libraries}{51}
-\contentsline {chapter}{\numberline {C}Code samples}{52}
-\contentsline {section}{\numberline {3.1}Off-canvas HTML code, showing how menus are hidden }{52}
-\contentsline {chapter}{Annotated Bibliography}{53}
+\contentsline {subsubsection}{\numberline {3.1.1.5}Feature 5- Construction of 3D paths from OLAN}{28}
+\contentsline {subsubsection}{\numberline {3.1.1.6}Feature 6- Animate OLAN flight path}{29}
+\contentsline {subsubsection}{\numberline {3.1.1.7}Feature 7- Exporting and importing routines}{30}
+\contentsline {subsubsection}{\numberline {3.1.1.8}Feature 8- Adding further GUI options}{31}
+\contentsline {subsubsection}{\numberline {3.1.1.9}Feature 9- Flight 'movie reel'}{32}
+\contentsline {subsubsection}{\numberline {3.1.1.10}Feature 10- Parameterisation of OLAN input}{34}
+\contentsline {section}{\numberline {3.2}Final status and progress}{34}
+\contentsline {subsection}{\numberline {3.2.1}After-test fixes and developments}{36}
+\contentsline {section}{\numberline {3.3}User testing}{36}
+\contentsline {section}{\numberline {3.4}Implementation and testing review}{37}
+\contentsline {chapter}{\numberline {4}Evaluation}{38}
+\contentsline {chapter}{Appendices}{39}
+\contentsline {chapter}{\numberline {A}Background research and analysis}{40}
+\contentsline {section}{\numberline {1.1}Initial project Gantt chart}{40}
+\contentsline {section}{\numberline {1.2}Inital requirements analysis}{42}
+\contentsline {section}{\numberline {1.3}OLAN understandings}{44}
+\contentsline {section}{\numberline {1.4}Revised FDD Gantt chart}{50}
+\contentsline {chapter}{\numberline {B}Third-Party Code and Libraries}{52}
+\contentsline {chapter}{\numberline {C}Code samples}{53}
+\contentsline {section}{\numberline {3.1}Off-canvas HTML code, showing how menus are hidden }{53}
+\contentsline {section}{\numberline {3.2}JSON OLAN instructions example}{54}
+\contentsline {section}{\numberline {3.3}RequireJS setup code}{54}
+\contentsline {section}{\numberline {3.4}Converting JSON representations into vectors}{55}
+\contentsline {section}{\numberline {3.5}Using local storage to export scenarios}{55}
+\contentsline {chapter}{\numberline {D}Application tests}{56}
+\contentsline {section}{\numberline {4.1}Usability testing for the GUI front-end}{56}
+\contentsline {section}{\numberline {4.2}Test Unit code for converting JSON to manoeuvre instruction object}{56}
+\contentsline {section}{\numberline {4.3}Test Unit code for checking lights and ground are created successfully}{56}
+\contentsline {section}{\numberline {4.4}Usability testing for cameras}{57}
+\contentsline {section}{\numberline {4.5}Test Unit code for animation controller getters and setters}{57}
+\contentsline {section}{\numberline {4.6}Test Unit code for checking import and export to JSON/ local storage functionality}{57}
+\contentsline {section}{\numberline {4.7}Usability testing for GUI options}{57}
+\contentsline {section}{\numberline {4.8}Usability testing providing parameters between OLAN}{57}
+\contentsline {chapter}{Annotated Bibliography}{59}
