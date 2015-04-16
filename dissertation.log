@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  16 APR 2015 17:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  16 APR 2015 23:18
 entering extended mode
 **C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
 (C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
@@ -268,6 +268,36 @@ File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
+(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen122
+\captionmargin@=\dimen123
+\captionwidth=\dimen124
+\caption@tempdima=\dimen125
+\caption@indent=\dimen126
+\caption@parindent=\dimen127
+\caption@hangindent=\dimen128
+)
+\c@ContinuedFloat=\count118
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: subfigure package is loaded.
+)
+\c@KVtest=\count119
+\sf@farskip=\skip64
+\sf@captopadj=\dimen129
+\sf@capskip=\skip65
+\sf@nearskip=\skip66
+\sf@top=\skip67
+\sf@bottom=\skip68
+)
 (C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -296,20 +326,7 @@ LaTeX Warning: Label `listing:json@cref' multiply defined.
 
 )
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter3/chapter3.a
-ux
-
-LaTeX Warning: Label `fig:vectors' multiply defined.
-
-
-LaTeX Warning: Label `fig:vectors@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:vectors' multiply defined.
-
-
-LaTeX Warning: Label `fig:vectors@cref' multiply defined.
-
-)
+ux)
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.a
 ux)
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1
@@ -320,34 +337,34 @@ ux)
 .aux)
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix4/appendix4
 .aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 77.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (C:\Users\Craig\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen122
+\scratchcounter=\count120
+\scratchdimen=\dimen130
 \scratchbox=\box37
-\nofMPsegments=\count119
-\nofMParguments=\count120
+\nofMPsegments=\count121
+\nofMParguments=\count122
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen123
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen131
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
 \everyMPtoPDFconversion=\toks25
 )
 Package lastpage Info: Please have a look at the pageslts package at
@@ -356,9 +373,12 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 76.
+(lastpage)             ! on input line 77.
 \AtBeginShipoutBox=\box38
-\c@lstlisting=\count124
+\c@lstlisting=\count126
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
  (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\cover.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
@@ -440,6 +460,14 @@ Missing character: There is no © in font ptmr7t!
 
 
 ]
+
+Package caption Warning: \label without proper \caption on input line 8.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `app:gantt1' on page 2 undefined on input line 11.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
@@ -452,9 +480,24 @@ Package pdftex.def Info: images/notes.jpg used on input line 15.
 
 [2 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/notes.jpg
 >]
+
+Package caption Warning: \label without proper \caption on input line 17.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `app:init' on page 3 undefined on input line 38.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
- [3] [4]
+[3]
+
+Package caption Warning: \label without proper \caption on input line 30.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `app:olan' on page 4 undefined on input line 69.
+
+[4]
 Overfull \hbox (2.08116pt too wide) in paragraph at lines 91--105
 [][] 
  []
@@ -462,7 +505,15 @@ Overfull \hbox (2.08116pt too wide) in paragraph at lines 91--105
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5] [6]) [7]
+[5] [6]
+
+Package caption Warning: \label without proper \caption on input line 56.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `app:gantt2' on page 7 undefined on input line 128.
+
+) [7]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.t
 ex
 Chapter 2.
@@ -556,6 +607,13 @@ r was cre-at-ed us-ing the 'THREE.WebGLRenderer'
  []
 
 
+Package caption Warning: \label without proper \caption on input line 18.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `test:canvas' on page 24 undefined on input line 48.
+
+
 Overfull \hbox (17.49753pt too wide) in paragraph at lines 51--57
 [][] 
  []
@@ -581,7 +639,16 @@ Overfull \hbox (17.49753pt too wide) in paragraph at lines 91--97
 [][] 
  []
 
-[26] [27] <images/plane.png, id=138, 402.00188pt x 348.55219pt>
+[26]
+
+Package caption Warning: \label without proper \caption on input line 52.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `test:cameras' on page 27 undefined on input line 108.
+
+
+[27] <images/plane.png, id=138, 402.00188pt x 348.55219pt>
 File: images/plane.png Graphic file (type png)
 
 <use images/plane.png>
@@ -592,100 +659,161 @@ Overfull \hbox (17.49753pt too wide) in paragraph at lines 122--128
 [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [28
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/plane.png>]
+ <images/issue.png, id=144, 222.8325pt x 172.39406pt>
+File: images/issue.png Graphic file (type png)
 
+<use images/issue.png>
+Package pdftex.def Info: images/issue.png used on input line 143.
+(pdftex.def)             Requested size: 341.43436pt x 264.1724pt.
 
-LaTeX Warning: Reference `fig:issue' on page 29 undefined on input line 146.
-
-
-Overfull \hbox (17.49753pt too wide) in paragraph at lines 158--164
+Overfull \hbox (17.49753pt too wide) in paragraph at lines 151--157
 [][] 
  []
 
-[29]
-Overfull \hbox (17.49753pt too wide) in paragraph at lines 176--182
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/issue.pn
+g>]
+Overfull \hbox (17.49753pt too wide) in paragraph at lines 169--175
 [][] 
  []
 
 [30]
-Overfull \hbox (17.49753pt too wide) in paragraph at lines 204--210
+Overfull \hbox (17.49753pt too wide) in paragraph at lines 197--203
 [][] 
  []
 
 [31]
-Overfull \hbox (17.49753pt too wide) in paragraph at lines 230--236
-[][] 
- []
 
-[32]
-
-LaTeX Warning: Reference `fig:movie' on page 33 undefined on input line 245.
+Package caption Warning: \label without proper \caption on input line 88.
+See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:movie' on page 33 undefined on input line 254.
+LaTeX Warning: Reference `test:options' on page 32 undefined on input line 220.
 
 
-Overfull \hbox (17.49753pt too wide) in paragraph at lines 257--263
-[][] 
- []
 
-[33]
-Overfull \hbox (17.49753pt too wide) in paragraph at lines 275--281
+Overfull \hbox (17.49753pt too wide) in paragraph at lines 223--229
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34] <images/burndown.png, id=163, 347.79938pt x 207.02344pt>
+[32] [33] <images/movie.png, id=161, 508.14844pt x 364.36125pt>
+File: images/movie.png Graphic file (type png)
+
+<use images/movie.png>
+Package pdftex.def Info: images/movie.png used on input line 244.
+(pdftex.def)             Requested size: 341.43436pt x 244.82684pt.
+
+Overfull \hbox (17.49753pt too wide) in paragraph at lines 252--258
+[][] 
+ []
+
+[34
+
+ <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/movie.png>]
+
+
+Package caption Warning: \label without proper \caption on input line 103.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `test:parameters' on page 35 undefined on input line 2
+65.
+
+
+Overfull \hbox (17.49753pt too wide) in paragraph at lines 270--276
+[][] 
+ []
+
+
+Package caption Warning: \label without proper \caption on input line 285.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tbl:features' on page 35 undefined on input line 281.
+
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[35] <images/burndown.png, id=170, 347.79938pt x 207.02344pt>
 File: images/burndown.png Graphic file (type png)
 
 <use images/burndown.png>
-Package pdftex.def Info: images/burndown.png used on input line 312.
+Package pdftex.def Info: images/burndown.png used on input line 307.
 (pdftex.def)             Requested size: 341.43436pt x 203.24168pt.
- [35 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/burndow
+ [36 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/burndow
 n.png>]
-<images/featureProgress.png, id=168, 685.8122pt x 255.95625pt>
+<images/featureProgress.png, id=175, 685.8122pt x 255.95625pt>
 File: images/featureProgress.png Graphic file (type png)
 
 <use images/featureProgress.png>
-Package pdftex.def Info: images/featureProgress.png used on input line 325.
+Package pdftex.def Info: images/featureProgress.png used on input line 320.
 (pdftex.def)             Requested size: 426.79134pt x 159.28877pt.
 
 
-LaTeX Warning: Reference `test:questionnaire' on page 36 undefined on input lin
-e 341.
+LaTeX Warning: Reference `test:questionnaire' on page 37 undefined on input lin
+e 336.
 
-[36 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/featureP
+[37 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/featureP
 rogress.png>]
 
-LaTeX Warning: Reference `test:questions' on page 37 undefined on input line 34
-7.
+LaTeX Warning: Reference `test:questions' on page 38 undefined on input line 34
+2.
 
-) [37]
+
+LaTeX Warning: Citation `stats' on page 38 undefined on input line 349.
+
+<images/framerate.png, id=180, 154.32657pt x 104.64093pt>
+File: images/framerate.png Graphic file (type png)
+
+<use images/framerate.png>
+Package pdftex.def Info: images/framerate.png used on input line 353.
+(pdftex.def)             Requested size: 256.0774pt x 173.64798pt.
+ [38]
+<images/fpsMeasured.png, id=184, 311.66437pt x 214.55156pt>
+File: images/fpsMeasured.png Graphic file (type png)
+
+<use images/fpsMeasured.png>
+Package pdftex.def Info: images/fpsMeasured.png used on input line 365.
+(pdftex.def)             Requested size: 199.16928pt x 137.10954pt.
+
+<images/fpsMeasuredBrowsers.png, id=185, 258.21469pt x 213.04594pt>
+File: images/fpsMeasuredBrowsers.png Graphic file (type png)
+
+<use images/fpsMeasuredBrowsers.png>
+Package pdftex.def Info: images/fpsMeasuredBrowsers.png used on input line 368.
+
+(pdftex.def)             Requested size: 199.16928pt x 164.33519pt.
+ [39 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/framera
+te.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/fpsM
+easured.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images
+/fpsMeasuredBrowsers.png>]) [40]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.t
 ex
 Chapter 4.
-) [38
+) [41
 
 
 
-] [39
+] [42
 
 
 ]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1
 .tex
 Appendix A.
-[40
+[43
 
 
-] <images/first.png, id=186, 1312.905pt x 248.42813pt>
+] <images/first.png, id=205, 1312.905pt x 248.42813pt>
 File: images/first.png Graphic file (type png)
 
 <use images/first.png>
@@ -696,10 +824,10 @@ Overfull \hbox (2.8394pt too wide) in paragraph at lines 10--11
  [][] 
  []
 
-[41
+[44
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/first.png>]
- <images/init.pdf, id=191, page=1, 614.295pt x 794.97pt>
+ <images/init.pdf, id=210, page=1, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 1>
@@ -710,7 +838,7 @@ Overfull \hbox (85.3886pt too wide) in paragraph at lines 19--20
 [][] 
  []
 
-<images/init.pdf, id=192, page=2, 614.295pt x 794.97pt>
+<images/init.pdf, id=211, page=2, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 2>
@@ -724,12 +852,12 @@ Overfull \hbox (85.3886pt too wide) in paragraph at lines 23--24
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42
+[45
 
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf>] 
-[43 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf
->] <images/eval.pdf, id=225, page=1, 597.55246pt x 845.07718pt>
+[46 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf
+>] <images/eval.pdf, id=245, page=1, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 1>
@@ -743,7 +871,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 32--33
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=226, page=2, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=246, page=2, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 2>
@@ -757,7 +885,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 36--37
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=227, page=3, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=247, page=3, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 3>
@@ -771,7 +899,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 40--41
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=228, page=4, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=248, page=4, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 4>
@@ -785,7 +913,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 44--45
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=229, page=5, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=249, page=5, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 5>
@@ -799,17 +927,17 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 48--49
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44
+[47
 
-] [45 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.p
-df>] [46 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eva
-l.pdf>] [47 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/
-eval.pdf>] [48 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/imag
-es/eval.pdf>] [49 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/i
-mages/eval.pdf>] [50
+] [48 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.p
+df>] [49 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eva
+l.pdf>] [50 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/
+eval.pdf>] [51 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/imag
+es/eval.pdf>] [52 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/i
+mages/eval.pdf>] [53
 
 ]
-<images/second.png, id=291, 1029.8475pt x 411.03563pt>
+<images/second.png, id=311, 1029.8475pt x 411.03563pt>
 File: images/second.png Graphic file (type png)
  <use images/second.png>
 Package pdftex.def Info: images/second.png used on input line 58.
@@ -819,7 +947,7 @@ Overfull \hbox (2.86494pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-[51
+[54
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/second.png>
 ])
@@ -833,13 +961,13 @@ Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¿ in font ptmr7t!
 Missing character: There is no ½ in font ptmr7t!
 
-LaTeX Warning: Citation `apache_poi' on page 52 undefined on input line 12.
+LaTeX Warning: Citation `apache_poi' on page 55 undefined on input line 12.
 
 
-LaTeX Warning: Citation `apache_license' on page 52 undefined on input line 13.
+LaTeX Warning: Citation `apache_license' on page 55 undefined on input line 13.
 
 
-) [52
+) [55
 
 
 
@@ -852,31 +980,157 @@ Appendix C.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[53
+[56
 
 
 
-] [54]) [55
+] [57]) [58
 
 ]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix4/appendix4
 .tex
 Appendix D.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 3872) in paragraph at lines 10--10
+[]\OT1/ptm/m/n/10.95 Resize win-dow to mo-bile
+ []
 
-[56
+
+Underfull \hbox (badness 6741) in paragraph at lines 10--10
+[]\OT1/ptm/m/n/10.95 Menu changes to mo-bile
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 11--11
+\OT1/ptm/m/n/10.95 put, about and help pages
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 15--15
+\OT1/ptm/m/n/10.95 Shows op-tion-s of cer-tain
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 16--16
+\OT1/ptm/m/n/10.95 re-veal-s o-rig-i-nal top lev-el
+ []
+
+
+Overfull \hbox (5.32085pt too wide) in paragraph at lines 5--19
+[][]
+ []
+
+[59
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]\OT1/ptm/b/n/10.95 Pass/
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 43--43
+[]\OT1/ptm/m/n/10.95 Test drag mouse to ro-tate
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 43--43
+[]\OT1/ptm/m/n/10.95 Changed af-ter fail, due
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 43--43
+\OT1/ptm/m/n/10.95 now so that it ro-tates
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 48--48
+[]\OT1/ptm/m/n/10.95 Up key-board key to move
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 49--49
+[]\OT1/ptm/m/n/10.95 Camera moves 10px back-
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 50--50
+[]\OT1/ptm/m/n/10.95 Switch to on-board cam-er-a
+ []
+
+
+Underfull \hbox (badness 6758) in paragraph at lines 50--50
+[]\OT1/ptm/m/n/10.95 Camera changes to 0,0,0
+ []
+
+
+Overfull \hbox (19.54723pt too wide) in paragraph at lines 40--53
+[][]
+ []
+
+[60]
+Underfull \hbox (badness 2600) in paragraph at lines 77--77
+[]\OT1/ptm/m/n/10.95 Loop should ap-pear when
+ []
+
+
+Underfull \hbox (badness 4886) in paragraph at lines 81--81
+[]\OT1/ptm/m/n/10.95 More sides to the fig-ure
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 82--82
+[]\OT1/ptm/m/n/10.95 Speed of flight should in-
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 84--84
+\OT1/ptm/m/n/10.95 closed and re-opened then
+ []
+
+
+Overfull \hbox (5.32085pt too wide) in paragraph at lines 74--89
+[][]
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+Underfull \hbox (badness 1137) in paragraph at lines 98--98
+[]\OT1/ptm/m/n/10.95 Should move s-tart of nex-
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 100--100
+[]\OT1/ptm/m/n/10.95 Should move s-tart of nex-
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 101--101
+\OT1/ptm/m/n/10.95 three times the length ex-it
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
+[]\OT1/ptm/m/n/10.95 Parameter had
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
+\OT1/ptm/m/n/10.95 pre-vent-ed the
+ []
+
+
+Overfull \hbox (5.32085pt too wide) in paragraph at lines 94--104
+[][]
+ []
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [57] [58]
+) [61] [62] [63]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 $\OT1/pcr/m/n/10.95 20060927153819 / http : / / www . aerobatics . org . il / o
@@ -895,7 +1149,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--46
 .95 http : / / martinfowler . com / bliki /$
  []
 
-[59
+[64
 
 
 ]
@@ -912,7 +1166,7 @@ lan / language .$
 
 ) 
 AED: lastpage setting LastPage
-[60]
+[65]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.aux
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\cover.aux)
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\declaration.aux)
@@ -942,13 +1196,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7160 strings out of 495352
- 116301 string characters out of 3183046
- 296325 words of memory out of 3000000
- 10100 multiletter control sequences out of 15000+200000
+ 8292 strings out of 495352
+ 137219 string characters out of 3183046
+ 321319 words of memory out of 3000000
+ 11217 multiletter control sequences out of 15000+200000
  28620 words of font info for 63 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,12n,45p,1439b,1645s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,46p,1439b,1634s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cr
 aig/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/Cra
@@ -961,9 +1215,9 @@ urw/palatino/uplri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
 es/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (69 pages, 4493962 bytes).
+Output written on dissertation.pdf (74 pages, 5264840 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
+ 383 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

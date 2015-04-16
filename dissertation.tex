@@ -24,6 +24,7 @@
 \usepackage{lscape}
 \usepackage{cleveref}
 \usepackage{listings}
+\usepackage{subfig}
 
 % Things for javascript code inserts in document.....
 \usepackage{color}
@@ -32,16 +33,16 @@
 \definecolor{purple}{rgb}{0.65, 0.12, 0.82}
 
 \lstdefinelanguage{JavaScript}{
-  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
-  keywordstyle=\color{blue}\bfseries,
-  ndkeywords={class, export, boolean, throw, implements, import, this},
-  ndkeywordstyle=\color{darkgray}\bfseries,
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var},
+  keywordstyle=\color{blue}\textbf,
+  ndkeywords={if, return, else, break, while, for},
+  ndkeywordstyle=\color{purple}\textbf,
   identifierstyle=\color{black},
   sensitive=false,
   comment=[l]{//},
   morecomment=[s]{/*}{*/},
-  commentstyle=\color{purple}\ttfamily,
-  stringstyle=\color{red}\ttfamily,
+  commentstyle=\color{green}\ttfamily,
+  stringstyle=\color{orange}\ttfamily,
   morestring=[b]',
   morestring=[b]"
 }

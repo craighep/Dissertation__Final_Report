@@ -132,24 +132,17 @@ The progress of the task is shown below. This feature was done exactly to its re
 \subsubsection{Feature 5- Construction of 3D paths from OLAN}
 The most important feature, drawing shapes onto the canvas using the instrctions read in from JSON files was next to be implemented. The main requirement here was to draw smooth shapes that match the Aresti shapes as accuratly as possible, also bearing in mind that they should be linkable.
 
-Using the array of maneouvre objects inported from JSON in the first feature implemented, creating shapes based on these was a matter of building up an array of vectors with each new vector being copied from the previous and then having the next instruction take effect on it. To do this, under a new module 'ManouevreController', a method was created that firstly found whih manouvre was to be built, then loop through the instructions of that manouevre creating it vector-by-vector. An example of how vectors were calculated is shown below in figure~\ref{fig:vectors}.
+Using the array of maneouvre objects inported from JSON in the first feature implemented, creating shapes based on these was a matter of building up an array of vectors with each new vector being copied from the previous and then having the next instruction take effect on it. To do this, under a new module 'ManouevreController', a method was created that firstly found whih manouvre was to be built, then loop through the instructions of that manouevre creating it vector-by-vector. The means in which each manoeuvre is constructed from the OLAN JSON can be seen in appendix C section~\ref{code:jsonmovesJS}. On each iteration, once the amount in each direction (x,y,z) has been found, these values are appied to a new vector with values copied from the previous one in the array.
 
-\begin{figure}[h]
-  \centering
-      %\includegraphics[width=1\textwidth]{images/vectors.png}
-  \caption{Flow chart of how vectors were used to construct the spline shape.}
-  \label{fig:vectors}
-\end{figure}
-
-As you can see, once vectors were created, they were passed to a three.js object which was a spline curve. A spline curve is one that interpolates along all its points to create a smooth shape. Once points are added to this object, it can then be added to the canvas. Upon initial usability testing of this, it was found that many of the joins between points were well-off center, due to the interpolation being too large. This was down to the fact that with each turn instruction being a 45 degree angle, meant that the change was too sharp from a straight to curved line, so the straight line was affected too much. To fix this, by dividing up the 45 degree into smaller pieces meant that interpolation was needed much less, therefore the curves appeared smoother and had much less effect on any predecessing straight lines.
+Once vectors were created, they were passed to a three.js object which was a spline curve. A spline curve is one that interpolates along all its points to create a smooth shape. Once points are added to this object, it can then be added to the canvas. Upon initial usability testing of this, it was found that many of the joins between points were well-off center, due to the interpolation being too large. This was down to the fact that with each turn instruction being a 45 degree angle, meant that the change was too sharp from a straight to curved line, so the straight line was affected too much. To fix this, by dividing up the 45 degree into smaller pieces meant that interpolation was needed much less, therefore the curves appeared smoother and had much less effect on any predecessing straight lines.
 
 Another big issue that appeared during testing was that any manoeuvres that had a change in angle through a turn always seemed to revert back to a straight line, meaning the rest of the manoeuvre was out of sync and did not look correct. This was an especially time-consuming bug, and a example of it can be seen in figure~\ref{fig:issue}. Becuase finding out the problem and attempting to fix it was eating away at other feature time, the issue was left for the time being, in order to complete other key features outlined in the requirments. In order to ensure this issue would not remain at the end of the project, a strict time limit was set on the next features to allow for a good amount of time to fix the issue here.
 
 \begin{figure}[h]
   \centering
-      %\includegraphics[width=1\textwidth]{images/vectors.png}
-  \caption{Flow chart of how vectors were used to construct the spline shape.}
-  \label{fig:vectors}
+      \includegraphics[width=0.8\textwidth]{images/issue.png}
+  \caption{Figure illustrating that where the vector is turning right to complete the diagonal line up, it is becoming flat with the X axis rather than curving to the correct angle.}
+  \label{fig:issue}
 \end{figure}
 
 At the end of the iterations in this report, this issue will be re-evaluated once the fix is in place. Other than this issue, the rest of the feature was implemented well, and entering OLAN now drew fairly accurate shapes. Again with testing, usability was the primary case here, becuase checking for correct spline curves created would be too time consuming and difficult with the use of JSUnit. The overall progress of the task at this point of the project is as follows:
@@ -244,11 +237,13 @@ Upon starting this though, it was foudn that many aspects of the feature would t
 
 The movie reel was incorparated into the HTML handler, as this was a dom-element related item and required JQuery to manipulate the space at the bottom of the canvas. Then, added to the listeners in the HTML handler file was an event where when the user enters an OLAN letter, and this is found in the manoeuvres array (to ensure it is a real OLAN notation), an image representing the Aresti figure with the letter for the filename was loaded into a div floated at the bottom of the page where it was appended. Although this means of creating the figure was not what was initially planned, due to time constraints this means of creating the feature ensured it was done as quickyl as possible, but also to a good standard of presentation that fit well with the rest of the application. It can be seen in figure~\ref{fig:movie} the reel with some figures loaded up, with the current animation progress highlighted over the manouevres.
 
+\clearpage 
+
 \begin{figure}[h]
   \centering
-      %\includegraphics[width=1\textwidth]{images/movie.png}
+      \includegraphics[width=0.8\textwidth]{images/movie.png}
   \caption{Movie reel overlaying the bottom of the canvas, with some figures loaded after the user typed in a string of OLAN.}
-  \label{fig:vectors}
+  \label{fig:movie}
 \end{figure}
 
 Figure~\ref{fig:movie} also shows the animation progress, which was achieved by simply getting the current value of time which was used earlier in the 'getPointAt' method, then getting the percentage of this for the amount of moves entered. After this, a simple div was placed again using Jquery over the width of that percentage to achieve a darker coloured semi-transparent status bar. During tests of this feature (usability), one such issue was found that was caused when more than five manoeuvres were entered, the remaining Aresti figures were not present on the page, as it had been split into five sections. This means at this point of the project only the first five manoeuvres have their animation status shown. This is another feature that is hoped to be fixed before the end of the project implementation stage. 
@@ -351,7 +346,32 @@ On completion of the process of the tests of the final application, a short revi
 
 This leads up to time management, where the amount of work done in the implimentation stage was an important factor. Considering that all features had been started and tested by a week before the stage deadline, progress was kept on top of, and it was ensured that tasks that were taking too long did not affect the rest of the application. An example of some of the issues are ones that came from attempting to create the manoeuvres on the canvas with the OLAN interpretations. The first set back was the interpolation issues, which were fixed by changing the curve inclines. Another setback was the issue with cuvres not appearing the go in the correct direction, which was again fixed at the end of the implementation. 
 
-Testing mechanisms used a wide selection of methods, from usability tests to unit tests ensuring that while the back-end methods performed the features as effiecently as possible, the front end allowed users to interact with these features easily. By using the FDD iterative approach, and producing this setion of the report alongside each iteration it has meant that the entire application and documentation has been built in the most stable way.
+Testing mechanisms used a wide selection of methods, from usability tests to unit tests ensuring that while the back-end methods performed the features as effiecently as possible, the front end allowed users to interact with these features easily. By using the FDD iterative approach, and producing this setion of the report alongside each iteration it has meant that the entire application and documentation has been built in the most stable way. Throughout testing the application, it was ensured the performance levels were checked to be fast enough to run on most devices, primarily using a library called stats.js~\cite{stats}. This allowed a small framerate counter in the corner of the application, which monitored how many frames or iterations of the animation the application acheived each second. Values between 40 and 60 was the aim, and 60 was the value throuhgout the most heavy work (having lots of manoeuvres being flown). The framerate counter was displayed as shown in figure~\ref{fig:framerate} with an example of framerate values on different devices in figure~\ref{fig:framerateDevices}.
+
+\begin{figure}[h]
+  \centering
+      \includegraphics[width=0.6\textwidth]{images/framerate.png}
+  \caption{Framerate counter shown in bottom right of the application.}
+  \label{fig:framerate}
+\end{figure}
+
+In addition to monitoring the stats from the display whilst developing, it was a useful idea to have a more accurate track of how well the application was performing under different browsers and devices. To do this, whilst under the devlopment enviroment a line of code was inserted into the iteration that got the latest frames per second, and logged this into a csv file. After one minute, the application was then closed, and the average rate was gathered. Each time this was performed on the certain device or browser, it was ensured the same operation occured to a good accuracy of similarity. The results can be seen in figures~\ref{fig:framerateDevicesBrowsers} and~\ref{fig:framerateDevices}. These tests created a good platform for ensuring a stable application and more effecient code improvements where the framerate may have been dropping.
+
+\begin{figure}[h!]
+\centering
+\parbox{7cm}{
+\includegraphics[width=7cm]{images/fpsMeasured.png}
+\caption{Average rate per device(Graphics RAM in brackets)}
+\label{fig:framerateDevices}}
+\qquad
+\begin{minipage}{7cm}
+\includegraphics[width=7cm]{images/fpsMeasuredBrowsers.png}
+\caption{Average frame rate per browser (all latest versions of browser on 04/05/2015)}
+\label{fig:framerateDevicesBrowsers}
+\end{minipage}
+\end{figure}
+
+It can be seen that there was one anomoly result, in the desktop with the same graphics memory as the laptop had a lower rate. This could be explained by a number of factors, one such way could be that the processor that would be executing the code may have been slower on the desktop. This was another consideration that ensured optimal coding methods.
 
 There are possible improvements that could have been made to this stage of the project though, one such would have been sticking to a much stricter order to features, by creating the base logic to produce the manoeuvres first, rather than getting the GUI up and running. This though would have slowed down testing, so there are weigh-ups both ways.
 

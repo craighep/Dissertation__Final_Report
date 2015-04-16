@@ -2,14 +2,18 @@
 
 \section{Usability testing for the GUI front-end}
 \begin{table}[h]
-\begin{tabular}{|p{4.5cm}|p{3.5cm}|p{3.5cm}|l|}
+\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{2cm}|p{2.5cm}|}
 \hline
-\textbf{Test} & \textbf{Pred. Result} & \textbf{Actual Result} & \textbf{Pass/ Fail}                                                                                                    \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
+\textbf{Test} & \textbf{Pred. Result} & \textbf{Pass/ Fail} & \textbf{Comment}                        \\ \hline
+Open menu    &   Menu is displayed on the left, canvas moves right. &  Pass          &    \\ \hline
+Close menu    &   Menu hides to the left, canvas is pulled back in to fill page. &   Pass         &     \\ \hline
+Resize window to mobile size    & Menu changes to mobile view, canvas still fills page.   & Pass           &     \\ \hline
+Open mobile menu    & Menu displaying OLAN input, about and help pages listed.   &     Pass       &     \\ \hline
+Open help page    &  Overlay appears from above, covers canvas with white box and text.  &       Pass     &     \\ \hline
+Open about page    &  Overlay appears from above, covers canvas with white box and text.  &      Pass      &     \\ \hline
+Close about page    &  Box fades away.  &      Pass      &     \\ \hline
+Open sub-menu    &  Menu pulls in from left in side to cover current menu. Shows options of certain menu chosen.  &    Pass        &     \\ \hline
+Click back on sub-menu    &  Sub-menu slides to left and reveals original top level menu.  &    Pass        &     \\ \hline
 \end{tabular}
 \label{test:canvas}
 \caption{Usability test table for testing the GUI.}
@@ -33,14 +37,17 @@
 
 \section{Usability testing for cameras}
 \begin{table}[h]
-\begin{tabular}{|p{4.5cm}|p{3.5cm}|p{3.5cm}|l|}
+\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{1cm}|p{4cm}|}
 \hline
-\textbf{Test} & \textbf{Pred. Result} & \textbf{Actual Result} & \textbf{Pass/ Fail}                                                                                                    \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
+\textbf{Test} & \textbf{Pred. Result} & \textbf{Pass/ Fail} & \textbf{Comment}                        \\ \hline
+Test drag mouse to rotate around canvas    &  Camera should rotate around the scene.  &     Fail       &  Changed after fail, due to camera rotation around the point(0,0,0). Changed now so that it rotates around current camera location.    \\ \hline
+Scroll zoom in    &   Camera should focus in on the center of the canvas. &   Pass         &    \\ \hline
+Scroll zoom out    &   Camera should see more of the canvas as mouse scrolls out. & Pass           &     \\ \hline
+Left keyboard key to move left    &  Camera moves 10px to the left.  &   Pass         &     \\ \hline
+Right keyboard key to move right    & Camera moves 10px to the right.   &    Pass        &     \\ \hline
+Up keyboard key to move forward    &  Camera moves 10px forward its Z axis.  &   Pass         &     \\ \hline
+Down keyboard key to move backwards    &  Camera moves 10px backwards its Z axis.  &  Pass          &     \\ \hline
+Switch to onboard camera view   &  Camera changes to 0,0,0 looking ahead. &  Pass          &     \\ \hline
 \end{tabular}
 \label{test:cameras}
 \caption{}
@@ -64,14 +71,19 @@
 
 \section{Usability testing for GUI options}
 \begin{table}[h]
-\begin{tabular}{|p{4.5cm}|p{3.5cm}|p{3.5cm}|l|}
+\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{2cm}|p{2.5cm}|}
 \hline
-\textbf{Test} & \textbf{Pred. Result} & \textbf{Actual Result} & \textbf{Pass/ Fail}                                                                                                    \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
+\textbf{Test} & \textbf{Pred. Result} & \textbf{Pass/ Fail} & \textbf{Comment}                        \\ \hline
+Type OLAN into input box to create figures    &  Loop should appear when 'o' is typed in, and movie-reel should show manouvre at bottom.  &            &     \\ \hline
+Use dropdown in OLAN options to add a figure    &  Loop should be added to canvas when chosen from dropdown.  &     Pass       &     \\ \hline
+Increase and decrease scale    &  Figures on canvas should become bigger or smaller depending on scale.  &       Pass     &     \\ \hline
+Increase and decrease extrusion segments    &  Curves should become less and more smooth depending on extrusion.  &       Pass     &     \\ \hline
+Increase and decrease radius    &  More sides to the figure should appear the higher the radius.  &     Pass       &     \\ \hline
+Increase animation speed    &   Speed of flight should increase depending on slider of speed. &            &     \\ \hline
+Turn switch on for auto repeat of animation    &  When on, when animating, should loop from beginning to end endlessly.  &       Pass     &     \\ \hline
+Switch auto save on and close application, then re-open    &  When on, if application is closed and re-opened then routines should be added automatically. Vice versa.  &       Pass     &     \\ \hline
+Export to JSON using button    &  JSON file begins to download on click.  &      Pass      &     \\ \hline
+Import JSON file using file chooser  &  Routine should load up when selecting a file.  &      Pass      &     \\ \hline
 \end{tabular}
 \label{test:options}
 \caption{}
@@ -79,14 +91,14 @@
 
 \section{Usability testing providing parameters between OLAN}
 \begin{table}[h]
-\begin{tabular}{|p{4.5cm}|p{3.5cm}|p{3.5cm}|l|}
+\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{2cm}|p{2.5cm}|}
 \hline
-\textbf{Test} & \textbf{Pred. Result} & \textbf{Actual Result} & \textbf{Pass/ Fail}                                                                                                    \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
-    &    &            &     \\ \hline
+\textbf{Test} & \textbf{Pred. Result} & \textbf{Pass/ Fail} & \textbf{Comment}                        \\ \hline
+Enter empty parameters '()'    &  No change to start location of next manoeuvre should occur.  &     Pass       &     \\ \hline
+Empty correct format paramaters '(10,10)'    &  Should move start of next manoeuvre 10 pixels up, 10 to the left.  &      Pass      &     \\ \hline
+Enter parameters without space between OLAN    & The manouvre nor parameters will be placed on the canvas.   &        Pass    &     \\ \hline
+Enter parameters with negative values '(-10,-10)'    &  Should move start of next manoeuvre 10 pixels down, 10 to the right.  &       Pass     &     \\ \hline
+Enter parameters on a manoeuvre "o''"  &  Loop should be drawn with three times the length exit travel.  &        Fail    &   Parameter had np effect to the loops exit, and prevented the manouvre from being drawn.  \\ \hline
 \end{tabular}
 \label{test:parameters}
 \caption{}
