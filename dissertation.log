@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  17 APR 2015 13:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  17 APR 2015 19:07
 entering extended mode
 **C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
 (C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
@@ -803,17 +803,17 @@ Chapter 4.
 
 
 
-]) [42] [43
+] [42]) [43] [44
 
 
 ]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1
 .tex
 Appendix A.
-[44
+[45
 
 
-] <images/first.png, id=208, 1312.905pt x 248.42813pt>
+] <images/first.png, id=211, 1312.905pt x 248.42813pt>
 File: images/first.png Graphic file (type png)
 
 <use images/first.png>
@@ -824,10 +824,10 @@ Overfull \hbox (2.8394pt too wide) in paragraph at lines 10--11
  [][] 
  []
 
-[45
+[46
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/first.png>]
- <images/init.pdf, id=213, page=1, 614.295pt x 794.97pt>
+ <images/init.pdf, id=217, page=1, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 1>
@@ -838,7 +838,7 @@ Overfull \hbox (85.3886pt too wide) in paragraph at lines 19--20
 [][] 
  []
 
-<images/init.pdf, id=214, page=2, 614.295pt x 794.97pt>
+<images/init.pdf, id=218, page=2, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 2>
@@ -852,12 +852,12 @@ Overfull \hbox (85.3886pt too wide) in paragraph at lines 23--24
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[46
+[47
 
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf>] 
-[47 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf
->] <images/eval.pdf, id=248, page=1, 597.55246pt x 845.07718pt>
+[48 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf
+>] <images/eval.pdf, id=251, page=1, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 1>
@@ -871,7 +871,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 32--33
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=249, page=2, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=252, page=2, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 2>
@@ -885,7 +885,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 36--37
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=250, page=3, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=253, page=3, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 3>
@@ -899,7 +899,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 40--41
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=251, page=4, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=254, page=4, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 4>
@@ -913,7 +913,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 44--45
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=252, page=5, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=255, page=5, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 5>
@@ -927,17 +927,17 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 48--49
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[48
+[49
 
-] [49 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.p
-df>] [50 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eva
-l.pdf>] [51 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/
-eval.pdf>] [52 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/imag
-es/eval.pdf>] [53 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/i
-mages/eval.pdf>] [54
+] [50 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.p
+df>] [51 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eva
+l.pdf>] [52 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/
+eval.pdf>] [53 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/imag
+es/eval.pdf>] [54 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/i
+mages/eval.pdf>] [55
 
 ]
-<images/second.png, id=314, 1029.8475pt x 411.03563pt>
+<images/second.png, id=317, 1029.8475pt x 411.03563pt>
 File: images/second.png Graphic file (type png)
  <use images/second.png>
 Package pdftex.def Info: images/second.png used on input line 58.
@@ -947,7 +947,7 @@ Overfull \hbox (2.86494pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-[55
+[56
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/second.png>
 ])
@@ -961,13 +961,13 @@ Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¿ in font ptmr7t!
 Missing character: There is no ½ in font ptmr7t!
 
-LaTeX Warning: Citation `apache_poi' on page 56 undefined on input line 12.
+LaTeX Warning: Citation `apache_poi' on page 57 undefined on input line 12.
 
 
-LaTeX Warning: Citation `apache_license' on page 56 undefined on input line 13.
+LaTeX Warning: Citation `apache_license' on page 57 undefined on input line 13.
 
 
-) [56
+) [57
 
 
 
@@ -980,11 +980,11 @@ Appendix C.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57
+[58
 
 
 
-] [58]) [59
+] [59]) [60
 
 ]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix4/appendix4
@@ -1020,7 +1020,7 @@ Overfull \hbox (5.32085pt too wide) in paragraph at lines 5--19
 [][]
  []
 
-[60
+[61
 
 
 
@@ -1069,7 +1069,7 @@ Overfull \hbox (19.54723pt too wide) in paragraph at lines 40--53
 [][]
  []
 
-[61]
+[62]
 Underfull \hbox (badness 2600) in paragraph at lines 77--77
 []\OT1/ptm/m/n/10.95 Loop should ap-pear when
  []
@@ -1130,7 +1130,7 @@ Overfull \hbox (5.32085pt too wide) in paragraph at lines 94--104
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [62] [63] [64]
+) [63] [64] [65]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 $\OT1/pcr/m/n/10.95 20060927153819 / http : / / www . aerobatics . org . il / o
@@ -1149,7 +1149,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--46
 .95 http : / / martinfowler . com / bliki /$
  []
 
-[65
+[66
 
 
 ]
@@ -1166,7 +1166,7 @@ lan / language .$
 
 ) 
 AED: lastpage setting LastPage
-[66]
+[67]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.aux
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\cover.aux)
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\declaration.aux)
@@ -1215,9 +1215,9 @@ urw/palatino/uplri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
 es/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (75 pages, 5269284 bytes).
+Output written on dissertation.pdf (76 pages, 5270923 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
+ 389 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
