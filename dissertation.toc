@@ -35,28 +35,28 @@
 \contentsline {chapter}{\numberline {4}Evaluation}{41}
 \contentsline {section}{\numberline {4.1}Anlaysis and design decisions}{41}
 \contentsline {section}{\numberline {4.2}Application and testing evaluation}{43}
-\contentsline {section}{\numberline {4.3}Project improvements}{43}
-\contentsline {section}{\numberline {4.4}Self-Evaluation}{43}
-\contentsline {chapter}{Appendices}{44}
-\contentsline {chapter}{\numberline {A}Background research and analysis}{45}
-\contentsline {section}{\numberline {1.1}Initial project Gantt chart}{45}
-\contentsline {section}{\numberline {1.2}Inital requirements analysis}{47}
-\contentsline {section}{\numberline {1.3}OLAN understandings}{49}
-\contentsline {section}{\numberline {1.4}Revised FDD Gantt chart}{55}
-\contentsline {chapter}{\numberline {B}Third-Party Code and Libraries}{57}
-\contentsline {chapter}{\numberline {C}Code samples}{58}
-\contentsline {section}{\numberline {3.1}Off-canvas HTML code, showing how menus are hidden }{58}
-\contentsline {section}{\numberline {3.2}JSON OLAN instructions example}{59}
-\contentsline {section}{\numberline {3.3}RequireJS setup code}{59}
-\contentsline {section}{\numberline {3.4}Converting JSON representations into vectors}{60}
-\contentsline {section}{\numberline {3.5}Using local storage to export scenarios}{60}
-\contentsline {chapter}{\numberline {D}Application tests}{61}
-\contentsline {section}{\numberline {4.1}Usability testing for the GUI front-end}{61}
-\contentsline {section}{\numberline {4.2}Test Unit code for converting JSON to manoeuvre instruction object}{62}
-\contentsline {section}{\numberline {4.3}Test Unit code for checking lights and ground are created successfully}{62}
-\contentsline {section}{\numberline {4.4}Usability testing for cameras}{62}
-\contentsline {section}{\numberline {4.5}Test Unit code for animation controller getters and setters}{63}
-\contentsline {section}{\numberline {4.6}Test Unit code for checking import and export to JSON/ local storage functionality}{63}
-\contentsline {section}{\numberline {4.7}Usability testing for GUI options}{63}
-\contentsline {section}{\numberline {4.8}Usability testing providing parameters between OLAN}{63}
-\contentsline {chapter}{Annotated Bibliography}{66}
+\contentsline {section}{\numberline {4.3}Project improvements}{44}
+\contentsline {section}{\numberline {4.4}Self-Evaluation}{44}
+\contentsline {chapter}{Appendices}{46}
+\contentsline {chapter}{\numberline {A}Background research and analysis}{47}
+\contentsline {section}{\numberline {1.1}Initial project Gantt chart}{47}
+\contentsline {section}{\numberline {1.2}Inital requirements analysis}{49}
+\contentsline {section}{\numberline {1.3}OLAN understandings}{51}
+\contentsline {section}{\numberline {1.4}Revised FDD Gantt chart}{57}
+\contentsline {chapter}{\numberline {B}Third-Party Code and Libraries}{59}
+\contentsline {chapter}{\numberline {C}Code samples}{60}
+\contentsline {section}{\numberline {3.1}Off-canvas HTML code, showing how menus are hidden }{60}
+\contentsline {section}{\numberline {3.2}JSON OLAN instructions example}{61}
+\contentsline {section}{\numberline {3.3}RequireJS setup code}{61}
+\contentsline {section}{\numberline {3.4}Converting JSON representations into vectors}{62}
+\contentsline {section}{\numberline {3.5}Using local storage to export scenarios}{62}
+\contentsline {chapter}{\numberline {D}Application tests}{63}
+\contentsline {section}{\numberline {4.1}Usability testing for the GUI front-end}{63}
+\contentsline {section}{\numberline {4.2}Test Unit code for converting JSON to manoeuvre instruction object}{64}
+\contentsline {section}{\numberline {4.3}Test Unit code for checking lights and ground are created successfully}{64}
+\contentsline {section}{\numberline {4.4}Usability testing for cameras}{64}
+\contentsline {section}{\numberline {4.5}Test Unit code for animation controller getters and setters}{65}
+\contentsline {section}{\numberline {4.6}Test Unit code for checking import and export to JSON/ local storage functionality}{65}
+\contentsline {section}{\numberline {4.7}Usability testing for GUI options}{65}
+\contentsline {section}{\numberline {4.8}Usability testing providing parameters between OLAN}{65}
+\contentsline {chapter}{Annotated Bibliography}{68}
