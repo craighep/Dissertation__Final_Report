@@ -1,6 +1,7 @@
 \chapter{Application tests}
 
 \section{Usability testing for the GUI front-end}
+\label{test:canvas}
 \begin{table}[h]
 \begin{tabular}{|p{4.5cm}|p{4.5cm}|p{2cm}|p{2.5cm}|}
 \hline
@@ -15,14 +16,13 @@ Close about page    &  Box fades away.  &      Pass      &     \\ \hline
 Open sub-menu    &  Menu pulls in from left in side to cover current menu. Shows options of certain menu chosen.  &    Pass        &     \\ \hline
 Click back on sub-menu    &  Sub-menu slides to left and reveals original top level menu.  &    Pass        &     \\ \hline
 \end{tabular}
-\label{test:canvas}
 \caption{Usability test table for testing the GUI.}
 \end{table}
 
 \section{Test Unit code for converting JSON to manoeuvre instruction object}
 \label{test:jsonmvoes}
 \begin{figure}[h!]
-\caption{}
+\caption{JSUnit code created to test the capabilites of changing the JSON instructions into objects.}
 \begin{lstlisting}
 \end{lstlisting}
 \end{figure}
@@ -30,12 +30,13 @@ Click back on sub-menu    &  Sub-menu slides to left and reveals original top le
 \section{Test Unit code for checking lights and ground are created successfully}
 \label{test:lights}
 \begin{figure}[h!]
-\caption{}
+\caption{Checks if objects for both are created at runtime of the application.}
 \begin{lstlisting}
 \end{lstlisting}
 \end{figure}
 
 \section{Usability testing for cameras}
+\label{test:cameras}
 \begin{table}[h]
 \begin{tabular}{|p{4.5cm}|p{4.5cm}|p{1cm}|p{4cm}|}
 \hline
@@ -49,14 +50,13 @@ Up keyboard key to move forward    &  Camera moves 10px forward its Z axis.  &  
 Down keyboard key to move backwards    &  Camera moves 10px backwards its Z axis.  &  Pass          &     \\ \hline
 Switch to onboard camera view   &  Camera changes to 0,0,0 looking ahead. &  Pass          &     \\ \hline
 \end{tabular}
-\label{test:cameras}
-\caption{}
+\caption{Tests various actions from the user to do with both cameras.}
 \end{table}
 
 \section{Test Unit code for animation controller getters and setters}
 \label{test:animation}
 \begin{figure}[h!]
-\caption{}
+\caption{Unit code checking information is set correctly, and if it can be changed at stored for various animation properties.}
 \begin{lstlisting}
 \end{lstlisting}
 \end{figure}
@@ -64,12 +64,13 @@ Switch to onboard camera view   &  Camera changes to 0,0,0 looking ahead. &  Pas
 \section{Test Unit code for checking import and export to JSON/ local storage functionality}
 \label{test:save}
 \begin{figure}[h!]
-\caption{}
+\caption{JSUnit code for checking flight paths export correctly to JSON and local storage, and check importing back works.}
 \begin{lstlisting}
 \end{lstlisting}
 \end{figure}
 
 \section{Usability testing for GUI options}
+\label{test:options}
 \begin{table}[h]
 \begin{tabular}{|p{4.5cm}|p{4.5cm}|p{2cm}|p{2.5cm}|}
 \hline
@@ -85,11 +86,11 @@ Switch auto save on and close application, then re-open    &  When on, if applic
 Export to JSON using button    &  JSON file begins to download on click.  &      Pass      &     \\ \hline
 Import JSON file using file chooser  &  Routine should load up when selecting a file.  &      Pass      &     \\ \hline
 \end{tabular}
-\label{test:options}
-\caption{}
+\caption{Usability test table for user interface options, including OLAN entry box, OLAN dropdown, pyhsics options, animation options and exporting/ importing to JSON.}
 \end{table}
 
 \section{Usability testing providing parameters between OLAN}
+\label{test:parameters}
 \begin{table}[h]
 \begin{tabular}{|p{4.5cm}|p{4.5cm}|p{2cm}|p{2.5cm}|}
 \hline
@@ -100,6 +101,35 @@ Enter parameters without space between OLAN    & The manouvre nor parameters wil
 Enter parameters with negative values '(-10,-10)'    &  Should move start of next manoeuvre 10 pixels down, 10 to the right.  &       Pass     &     \\ \hline
 Enter parameters on a manoeuvre "o''"  &  Loop should be drawn with three times the length exit travel.  &        Fail    &   Parameter had np effect to the loops exit, and prevented the manouvre from being drawn.  \\ \hline
 \end{tabular}
-\label{test:parameters}
-\caption{}
+\caption{Usability test table showing results of typing in parameters alongside maneouvres.}
 \end{table}
+
+\clearpage
+
+\section{User questionnaire}
+\label{test:questionnaire}
+\begin{figure}[h!]
+    \caption{A google forms questionnaire created to allow users to give feedback about the application.}
+    \includegraphics[width=15cm,height=18cm,page=1]{images/questionnaire.pdf}
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=15cm,height=18cm,page=2]{images/questionnaire.pdf}
+\end{figure}
+
+\clearpage
+
+\section{User questionnaire results}
+\label{test:questionnaireResults}
+\begin{figure}[h!]
+    \caption{Statistics from the questionnaire results, showing percentages of answers and comments/ suggestions.}
+    \includegraphics[width=15cm,height=18cm,page=1]{images/questionnaireResults.pdf}
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=15cm,height=18cm,page=2]{images/questionnaireResults.pdf}
+\end{figure}
+
+\begin{figure}[h!]
+    \includegraphics[width=15cm,height=18cm,page=3]{images/questionnaireResults.pdf}
+\end{figure}

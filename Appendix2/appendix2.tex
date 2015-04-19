@@ -1,13 +1,22 @@
-\chapter{Third-Party Code and Libraries}
+\chapter{Third-Party Code, Libraries and tools}
+There are some libraries and tools that were used during the project to design and implement the application. The libraries mentioned here have a description of what they are, why they were used in my the application, and links to both the library home page and library license. In addition to this, a few tools that were used behind the scenes of this project have been mentioned. 
 
-If you have made use of any third party code or software libraries, i.e. any code that you have not designed and written yourself, then you must include this appendix. 
+\textbf{Three.js} - This project has been used to handle all the WebGL features of the application, providing methods to access the shader code and handle any animations. From loading up models to creating cameras, this library was used extensively through the project. Available on the three.js site \cite{ThreeJs}, licensed under MIT \cite{MIT}.
 
-As has been said in lectures, it is acceptable and likely that you will make use of third-party code and software libraries. The key requirement is that we understand what is your original work and what work is based on that of other people. 
+\textbf{StatsJs} - A library for monitoring performance of JavaScript code. This was used to see how well my code was performing in relation to frames per second. The library places a FPS counter onto the page, and helped monitor how different effects can reduce performance. Available on the Javascripttoo page \cite{stats}, licensed under MIT \cite{MIT}.
 
-Therefore, you need to clearly state what you have used and where the original material can be found. Also, if you have made any changes to the original versions, you must explain what you have changed. 
+\textbf{JQuery} - A library for interacting with both HTML and some back end methods. This library was used for support of RequireJS, foundation CSS and used for connecting the back end of the application with the GUI. Licensed under MIT \cite{MIT}, currently available from the JQuery site \cite{JQuery}.
 
-As an example, you might include a definition such as: 
+\textbf{Foundation} - A CSS framework used to help build a responsive site. Similar to the bootstrap library, it comes with lots of pre-styled classes, so it made building the site a matter of created nested div tags. Currently availible from the foundation page \cite{foundation}, licensed under MIT \cite{MIT}.
 
-Apache POI library � The project has been used to read and write Microsoft Excel files (XLS) as part of the interaction with the client�s existing system for processing data. Version 3.10-FINAL was used. The library is open source and it is available from the Apache Software Foundation 
-\cite{apache_poi}. The library is released using the Apache License 
-\cite{apache_license}. This library was used without modification. 
+\textbf{RequireJS} - A framework for creating modulation of JavaScript code. Used to modulate the application, and dynamically load up JavaScript files defined in each module. Dual licensed under MIT \cite{MIT} and BSD \cite{BSD}, require is available from the RequireJS site \cite{requirejs}.
+
+Alongside the libraries mentioned above, there were some tools which helped form this report. Mainly diagram creators, they helped in the creation of supporting illustrations.
+
+\textbf{Gantter} - A an on-line application allowing the creation of Gantt charts, with export capabilities. This was used to create both Gantt charts present in this report.
+
+\textbf{Creatly} - On-line diagram creation tool for projects. Used to create all use-cases, class diagram, flow charts and MVC diagrams, this proved a handy tool throughout design.
+
+\textbf{Mockflow} - An on-line application for the designing of wire-frames. Allowed me to draw and style mock ups of the site before creating it. Had a very useful feature which allowed me to export the mock up to HTML code, instantly creating the site.
+
+\textbf{TeXcount} - \LaTeX word counter used to keep check on the amount of words in the report. Available as a Perl script as well as on-line.

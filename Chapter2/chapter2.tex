@@ -94,6 +94,8 @@ Two other controllers that should be mentioned are the camera and canvas modules
 
 The final module to be highlighted in the diagram is the save and loading module, responsible for the storage of user input and flight paths. Because I suggested two means of saving flight paths which were JSON and Local storage, there is the option to create a module for both of these, one for handling saving data to files, and one for in the browser. At this stage, keeping all the save and load logic in one module will suffice, as there should not be many methods required, so files would be relatively short. The module will then be able to share methods between both means of saving for preparing data. There is a trade-off currently between saving OLAN as the rendered set of vectors, or simply saving user input. The first would mean the application would be ready as soon as a flight is loaded, but would take more space to save, whilst the other way would mean slower loading but much shorter save data. I will consider both methods when implementation occurs.
 
+\clearpage
+
 \subsection{Object structure and storage formatting}
 It is imperative that the structure of data, especially the OLAN instructions for construction of each manoeuvre is organised efficiently and be as accessible as possible, to consider the speed of the application running in a user's browser. As it is planned to represent each broken down manoeuvre into a JSON string of instructions, they should be easy to read, maintain and add to. The proposed structure of the file holding the JSON will be as follows:
 
@@ -134,7 +136,7 @@ The JSON example shown in listing ~\ref{listing:json} displays the planned layou
 	\item Length - length of the manoeuvre
 \end{enumerate}
 
-By using these four attributes, the manoeuvre module will be able to go one by one through each creating a new vector based on the previous vector with these effects added. As you will see in listing ~\ref{listing:json}, the value of each will either be Nil, positive or negative. This makes it simple to tell the application if the manoeuvre is for example banking up, down, or remaining on a straight flight. The length attribute will be used to tell the application how far to move along the paths current Z axis after performing a move. If pitch, roll and yaw are all nil, the plane will follow a straight line. The length attribute will be very useful for adjusting the amount a pitch up spans; if it is small, the curve upwards will be tighter, and a larger length will mean a longer less noticeable curve. This will be especially useful for some requirements outlined in the analysis and feature list of the project concerning different aircraft types carrying different traits (some aircrafts may require more distance to bank to the same angle as others).
+By using these four attributes, the manoeuvre module will be able to go one by one through each creating a new vector based on the previous vector with these effects added. As you will see in listing ~\ref{listing:jsonvectors}, the value of each will either be Nil, positive or negative. This makes it simple to tell the application if the manoeuvre is for example banking up, down, or remaining on a straight flight. The length attribute will be used to tell the application how far to move along the paths current Z axis after performing a move. If pitch, roll and yaw are all nil, the plane will follow a straight line. The length attribute will be very useful for adjusting the amount a pitch up spans; if it is small, the curve upwards will be tighter, and a larger length will mean a longer less noticeable curve. This will be especially useful for some requirements outlined in the analysis and feature list of the project concerning different aircraft types carrying different traits (some aircrafts may require more distance to bank to the same angle as others).
 
 As mentioned in section ~\ref{sec:module}, there are two options for the data structure of the saved data from flight plans. The first option which discussed storing the pre-compile vectors from OLAN entry before saving could appear as such:
 
@@ -159,9 +161,9 @@ As mentioned in section ~\ref{sec:module}, there are two options for the data st
 	]}
 }
 \end{lstlisting}
-\label{listing:json}
+\label{listing:jsonvectors}
 
-While the second option which will be the one I will be looking to implement first with respect to time could be simply:
+While the second option will be the preferred one to implement, due to time limitations. This could be simply:
 
 \lstset{language=JavaScript}
 \medskip
@@ -170,9 +172,10 @@ While the second option which will be the one I will be looking to implement fir
 	"OLAN" : "o id b"
 }
 \end{lstlisting}
-\label{listing:json}
 
 Once other proceeding features have been created and time is available to add the save/load feature, then both options will be considered again. For the time being, it would be easier to choose the second option because functions created to build flight paths will already be there so they could be re-used to process the OLAN input again.
+
+\clearpage
 
 \subsection{Naming conventions}
 The final considerations that need to be looked at in the back-end are naming conventions. It is important that variables, methods and modules are named accordingly to their function, and so that they are easily readable. For the purpose of my application, I will be ensuring to use the Google recommendations for naming conventions in JavaScript. The guide, which can be found on their style-guide site \cite{google_javascript}, details variables, global variables, functions and class names that should be used when coding any system. The naming conventions in my application should all follow the same style throughout.
