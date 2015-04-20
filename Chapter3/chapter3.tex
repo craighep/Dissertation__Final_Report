@@ -325,7 +325,9 @@ In addition to the graph shown, the features can be expressed as feature sets in
 \end{figure}
 
 \subsection{After-test fixes and developments}
+Before a look at what fixes were done to solve issues found earlier in the iteration stage, developments to do with testing can be mentioned. Since starting using both requireJS and Jasmine, it was noticed that it could be useful to have a helper module where different tests could share set-up or tear down code. The snippet from the test utility module can be found in appendix D section~\ref{test:utils}, and was used where it was required that some GUi elements had to be created before they could be tested using fake event triggers.
 
+Moving onto feature developments, the first which was the most important was the...
 %fix OLAN, smoke trails too!
 %hide movie reel
 %fix reel scroll

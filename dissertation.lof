@@ -33,9 +33,10 @@
 \contentsline {figure}{\numberline {C.4}{\ignorespaces Snippet of code responsible for converting the manoeuvre objects into vectors, allowing the creation of Three.js spline curves.\relax }}{66}
 \contentsline {figure}{\numberline {C.5}{\ignorespaces Code used for checking local storage compatibility.\relax }}{66}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces JSUnit code created to test the capabilites of changing the JSON instructions into objects.\relax }}{68}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Checks if objects for both are created at runtime of the application.\relax }}{68}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Unit code checking information is set correctly, and if it can be changed at stored for various animation properties.\relax }}{69}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces JSUnit code for checking flight paths export correctly to JSON and local storage, and check importing back works.\relax }}{69}
-\contentsline {figure}{\numberline {D.5}{\ignorespaces A google forms questionnaire created to allow users to give feedback about the application.\relax }}{72}
-\contentsline {figure}{\numberline {D.6}{\ignorespaces Statistics from the questionnaire results, showing percentages of answers and comments/ suggestions.\relax }}{74}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces RequireJS module for allowing test units to share methods providing them with GUI elements before tests. Tear down code removes the elements after each test.\relax }}{68}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces JSUnit code created to test the capabilites of changing the JSON instructions into objects.\relax }}{68}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Checks if objects for both are created at runtime of the application.\relax }}{68}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Unit code checking information is set correctly, and if it can be changed at stored for various animation properties.\relax }}{68}
+\contentsline {figure}{\numberline {D.5}{\ignorespaces JSUnit code for checking flight paths export correctly to JSON and local storage, and check importing back works.\relax }}{69}
+\contentsline {figure}{\numberline {D.6}{\ignorespaces A google forms questionnaire created to allow users to give feedback about the application.\relax }}{72}
+\contentsline {figure}{\numberline {D.7}{\ignorespaces Statistics from the questionnaire results, showing percentages of answers and comments/ suggestions.\relax }}{74}

@@ -19,6 +19,27 @@ Click back on sub-menu    &  Sub-menu slides to left and reveals original top le
 \caption{Usability test table for testing the GUI.}
 \end{table}
 
+\clearpage
+
+\section{Test utility code for creating GUI before testing}
+\label{test:utils}
+\begin{figure}[h!]
+\caption{RequireJS module for allowing test units to share methods providing them with GUI elements before tests. Tear down code removes the elements after each test.}
+\begin{lstlisting}
+define(function(){ 
+	return {
+		setUpAppend: function(toAppend) {
+		            toAppend = "<div id='added'>" + toAppend + "</div>";
+		            $('body').append(toAppend);
+		},
+        removeAppended: function(){
+            $("#added").remove();
+        }
+	}
+});
+\end{lstlisting}
+\end{figure}
+
 \section{Test Unit code for converting JSON to manoeuvre instruction object}
 \label{test:jsonmvoes}
 \begin{figure}[h!]

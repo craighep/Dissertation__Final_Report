@@ -52,13 +52,14 @@
 \contentsline {section}{\numberline {3.5}Using local storage to export scenarios}{66}
 \contentsline {chapter}{\numberline {D}Application tests}{67}
 \contentsline {section}{\numberline {4.1}Usability testing for the GUI front-end}{67}
-\contentsline {section}{\numberline {4.2}Test Unit code for converting JSON to manoeuvre instruction object}{68}
-\contentsline {section}{\numberline {4.3}Test Unit code for checking lights and ground are created successfully}{68}
-\contentsline {section}{\numberline {4.4}Usability testing for cameras}{68}
-\contentsline {section}{\numberline {4.5}Test Unit code for animation controller getters and setters}{69}
-\contentsline {section}{\numberline {4.6}Test Unit code for checking import and export to JSON/ local storage functionality}{69}
-\contentsline {section}{\numberline {4.7}Usability testing for GUI options}{69}
-\contentsline {section}{\numberline {4.8}Usability testing providing parameters between OLAN}{69}
-\contentsline {section}{\numberline {4.9}User questionnaire}{72}
-\contentsline {section}{\numberline {4.10}User questionnaire results}{74}
+\contentsline {section}{\numberline {4.2}Test utility code for creating GUI before testing}{68}
+\contentsline {section}{\numberline {4.3}Test Unit code for converting JSON to manoeuvre instruction object}{68}
+\contentsline {section}{\numberline {4.4}Test Unit code for checking lights and ground are created successfully}{68}
+\contentsline {section}{\numberline {4.5}Usability testing for cameras}{68}
+\contentsline {section}{\numberline {4.6}Test Unit code for animation controller getters and setters}{68}
+\contentsline {section}{\numberline {4.7}Test Unit code for checking import and export to JSON/ local storage functionality}{69}
+\contentsline {section}{\numberline {4.8}Usability testing for GUI options}{69}
+\contentsline {section}{\numberline {4.9}Usability testing providing parameters between OLAN}{69}
+\contentsline {section}{\numberline {4.10}User questionnaire}{72}
+\contentsline {section}{\numberline {4.11}User questionnaire results}{74}
 \contentsline {chapter}{Annotated Bibliography}{77}
