@@ -317,7 +317,7 @@ Analysing the graph further, the main problem can be seen where work was halted 
 
 In addition to the graph shown, the features can be expressed as feature sets in traditional FDD progress reports. The progress reports using the due dates, and current progress are highlighted in figure~\ref{fig:featureprogress}, where the name of the feature set is shown, followed by how many parts the feature set contains, and the percentage. Where the background is green, the feature set is complete, yellow means it is currently ongoing, and red means the feature set is behind schedule. It expands on the tasks that need to be done more proptly, so for this project the main issue that will be addressed first is the OLAN to flight path creation.
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
       \includegraphics[width=1\textwidth]{images/featureProgress.png}
   \caption{Feature progress reports for each of the feature sets implemented up to this point in time. The predicted month of completion is shown at the bottom, and tasks where they are not complete and tested fully are ones without a green background.}
@@ -325,14 +325,26 @@ In addition to the graph shown, the features can be expressed as feature sets in
 \end{figure}
 
 \subsection{After-test fixes and developments}
-Before a look at what fixes were done to solve issues found earlier in the iteration stage, developments to do with testing can be mentioned. Since starting using both requireJS and Jasmine, it was noticed that it could be useful to have a helper module where different tests could share set-up or tear down code. The snippet from the test utility module can be found in appendix D section~\ref{test:utils}, and was used where it was required that some GUi elements had to be created before they could be tested using fake event triggers.
+Before a look at what fixes were done to solve issues found earlier in the iteration stage, developments to do with testing can be mentioned. Since starting using both requireJS and Jasmine, it was noticed that it could be useful to have a helper module where different tests could share set-up or tear down code. The snippet from the test utility module can be found in appendix D section~\ref{test:utils}, and was used where it was required that some GUI elements had to be created before they could be tested using fake event triggers.
 
 Moving onto feature developments, the first which was the most important was the...
 %fix OLAN, smoke trails too!
-%hide movie reel
-%fix reel scroll
+A small feature that was added from a look and usability view was a button to hide the movie-reel. At times where all 5 slots were taken up from the amount of manoeuvres entered, it could be obstructing to the view. Having the option to minimise the reel was added, thus allowing the user to hide and show it if they so desired.
+%fix reel scrollacv
 %parameters OLAN not done
 %check if manoeuvres fit
+
+\section{Jasmine testing}
+Following all changes and completion of project time for implementation and testing, it was decided that all Jasmine tests should be checked, appended to where required, and then ensured they all passed. New tests added included testing the new auto-save function for local storage. For this, a new test which checked the getter for the value of the auto-save-on feature was added to the import/export test specification. At the end of testing, there was a total of 16 unit tests, each one compromised with a set of instructions to the array of modules in the application followed by an expect statement which checked the return objects of the particular feature that was being tested.
+
+A great advantage of Jasmine is the ability to run the tests in both the browser and through the Travis build server. Each time new tests were added, Travis would alert on a failed test enabling time to be taken to fix the failing feature. Figure~\ref{fig:jasmine} shown below highlights the results of running the tests locally from the browser, and with each of the test specifications passing. There was one issue that was found testing this way though, which was if for instance the application had been running in the same browser, local storage tests were sometimes affected if the application had been changing the local storage content. This is because it is saved across the entire browser, so if the check-box for auto save was checked, it would be checked while testing, causing opposite results when testing for checking the box. A simple solution was to test in one browser, and run the application in another.
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.9\textwidth]{images/jasmine.png}
+  \caption{Screenshot of all Jasmine tests passing in the browser.}
+  \label{fig:jasmine}
+\end{figure}
 
 \section{User testing}
 Now that the allocated time for implementation and testing has been used, testing to see how the application meets its initial requirements is important. Along with the JSUnit tests and the usability tests that were created, user testing is a means of testing ideal for front-end applications where the usability of the application is paramount. There are a few routes that can be taken to perform user testing, one of which is a questionnaire. Rather than allowing the user to send feedback through suggestions or pros and cons, a quicker and more direct way to check the applications fulfills its needs is to provide the user with a set of direct questions, allowing them to state if they agree or disagree. One example could be whether the colour scheme is suitable. By getting the amount agreeing above a certain threshold percentage wise would help show that the colour scheme aspect was correctly applied.
