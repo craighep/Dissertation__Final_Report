@@ -15,11 +15,12 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Movie reel overlaying the bottom of the canvas, with some figures loaded after the user typed in a string of OLAN.\relax }}{36}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Burn-down chart of features implemented and tested fully. X axis represents number of features to implement, whilst Y axis shows the date that the features have been implemented by.\relax }}{39}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Feature progress reports for each of the feature sets implemented up to this point in time. The predicted month of completion is shown at the bottom, and tasks where they are not complete and tested fully are ones without a green background.\relax }}{39}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Screenshot of all Jasmine tests passing in the browser.\relax }}{40}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Latest Travis build after a commit, running all the Jasmine tests in the application.\relax }}{42}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Frame-rate counter shown in bottom right of the application.\relax }}{43}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Average rate per device(Graphics RAM in brackets)\relax }}{43}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Average frame rate per browser (all latest versions of browser on 04/05/2015)\relax }}{43}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Module diagram showing links between each module at the end of the implementation stage.\relax }}{40}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Screenshot of all Jasmine tests passing in the browser.\relax }}{41}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Latest Travis build after a commit, running all the Jasmine tests in the application.\relax }}{43}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Frame-rate counter shown in bottom right of the application.\relax }}{43}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Average rate per device(Graphics RAM in brackets)\relax }}{44}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Average frame rate per browser (all latest versions of browser on 04/05/2015)\relax }}{44}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Initial gantt chart, outline times throughout project activities, to be updated as time passes during the project span.\relax }}{52}

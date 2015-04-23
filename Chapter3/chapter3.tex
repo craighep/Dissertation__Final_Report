@@ -333,6 +333,15 @@ A small feature that was added from a look and usability view was a button to hi
 %fix reel scrollacv
 %parameters OLAN not done
 %check if manoeuvres fit
+%refactoring- smaller lines, reference book
+
+After all changes were complete, a reconstruction of the module diagram from the design section was possible. The diagram in figure~\ref{fig:mod_after}....
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=1\textwidth]{images/mod_after.png}
+  \caption{Module diagram showing links between each module at the end of the implementation stage.}
+  \label{fig:mod_after}
+\end{figure}
 
 \section{Jasmine testing}
 Following all changes and completion of project time for implementation and testing, it was decided that all Jasmine tests should be checked, appended to where required, and then ensured they all passed. New tests added included testing the new auto-save function for local storage. For this, a new test which checked the getter for the value of the auto-save-on feature was added to the import/export test specification. At the end of testing, there was a total of 16 unit tests, each one compromised with a set of instructions to the array of modules in the application followed by an expect statement which checked the return objects of the particular feature that was being tested.
