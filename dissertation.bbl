@@ -60,6 +60,12 @@
  \begin{quotation}\noindent Local server application allowing php to run on a
   local machine. Download page and guide to using EasyPhp. \end{quotation}
 
+\bibitem{count}
+{Einarro Ifi}, ``{TexCount Tex Counter},''
+  \url{http://app.uio.no/ifi/texcount/}, 2005, last checked: 1st May 2015.
+ \begin{quotation}\noindent An online and offline Latex word counter.
+  \end{quotation}
+
 \bibitem{koala}
 {Ethan Lai}, ``{Koala - a gui application for LESS, Sass, Compass and
   coffeescript},'' \url{http://koala-app.com}, 2013, last checked: 7th March
@@ -180,6 +186,12 @@
   last checked: 15 February 2015.
  \begin{quotation}\noindent The application allowing input of OLAN to produce
   Aresti diagrams. Currently open source and licensed under GPL V3
+  \end{quotation}
+
+\bibitem{clean_code}
+{Robert C. Martin}, ``{Clean Code: A Handbook of Agile Software
+  Craftsmanship},'' 2008, last checked: 25th April 2015.
+ \begin{quotation}\noindent A book on agile principles, and layout of code.
   \end{quotation}
 
 \bibitem{FDD}

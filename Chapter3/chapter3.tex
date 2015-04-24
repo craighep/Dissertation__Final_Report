@@ -329,13 +329,35 @@ Before a look at what fixes were done to solve issues found earlier in the itera
 
 Moving onto feature developments, the first which was the most important was the...
 %fix OLAN, smoke trails too!
-A small feature that was added from a look and usability view was a button to hide the movie-reel. At times where all 5 slots were taken up from the amount of manoeuvres entered, it could be obstructing to the view. Having the option to minimise the reel was added, thus allowing the user to hide and show it if they so desired.
-%fix reel scrollacv
+A small feature that was added from a look and usability view was a button to hide the movie-reel. At times where all 5 slots were taken up from the amount of manoeuvres entered, it could be obstructing to the view. Having the option to minimise the reel was added, thus allowing the user to hide and show it if they so desired. Figure~\ref{fig:minimise} shows the new button which can be used to hide the reel, whilst figure~\ref{fig:maxmimise} shows the ability to make the reel appear again.
+\begin{figure}[h!]
+	\centering
+	\parbox{7cm}{
+		\includegraphics[width=7cm]{images/minimise.png}
+		\caption{Movie-reel shown with minimise button displayed.}
+		\label{fig:minimise}}
+	\qquad
+	\begin{minipage}{7cm}
+		\includegraphics[width=7cm]{images/maximise.png}
+		\caption{Movie-reel hidden with display button shown.}
+		\label{fig:maxmimise}
+	\end{minipage}
+\end{figure}
+
+A fix that was added to the application also looking towards the movie-reel was the issue found where when more than 10 manoeuvres were present, then the reel did not scroll onto the next five when the first five had been animated across. This issue has now been addressed, and now correctly shows the next five manoeuvres after animating across the previous five. A flow chart shown in figure~\ref{fig:moves} illustrates how the application knows when to move to the next five manoeuvres.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{images/moves_flow.png}
+	\caption{Flow chart showing how movie-reel knows when to move.}
+	\label{fig:moves}
+\end{figure}
+
 %parameters OLAN not done
 %check if manoeuvres fit
-%refactoring- smaller lines, reference book
 
-After all changes were complete, a reconstruction of the module diagram from the design section was possible. The diagram in figure~\ref{fig:mod_after}....
+A final change performed within the allocated time left was the re-factoring of code. A book that was used for guidance with this was 'Clean Code'~\cite{clean_code} by Robert C. Martin who mentioned that methods should do one thing only, and not be longer than four or five lines. Following this principles, this was performed on the application code, and JSDoc re-compiled.
+
+After all changes were complete, a reconstruction of the module diagram from the design section was possible. The diagram in figure~\ref{fig:mod_after} shows which modules communicate with each other, with the main module initiating a lot of other modules, this has many links. Modules like the htmlHandler were used a lot because many events or actions from the user required the GUI to be updated.
 \begin{figure}[h!]
   \centering
       \includegraphics[width=1\textwidth]{images/mod_after.png}
@@ -415,6 +437,13 @@ There are possible improvements that could have been made to this stage of the p
 
 It was found that during the implantation stage, by regularly updating both the work blog \cite{blog} and the JSDoc, both were useful guides for reviewing the completed application. The JSDoc which can be found in the 'docs' folder in the code structure contains descriptions of every method in the application, and has a good front-end website to view each. Although it was key to ensure that all code contained in the application was self-explanatory to a certain amount for future developments, it was important to include a description above each method to help any readers know the general layout and workings of the application. 
 
-The completed application can be found and viewed on-line at: \url{http://craighep.github.io/Dissertation/}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/final.png}
+	\caption{Final state of the application, with menus, canvas and movie reel added.}
+	\label{fig:final}
+\end{figure}
+
+The completed application which can be seen in figure~\ref{fig:final} can be found and viewed on-line at: \url{http://craighep.github.io/Dissertation/}
 
 And all documentation including the JSDoc can be viewed on-line at: \url{http://craighep.github.io/Dissertation/docs/}

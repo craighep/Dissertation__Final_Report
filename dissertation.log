@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  23 APR 2015 21:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  24 APR 2015 10:31
 entering extended mode
 **dissertation.tex
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.tex
@@ -689,82 +689,109 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [38
 
-] [39 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/burndo
-wn.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/feat
-ureProgress.png>]
-<images/mod_after.png, id=188, 1179.40625pt x 727.71875pt>
+] <images/minimise.png, id=183, 289.08pt x 180.675pt>
+File: images/minimise.png Graphic file (type png)
+
+<use images/minimise.png>
+Package pdftex.def Info: images/minimise.png used on input line 338.
+(pdftex.def)             Requested size: 199.16928pt x 124.48116pt.
+
+<images/maximise.png, id=184, 220.57407pt x 115.18031pt>
+File: images/maximise.png Graphic file (type png)
+
+<use images/maximise.png>
+Package pdftex.def Info: images/maximise.png used on input line 341.
+(pdftex.def)             Requested size: 199.16928pt x 104.00752pt.
+ [39 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/burndow
+n.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/featu
+reProgress.png>]
+<images/mod_after.png, id=190, 1179.40625pt x 727.71875pt>
 File: images/mod_after.png Graphic file (type png)
 
 <use images/mod_after.png>
-Package pdftex.def Info: images/mod_after.png used on input line 341.
+Package pdftex.def Info: images/mod_after.png used on input line 355.
 (pdftex.def)             Requested size: 426.79134pt x 263.34435pt.
- [40 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/mod_aft
-er.png>]
-<images/jasmine.png, id=194, 572.1375pt x 345.54094pt>
-File: images/jasmine.png Graphic file (type png)
-
-<use images/jasmine.png>
-Package pdftex.def Info: images/jasmine.png used on input line 353.
-(pdftex.def)             Requested size: 384.10959pt x 231.98575pt.
- [41 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/jasmine
-.png>]
-<images/travis.png, id=199, 584.93532pt x 222.07968pt>
-File: images/travis.png Graphic file (type png)
- <use images/travis.png>
-Package pdftex.def Info: images/travis.png used on input line 380.
-(pdftex.def)             Requested size: 341.43436pt x 129.63652pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42] <images/framerate.png, id=203, 154.32657pt x 104.64093pt>
+<images/jasmine.png, id=191, 572.1375pt x 345.54094pt>
+File: images/jasmine.png Graphic file (type png)
+
+<use images/jasmine.png>
+Package pdftex.def Info: images/jasmine.png used on input line 367.
+(pdftex.def)             Requested size: 384.10959pt x 231.98575pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[40 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/minimise
+.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/maximi
+se.png>] [41 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images
+/mod_after.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/ima
+ges/jasmine.png>] [42] <images/travis.png, id=206, 584.93532pt x 222.07968pt>
+File: images/travis.png Graphic file (type png)
+
+<use images/travis.png>
+Package pdftex.def Info: images/travis.png used on input line 394.
+(pdftex.def)             Requested size: 341.43436pt x 129.63652pt.
+ [43 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/travis.
+png>]
+<images/framerate.png, id=211, 154.32657pt x 104.64093pt>
 File: images/framerate.png Graphic file (type png)
 
 <use images/framerate.png>
-Package pdftex.def Info: images/framerate.png used on input line 391.
+Package pdftex.def Info: images/framerate.png used on input line 405.
 (pdftex.def)             Requested size: 128.0387pt x 86.82318pt.
- [43 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/travis.
-png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/framera
-te.png>]
-<images/fpsMeasured.png, id=209, 311.66437pt x 214.55156pt>
+
+<images/fpsMeasured.png, id=212, 311.66437pt x 214.55156pt>
 File: images/fpsMeasured.png Graphic file (type png)
 
 <use images/fpsMeasured.png>
-Package pdftex.def Info: images/fpsMeasured.png used on input line 403.
+Package pdftex.def Info: images/fpsMeasured.png used on input line 417.
 (pdftex.def)             Requested size: 199.16928pt x 137.10954pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--403
-[]\OT1/ptm/m/n/10.95 Figure 3.11: |Av-er-age rate per de-
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
+[]\OT1/ptm/m/n/10.95 Figure 3.13: |Av-er-age rate per de-
  []
 
-<images/fpsMeasuredBrowsers.png, id=210, 258.21469pt x 213.04594pt>
+<images/fpsMeasuredBrowsers.png, id=213, 258.21469pt x 213.04594pt>
 File: images/fpsMeasuredBrowsers.png Graphic file (type png)
 
 <use images/fpsMeasuredBrowsers.png>
-Package pdftex.def Info: images/fpsMeasuredBrowsers.png used on input line 406.
+Package pdftex.def Info: images/fpsMeasuredBrowsers.png used on input line 420.
 
 (pdftex.def)             Requested size: 199.16928pt x 164.33519pt.
-) [44 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/fpsMea
-sured.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/f
-psMeasuredBrowsers.png>]
+ [44 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/framera
+te.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/fpsM
+easured.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images
+/fpsMeasuredBrowsers.png>]
+<images/final.png, id=220, 1445.4pt x 737.75626pt>
+File: images/final.png Graphic file (type png)
+ <use images/final.png>
+Package pdftex.def Info: images/final.png used on input line 434.
+(pdftex.def)             Requested size: 341.43436pt x 174.27332pt.
+)
+[45 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/final.pn
+g>]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter4/chapter4.t
 ex
 Chapter 4.
-[45
+[46
 
 
 
-] [46] [47] [48]) [49] [50
+] [47] [48] [49]) [50] [51
 
 
 ]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix1/appendix1
 .tex
 Appendix A.
-[51
+[52
 
 
-] <images/first.png, id=238, 1312.905pt x 248.42813pt>
+] <images/first.png, id=248, 1312.905pt x 248.42813pt>
 File: images/first.png Graphic file (type png)
 
 <use images/first.png>
@@ -775,10 +802,10 @@ Overfull \hbox (2.8394pt too wide) in paragraph at lines 9--10
  [][] 
  []
 
-[52
+[53
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/first.png>]
- <images/init.pdf, id=244, page=1, 614.295pt x 794.97pt>
+ <images/init.pdf, id=253, page=1, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 1>
@@ -789,7 +816,7 @@ Overfull \hbox (85.3886pt too wide) in paragraph at lines 18--19
 [][] 
  []
 
-<images/init.pdf, id=245, page=2, 614.295pt x 794.97pt>
+<images/init.pdf, id=254, page=2, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 2>
@@ -803,12 +830,12 @@ Overfull \hbox (85.3886pt too wide) in paragraph at lines 22--23
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[53
+[54
 
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf>] 
-[54 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf
->] <images/eval.pdf, id=278, page=1, 597.55246pt x 845.07718pt>
+[55 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf
+>] <images/eval.pdf, id=287, page=1, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 1>
@@ -819,7 +846,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 31--32
  [][] 
  []
 
-<images/eval.pdf, id=279, page=2, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=288, page=2, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 2>
@@ -833,7 +860,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 35--36
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=280, page=3, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=289, page=3, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 3>
@@ -847,7 +874,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 39--40
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=281, page=4, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=290, page=4, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 4>
@@ -861,7 +888,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 43--44
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=282, page=5, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=291, page=5, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 5>
@@ -875,14 +902,14 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 47--48
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[55
+[56
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.pdf>] 
-[56 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.pdf
->] [57 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.
-pdf>] [58 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/ev
-al.pdf>] [59 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images
-/eval.pdf>] <images/second.png, id=338, 1029.8475pt x 411.03563pt>
+[57 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.pdf
+>] [58 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.
+pdf>] [59 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/ev
+al.pdf>] [60 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images
+/eval.pdf>] <images/second.png, id=347, 1029.8475pt x 411.03563pt>
 File: images/second.png Graphic file (type png)
 
 <use images/second.png>
@@ -893,7 +920,7 @@ Overfull \hbox (2.86494pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-[60
+[61
 
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/second.png>
@@ -901,24 +928,24 @@ Overfull \hbox (2.86494pt too wide) in paragraph at lines 58--59
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix2/appendix2
 .tex
 Appendix B.
-[61
+[62
 
 
 
 
 
-]) [62]
+]) [63]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix3/appendix3
 .tex
 Appendix C.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[63
+[64
 
 
 
-] [64]) [65
+] [65]) [66
 
 ]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix4/appendix4
@@ -954,13 +981,13 @@ Overfull \hbox (5.32085pt too wide) in paragraph at lines 6--19
 [][] 
  []
 
-[66
+[67
 
 
 
-] [67
+] [68
 
-] [68]
+] [69]
 Underfull \hbox (badness 10000) in paragraph at lines 130--130
 []\OT1/ptm/b/n/10.95 Pass/
  []
@@ -1005,9 +1032,9 @@ Overfull \hbox (19.54723pt too wide) in paragraph at lines 128--140
 [][] 
  []
 
-[69
+[70
 
-] [70
+] [71
 
 ]
 Underfull \hbox (badness 2600) in paragraph at lines 258--258
@@ -1034,9 +1061,9 @@ Overfull \hbox (5.32085pt too wide) in paragraph at lines 255--269
 [][] 
  []
 
-[71
+[72
 
-] [72]
+] [73]
 Underfull \hbox (badness 1137) in paragraph at lines 281--281
 []\OT1/ptm/m/n/10.95 Should move s-tart of nex-
  []
@@ -1066,9 +1093,9 @@ Overfull \hbox (5.32085pt too wide) in paragraph at lines 277--286
 [][] 
  []
 
-[73
+[74
 
-] <images/questionnaire.pdf, id=384, page=1, 598.235pt x 846.16125pt>
+] <images/questionnaire.pdf, id=393, page=1, 598.235pt x 846.16125pt>
 File: images/questionnaire.pdf Graphic file (type pdf)
 
 <use images/questionnaire.pdf, page 1>
@@ -1076,7 +1103,7 @@ Package pdftex.def Info: images/questionnaire.pdf, page1 used on input line 295
 .
 (pdftex.def)             Requested size: 426.79456pt x 512.168pt.
 
-<images/questionnaire.pdf, id=385, page=2, 598.235pt x 846.16125pt>
+<images/questionnaire.pdf, id=394, page=2, 598.235pt x 846.16125pt>
 File: images/questionnaire.pdf Graphic file (type pdf)
 
 <use images/questionnaire.pdf, page 2>
@@ -1087,7 +1114,7 @@ Package pdftex.def Info: images/questionnaire.pdf, page2 used on input line 299
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[74
+[75
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/questionnai
 re.pdf
@@ -1095,13 +1122,13 @@ re.pdf
 pdfTeX warning: pdflatex.exe (file C:/Users/Craig/Documents/GitHub/Dissertation
 __Final_Report/images/questionnaire.pdf): PDF inclusion: invalid other resource
  which is no dict (key 'ProcSets', type <array>); ignored.
->] [75 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/quest
+>] [76 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/quest
 ionnaire.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Craig/Documents/GitHub/Dissertation
 __Final_Report/images/questionnaire.pdf): PDF inclusion: invalid other resource
  which is no dict (key 'ProcSets', type <array>); ignored.
->] <images/questionnaireResults.pdf, id=490, page=1, 598.235pt x 846.16125pt>
+>] <images/questionnaireResults.pdf, id=500, page=1, 598.235pt x 846.16125pt>
 File: images/questionnaireResults.pdf Graphic file (type pdf)
 
 <use images/questionnaireResults.pdf, page 1>
@@ -1109,7 +1136,7 @@ Package pdftex.def Info: images/questionnaireResults.pdf, page1 used on input l
 ine 308.
 (pdftex.def)             Requested size: 426.79456pt x 512.168pt.
 
-<images/questionnaireResults.pdf, id=491, page=2, 598.235pt x 846.16125pt>
+<images/questionnaireResults.pdf, id=501, page=2, 598.235pt x 846.16125pt>
 File: images/questionnaireResults.pdf Graphic file (type pdf)
 
 <use images/questionnaireResults.pdf, page 2>
@@ -1120,7 +1147,7 @@ ine 312.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/questionnaireResults.pdf, id=492, page=3, 598.235pt x 846.16125pt>
+<images/questionnaireResults.pdf, id=502, page=3, 598.235pt x 846.16125pt>
 File: images/questionnaireResults.pdf Graphic file (type pdf)
 
 <use images/questionnaireResults.pdf, page 3>
@@ -1131,16 +1158,10 @@ ine 316.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [76
+) [77
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/questionnai
 reResults.pdf
-
-pdfTeX warning: pdflatex.exe (file C:/Users/Craig/Documents/GitHub/Dissertation
-__Final_Report/images/questionnaireResults.pdf): PDF inclusion: invalid other r
-esource which is no dict (key 'ProcSets', type <array>); ignored.
->] [77 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/quest
-ionnaireResults.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Craig/Documents/GitHub/Dissertation
 __Final_Report/images/questionnaireResults.pdf): PDF inclusion: invalid other r
@@ -1151,13 +1172,19 @@ ionnaireResults.pdf
 pdfTeX warning: pdflatex.exe (file C:/Users/Craig/Documents/GitHub/Dissertation
 __Final_Report/images/questionnaireResults.pdf): PDF inclusion: invalid other r
 esource which is no dict (key 'ProcSets', type <array>); ignored.
+>] [79 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/quest
+ionnaireResults.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Craig/Documents/GitHub/Dissertation
+__Final_Report/images/questionnaireResults.pdf): PDF inclusion: invalid other r
+esource which is no dict (key 'ProcSets', type <array>); ignored.
 >] (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.bbl
-[79
+[80
 
 
-] [80] [81]) 
+] [81] [82]) 
 AED: lastpage setting LastPage
-[82]
+[83]
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.aux
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\cover.aux)
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\declaration.aux)
@@ -1180,10 +1207,10 @@ ux)
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix4/appendix4
 .aux)) ) 
 Here is how much of TeX's memory you used:
- 8392 strings out of 495352
- 139237 string characters out of 3183046
+ 8417 strings out of 495352
+ 139684 string characters out of 3183046
  350319 words of memory out of 3000000
- 11310 multiletter control sequences out of 15000+200000
+ 11332 multiletter control sequences out of 15000+200000
  30205 words of font info for 65 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  44i,12n,46p,1406b,1140s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1199,9 +1226,9 @@ type1/urw/palatino/uplri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
 rw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/ut
 mr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (91 pages, 5564985 bytes).
+Output written on dissertation.pdf (92 pages, 6126603 bytes).
 PDF statistics:
- 569 PDF objects out of 1000 (max. 8388607)
+ 578 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
