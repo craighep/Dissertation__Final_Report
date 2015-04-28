@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  28 APR 2015 23:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.11)  29 APR 2015 00:57
 entering extended mode
 **C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
 (C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/dissertation.tex
@@ -369,21 +369,27 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
  (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\cover.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+<images/logo.png, id=1, 525.965pt x 108.405pt>
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 7.
+(pdftex.def)             Requested size: 262.98184pt x 54.20236pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [0
 
 
-{C:/Users/Craig/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
+{C:/Users/Craig/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Cr
+aig/Documents/GitHub/Dissertation__Final_Report/images/logo.png (PNG copy)>])
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\declaration.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
@@ -419,6 +425,9 @@ x) [2
 
 
 ]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
+
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\dissertation.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
@@ -439,8 +448,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter1/chapter1.t
 ex
 Chapter 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 [1
@@ -454,7 +461,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-<images/notes.jpg, id=38, 3276.24pt x 2457.18pt>
+<images/notes.jpg, id=39, 3276.24pt x 2457.18pt>
 File: images/notes.jpg Graphic file (type jpg)
  <use images/notes.jpg>
 Package pdftex.def Info: images/notes.jpg used on input line 17.
@@ -464,7 +471,7 @@ Package pdftex.def Info: images/notes.jpg used on input line 17.
 >]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
- [3] [4] [5] <images/usereq.png, id=52, 466.74374pt x 547.04375pt>
+ [3] [4] [5] <images/usereq.png, id=53, 466.74374pt x 547.04375pt>
 File: images/usereq.png Graphic file (type png)
 
 <use images/usereq.png>
@@ -482,7 +489,7 @@ Overfull \hbox (2.08116pt too wide) in paragraph at lines 103--117
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Chapter2/chapter2.t
 ex
 Chapter 2.
-<images/mvc.png, id=67, 572.1375pt x 381.425pt>
+<images/mvc.png, id=68, 572.1375pt x 381.425pt>
 File: images/mvc.png Graphic file (type png)
  <use images/mvc.png>
 Package pdftex.def Info: images/mvc.png used on input line 10.
@@ -504,7 +511,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <9> not available
 (Font)              Font shape `OT1/pcr/b/n' tried instead on input line 44.
 
-[13] <images/mod.png, id=84, 1382.16376pt x 1199.48125pt>
+[13] <images/mod.png, id=85, 1382.16376pt x 1199.48125pt>
 File: images/mod.png Graphic file (type png)
  <use images/mod.png>
 Package pdftex.def Info: images/mod.png used on input line 78.
@@ -515,7 +522,7 @@ Package pdftex.def Info: images/mod.png used on input line 78.
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/mod.png>] [
 15] [16
 
-] [17] <images/usecase.png, id=99, 577.15625pt x 625.33624pt>
+] [17] <images/usecase.png, id=100, 577.15625pt x 625.33624pt>
 File: images/usecase.png Graphic file (type png)
 
 <use images/usecase.png>
@@ -528,7 +535,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [18
 
 ] [19 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/usecas
-e.png>] <images/flow.png, id=107, 662.475pt x 486.81876pt>
+e.png>] <images/flow.png, id=108, 662.475pt x 486.81876pt>
 File: images/flow.png Graphic file (type png)
 
 <use images/flow.png>
@@ -537,13 +544,13 @@ Package pdftex.def Info: images/flow.png used on input line 208.
  [20
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/flow.png>]
-<images/desktop.png, id=112, 1205.50375pt x 669.50125pt>
+<images/desktop.png, id=113, 1205.50375pt x 669.50125pt>
 File: images/desktop.png Graphic file (type png)
 
 <use images/desktop.png>
 Package pdftex.def Info: images/desktop.png used on input line 222.
 (pdftex.def)             Requested size: 426.79134pt x 237.02591pt.
- <images/mobile.png, id=113, 779.91376pt x 574.145pt>
+ <images/mobile.png, id=114, 779.91376pt x 574.145pt>
 File: images/mobile.png Graphic file (type png)
 
 <use images/mobile.png>
@@ -559,7 +566,7 @@ Chapter 3.
 
 
 
-] <images/desktopProgress.png, id=129, 720.44156pt x 618.81187pt>
+] <images/desktopProgress.png, id=130, 720.44156pt x 618.81187pt>
 File: images/desktopProgress.png Graphic file (type png)
 
 <use images/desktopProgress.png>
@@ -596,7 +603,7 @@ Overfull \hbox (17.49753pt too wide) in paragraph at lines 73--79
 [][] 
  []
 
-[27] <images/ground.png, id=140, 237.13594pt x 228.10219pt>
+[27] <images/ground.png, id=141, 237.13594pt x 228.10219pt>
 File: images/ground.png Graphic file (type png)
 
 <use images/ground.png>
@@ -608,14 +615,14 @@ Overfull \hbox (17.49753pt too wide) in paragraph at lines 100--106
  []
 
 [28 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/ground.p
-ng>] <images/zoom.png, id=146, 1357.32094pt x 439.6425pt>
+ng>] <images/zoom.png, id=147, 1357.32094pt x 439.6425pt>
 File: images/zoom.png Graphic file (type png)
 
 <use images/zoom.png>
 Package pdftex.def Info: images/zoom.png used on input line 117.
 (pdftex.def)             Requested size: 298.75262pt x 96.76189pt.
  [29 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/zoom.pn
-g>] <images/plane.png, id=151, 402.00188pt x 348.55219pt>
+g>] <images/plane.png, id=152, 402.00188pt x 348.55219pt>
 File: images/plane.png Graphic file (type png)
 
 <use images/plane.png>
@@ -629,7 +636,7 @@ Overfull \hbox (17.49753pt too wide) in paragraph at lines 138--144
 [30
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/plane.png>]
- <images/issue.png, id=156, 222.8325pt x 172.39406pt>
+ <images/issue.png, id=157, 222.8325pt x 172.39406pt>
 File: images/issue.png Graphic file (type png)
 
 <use images/issue.png>
@@ -651,13 +658,13 @@ Overfull \hbox (17.49753pt too wide) in paragraph at lines 185--191
 [][] 
  []
 
-[32] <images/import.png, id=164, 216.81pt x 214.55156pt>
+[32] <images/import.png, id=165, 216.81pt x 214.55156pt>
 File: images/import.png Graphic file (type png)
 
 <use images/import.png>
 Package pdftex.def Info: images/import.png used on input line 215.
 (pdftex.def)             Requested size: 170.71652pt x 168.94714pt.
- <images/loaded.png, id=165, 203.25937pt x 165.61874pt>
+ <images/loaded.png, id=166, 203.25937pt x 165.61874pt>
 File: images/loaded.png Graphic file (type png)
 
 <use images/loaded.png>
@@ -675,7 +682,7 @@ Overfull \hbox (17.49753pt too wide) in paragraph at lines 255--261
 [][] 
  []
 
-[35] [36] <images/movie.png, id=181, 508.14844pt x 364.36125pt>
+[35] [36] <images/movie.png, id=182, 508.14844pt x 364.36125pt>
 File: images/movie.png Graphic file (type png)
 
 <use images/movie.png>
@@ -694,7 +701,7 @@ Overfull \hbox (17.49753pt too wide) in paragraph at lines 302--308
 [][] 
  []
 
-[38] <images/burndown.png, id=189, 347.79938pt x 207.02344pt>
+[38] <images/burndown.png, id=190, 347.79938pt x 207.02344pt>
 File: images/burndown.png Graphic file (type png)
 
 <use images/burndown.png>
@@ -704,7 +711,7 @@ Package pdftex.def Info: images/burndown.png used on input line 341.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/featureProgress.png, id=190, 685.8122pt x 255.95625pt>
+<images/featureProgress.png, id=191, 685.8122pt x 255.95625pt>
 File: images/featureProgress.png Graphic file (type png)
 
 <use images/featureProgress.png>
@@ -718,21 +725,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] [40 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/burndo
 wn.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/feat
-ureProgress.png>] <images/minimise.png, id=200, 289.08pt x 180.675pt>
+ureProgress.png>] <images/minimise.png, id=201, 289.08pt x 180.675pt>
 File: images/minimise.png Graphic file (type png)
 
 <use images/minimise.png>
 Package pdftex.def Info: images/minimise.png used on input line 372.
 (pdftex.def)             Requested size: 199.16928pt x 124.48116pt.
 
-<images/maximise.png, id=201, 220.57407pt x 115.18031pt>
+<images/maximise.png, id=202, 220.57407pt x 115.18031pt>
 File: images/maximise.png Graphic file (type png)
 
 <use images/maximise.png>
 Package pdftex.def Info: images/maximise.png used on input line 375.
 (pdftex.def)             Requested size: 199.16928pt x 104.00752pt.
 
-<images/reel-flow.png, id=202, 682.55pt x 455.7025pt>
+<images/reel-flow.png, id=203, 682.55pt x 455.7025pt>
 File: images/reel-flow.png Graphic file (type png)
 
 <use images/reel-flow.png>
@@ -742,7 +749,7 @@ Package pdftex.def Info: images/reel-flow.png used on input line 385.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/warn.png, id=203, 537.50812pt x 175.40532pt>
+<images/warn.png, id=204, 537.50812pt x 175.40532pt>
 File: images/warn.png Graphic file (type png)
  <use images/warn.png>
 Package pdftex.def Info: images/warn.png used on input line 394.
@@ -753,7 +760,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [41 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/minimise
 .png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/maximi
-se.png>] <images/smoke.png, id=209, 368.87813pt x 285.31593pt>
+se.png>] <images/smoke.png, id=210, 368.87813pt x 285.31593pt>
 File: images/smoke.png Graphic file (type png)
 
 <use images/smoke.png>
@@ -763,7 +770,7 @@ Package pdftex.def Info: images/smoke.png used on input line 403.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/burndownnew.png, id=210, 353.06906pt x 187.45032pt>
+<images/burndownnew.png, id=211, 353.06906pt x 187.45032pt>
 File: images/burndownnew.png Graphic file (type png)
 
 <use images/burndownnew.png>
@@ -772,7 +779,7 @@ Package pdftex.def Info: images/burndownnew.png used on input line 414.
  [42 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/reel-fl
 ow.png> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/warn
 .png>]
-<images/mod_after.png, id=216, 1355.0625pt x 727.71875pt>
+<images/mod_after.png, id=217, 1355.0625pt x 727.71875pt>
 File: images/mod_after.png Graphic file (type png)
 
 <use images/mod_after.png>
@@ -784,7 +791,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [43 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/smoke.pn
 g> <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/burndownn
-ew.png>] <images/jasmine.png, id=222, 572.1375pt x 345.54094pt>
+ew.png>] <images/jasmine.png, id=223, 572.1375pt x 345.54094pt>
 File: images/jasmine.png Graphic file (type png)
 
 <use images/jasmine.png>
@@ -796,7 +803,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [44 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/mod_afte
 r.png>] [45 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/
-jasmine.png>] <images/travis.png, id=231, 584.93532pt x 222.07968pt>
+jasmine.png>] <images/travis.png, id=232, 584.93532pt x 222.07968pt>
 File: images/travis.png Graphic file (type png)
 
 <use images/travis.png>
@@ -806,14 +813,14 @@ Package pdftex.def Info: images/travis.png used on input line 460.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/framerate.png, id=232, 154.32657pt x 104.64093pt>
+<images/framerate.png, id=233, 154.32657pt x 104.64093pt>
 File: images/framerate.png Graphic file (type png)
 
 <use images/framerate.png>
 Package pdftex.def Info: images/framerate.png used on input line 469.
 (pdftex.def)             Requested size: 128.0387pt x 86.82318pt.
  [46]
-<images/fpsMeasured.png, id=237, 311.66437pt x 214.55156pt>
+<images/fpsMeasured.png, id=238, 311.66437pt x 214.55156pt>
 File: images/fpsMeasured.png Graphic file (type png)
 
 <use images/fpsMeasured.png>
@@ -824,7 +831,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 481--481
 []\OT1/ptm/m/n/10.95 Figure 3.21: |Av-er-age rate per de-
  []
 
-<images/fpsMeasuredBrowsers.png, id=238, 258.21469pt x 213.04594pt>
+<images/fpsMeasuredBrowsers.png, id=239, 258.21469pt x 213.04594pt>
 File: images/fpsMeasuredBrowsers.png Graphic file (type png)
 
 <use images/fpsMeasuredBrowsers.png>
@@ -835,7 +842,7 @@ Package pdftex.def Info: images/fpsMeasuredBrowsers.png used on input line 484.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/final.png, id=239, 1445.4pt x 737.75626pt>
+<images/final.png, id=240, 1445.4pt x 737.75626pt>
 File: images/final.png Graphic file (type png)
  <use images/final.png>
 Package pdftex.def Info: images/final.png used on input line 498.
@@ -864,7 +871,7 @@ Appendix A.
 [56
 
 
-] <images/first.png, id=276, 1312.905pt x 248.42813pt>
+] <images/first.png, id=277, 1312.905pt x 248.42813pt>
 File: images/first.png Graphic file (type png)
 
 <use images/first.png>
@@ -878,7 +885,7 @@ Overfull \hbox (2.8394pt too wide) in paragraph at lines 9--10
 [57
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/first.png>]
- <images/init.pdf, id=281, page=1, 614.295pt x 794.97pt>
+ <images/init.pdf, id=282, page=1, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 1>
@@ -889,7 +896,7 @@ Overfull \hbox (85.3886pt too wide) in paragraph at lines 18--19
 [][] 
  []
 
-<images/init.pdf, id=282, page=2, 614.295pt x 794.97pt>
+<images/init.pdf, id=283, page=2, 614.295pt x 794.97pt>
 File: images/init.pdf Graphic file (type pdf)
 
 <use images/init.pdf, page 2>
@@ -908,7 +915,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
  <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf>] 
 [59 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/init.pdf
->] <images/eval.pdf, id=316, page=1, 597.55246pt x 845.07718pt>
+>] <images/eval.pdf, id=317, page=1, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 1>
@@ -919,7 +926,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 31--32
  [][] 
  []
 
-<images/eval.pdf, id=317, page=2, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=318, page=2, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 2>
@@ -933,7 +940,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 35--36
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=318, page=3, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=319, page=3, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 3>
@@ -947,7 +954,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 39--40
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=319, page=4, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=320, page=4, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 4>
@@ -961,7 +968,7 @@ Overfull \hbox (28.46564pt too wide) in paragraph at lines 43--44
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/eval.pdf, id=320, page=5, 597.55246pt x 845.07718pt>
+<images/eval.pdf, id=321, page=5, 597.55246pt x 845.07718pt>
 File: images/eval.pdf Graphic file (type pdf)
 
 <use images/eval.pdf, page 5>
@@ -982,7 +989,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 >] [62 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/eval.
 pdf>] [63 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images/ev
 al.pdf>] [64 <C:/Users/Craig/Documents/GitHub/Dissertation__Final_Report/images
-/eval.pdf>] <images/second.png, id=376, 1029.8475pt x 411.03563pt>
+/eval.pdf>] <images/second.png, id=377, 1029.8475pt x 411.03563pt>
 File: images/second.png Graphic file (type png)
 
 <use images/second.png>
@@ -1168,7 +1175,7 @@ Overfull \hbox (5.32085pt too wide) in paragraph at lines 277--286
 
 [78
 
-] <images/questionnaire.pdf, id=422, page=1, 598.235pt x 846.16125pt>
+] <images/questionnaire.pdf, id=423, page=1, 598.235pt x 846.16125pt>
 File: images/questionnaire.pdf Graphic file (type pdf)
 
 <use images/questionnaire.pdf, page 1>
@@ -1176,7 +1183,7 @@ Package pdftex.def Info: images/questionnaire.pdf, page1 used on input line 295
 .
 (pdftex.def)             Requested size: 426.79456pt x 512.168pt.
 
-<images/questionnaire.pdf, id=423, page=2, 598.235pt x 846.16125pt>
+<images/questionnaire.pdf, id=424, page=2, 598.235pt x 846.16125pt>
 File: images/questionnaire.pdf Graphic file (type pdf)
 
 <use images/questionnaire.pdf, page 2>
@@ -1201,7 +1208,7 @@ ionnaire.pdf
 pdfTeX warning: pdflatex.EXE (file C:/Users/Craig/Documents/GitHub/Dissertation
 __Final_Report/images/questionnaire.pdf): PDF inclusion: invalid other resource
  which is no dict (key 'ProcSets', type <array>); ignored.
->] <images/questionnaireResults.pdf, id=528, page=1, 598.235pt x 846.16125pt>
+>] <images/questionnaireResults.pdf, id=529, page=1, 598.235pt x 846.16125pt>
 File: images/questionnaireResults.pdf Graphic file (type pdf)
 
 <use images/questionnaireResults.pdf, page 1>
@@ -1209,7 +1216,7 @@ Package pdftex.def Info: images/questionnaireResults.pdf, page1 used on input l
 ine 308.
 (pdftex.def)             Requested size: 426.79456pt x 512.168pt.
 
-<images/questionnaireResults.pdf, id=529, page=2, 598.235pt x 846.16125pt>
+<images/questionnaireResults.pdf, id=530, page=2, 598.235pt x 846.16125pt>
 File: images/questionnaireResults.pdf Graphic file (type pdf)
 
 <use images/questionnaireResults.pdf, page 2>
@@ -1220,7 +1227,7 @@ ine 312.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/questionnaireResults.pdf, id=530, page=3, 598.235pt x 846.16125pt>
+<images/questionnaireResults.pdf, id=531, page=3, 598.235pt x 846.16125pt>
 File: images/questionnaireResults.pdf Graphic file (type pdf)
 
 <use images/questionnaireResults.pdf, page 3>
@@ -1293,11 +1300,11 @@ ux)
 (C:\Users\Craig\Documents\GitHub\Dissertation__Final_Report\Appendix5/appendix5
 .aux)) ) 
 Here is how much of TeX's memory you used:
- 8482 strings out of 495352
- 141307 string characters out of 3183046
+ 8518 strings out of 495352
+ 141778 string characters out of 3183046
  350319 words of memory out of 3000000
- 11381 multiletter control sequences out of 15000+200000
- 30205 words of font info for 65 fonts, out of 3000000 for 9000
+ 11407 multiletter control sequences out of 15000+200000
+ 42169 words of font info for 91 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  44i,12n,46p,1465b,1140s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/
@@ -1312,9 +1319,9 @@ type1/urw/palatino/uplri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
 rw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/ut
 mr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (99 pages, 6751192 bytes).
+Output written on dissertation.pdf (99 pages, 6845949 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
+ 618 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

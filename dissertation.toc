@@ -37,9 +37,10 @@
 \contentsline {section}{\numberline {4.1}Anlaysis and design decisions}{49}
 \contentsline {section}{\numberline {4.2}Application and testing evaluation}{51}
 \contentsline {section}{\numberline {4.3}Project improvements}{52}
-\contentsline {section}{\numberline {4.4}Self-Evaluation}{53}
-\contentsline {section}{\numberline {4.5}Word count}{54}
-\contentsline {section}{\numberline {4.6}Licensing the application}{54}
+\contentsline {section}{\numberline {4.4}Future work}{53}
+\contentsline {section}{\numberline {4.5}Self-Evaluation}{53}
+\contentsline {section}{\numberline {4.6}Word count}{54}
+\contentsline {section}{\numberline {4.7}Licensing the application}{54}
 \contentsline {chapter}{Appendices}{55}
 \contentsline {chapter}{\numberline {A}Background research and analysis}{56}
 \contentsline {section}{\numberline {1.1}Initial project Gantt chart}{57}
