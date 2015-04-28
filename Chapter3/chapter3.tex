@@ -85,6 +85,15 @@ The third feature, which is another to be brought forward ahead of flight path c
 
 In order to have started this feature, another module was added to the architecture named 'TerrainHandler', which was where both lighting and ground was to then have their methods of adding to the canvas. This feature was found to be the shortest of the features, as it only required two simple methods. Rather than passing the renderer canvas object to this module to add the ground and lighting, it was decided to simply make both methods like factories to return the ground and lighting objects to where they were called from. In the case of where this module was called from, the main class where the canvas was created seemed the best place to call each method, as everything to do with setting up the scene could remain together and be easily understood or developed further.
 
+Some refactoring was done here also, including the change from having a grid drawn with threeJS alongside an image to changing the image to have a built in grid. The reasoning for this change was because with a large grid on the scene, the amount of power required to render the scene was too large making it lag. To fix this, a simple edit to the terrain texture image was done by adding a thin black line on each edge of the image. Because each image measures 10 by 10 pixels, the grid remains accurate. Figure~\ref{fig:grid} shows the terrain with grid.
+
+\begin{figure}[h]
+  \centering
+      \includegraphics[width=0.4\textwidth]{images/ground.png}
+  \caption{Grid on top of terrain after editing the image for the terrain texture.}
+  \label{fig:grid}
+\end{figure}
+
 As for testing, by keeping the terrain and lighting in their own module also helped towards testing the new methods. Two very simple tests were made using JSUnit to check the returns of each method, and both were added to the Jasmine instructions under each Github commit through the Travis builds. As with other tests, the test cases can be found in the appendices under appendix D section~\ref{test:lights}. This feature was fairly straight forward to implement and test with help from the three.js documentation site, therefore the feature was done in less time than originally planned.
 
 \begin{table}[h]
@@ -101,11 +110,18 @@ As for testing, by keeping the terrain and lighting in their own module also hel
 \subsubsection{Feature 4- Cameras}
 The final predecessing feature before the creation of OLAN paths that was decided should be ready were the various cameras that will look around the canvas. The initial requirements for cameras was to have two different views: one for navigating around the canvas, and the other for being on-board the flight path. At this stage of the project, creating the second was only possible to a certain extent, because without the construction of the paths yet, getting the location of where the on-board camera should be is not possible. Therefore, for this requirement both cameras were created, with the exception of the on-board camera where functionality is currently restricted. 
 
-To start, another module was created for the 'CameraController'. Because it was best to keep the cameras completely separated from other parts of the application to reduce decoupling, both camera objects were stored in this module and provided get and set methods for calls from other modules. An initiator method was created for use from the main module, to create both camera objects at start up. Both these objects were again available from the three.js library as 'THREE.PerspectiveCamera'. Then by passing the module around to any other modules, it will then be possible to update and retrieve each camera object again. Alongside the camera creation, a controller for changing the angle of view, zoom and co-ordinates was created as another module. 
+To start, another module was created for the 'CameraController'. Because it was best to keep the cameras completely separated from other parts of the application to reduce decoupling, both camera objects were stored in this module and provided get and set methods for calls from other modules. An initiator method was created for use from the main module, to create both camera objects at start up. Both these objects were again available from the three.js library as 'THREE.PerspectiveCamera'. Then by passing the module around to any other modules, it will then be possible to update and retrieve each camera object again. Alongside the camera creation, a controller for changing the angle of view, zoom and co-ordinates was created as another module. Figure~\ref{fig:zoom} shows the entire 5000 by 5000 canvas on maximum zoom-out.
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.7\textwidth]{images/zoom.png}
+  \caption{Canvas from maximum zoom-out of perspective camera.}
+  \label{fig:zoom}
+\end{figure}
 
 This module, which has been called 'CanvasController' as designed in the module diagram, adds event listeners for dragging the mouse around the canvas, keyboard presses to move up and down, and scroll for zooming. Then by getting the new updated values of view-point angles, these are passed back to the camera controller which updates the values of each camera. By repeating this in a render loop in the main module, the updating of cameras is done several times a second, to make movements appear fluid. To help this, the code was redactor several times to ensure that the amount of work done by the browser is as little as possible on each loop of the animation.
 
-As for testing, alike the first feature where usability testing was the primary and sole means of checking the implementation fulfills the feature, JSUnit testing was not used. Usability testing was found the best option here, and results can be found in appendix D section~\ref{test:cameras}. During testing, it was found that there was an issue that when rotating the camera around the canvas, it seemed to always rotate around the point (0,0,0). This meant that navigating the canvas was slightly harder than it should have been. This was fixed though, by simply moving the camera rather than the scene in the canvas. As for the camera that was designed to be as on board view, a model airplane was added to represent the camera so it could be seen on the canvas. Although it does not move yet, the plane loads up at the start of the application and can be placed anywhere on the scene. You can see the plan on the canvas at point (0,0,0) below in figure~\ref{fig:plane}. The plane model is constructed from a JSON file from a page on the web with thousands of free models.
+As for testing, alike the first feature where usability testing was the primary and sole means of checking the implementation fulfills the feature, JSUnit testing was not used. Usability testing was found the best option here, and results can be found in appendix D section~\ref{test:cameras}. During testing, it was found that there was an issue that when rotating the camera around the canvas, it seemed to always rotate around the point (0,0,0). This meant that navigating the canvas was slightly harder than it should have been. This was  though, by simply moving the camera rather than the scene in the canvas. As for the camera that was designed to be as on board view, a model airplane was added to represent the camera so it could be seen on the canvas. Although it does not move yet, the plane loads up at the start of the application and can be placed anywhere on the scene. You can see the plan on the canvas at point (0,0,0) below in figure~\ref{fig:plane}. The plane model is constructed from a JSON file from a page on the web with thousands of free models.
 
 \clearpage
 
@@ -187,7 +203,23 @@ To start this, a final module was created for the handling of JSON files and loc
 	\item Importing from local storage- same, should be automatic when application loads up
 \end{enumerate}
 
-In addition to the requirements that were implemented, it was decided that user should be able to choose whether automatic backup of the entered OLAN would load up at the start of the application. Because of the observer pattern that is being used throughout implementation, it took a very short space of time to add this feature to the HTML handler listener.
+In addition to the requirements that were implemented, it was decided that user should be able to choose whether automatic backup of the entered OLAN would load up at the start of the application. Because of the observer pattern that is being used throughout implementation, it took a very short space of time to add this feature to the HTML handler listener. 
+
+As for the GUI, to ensure a nice clean and well informed interface for importing, both loading bar and progress pop up were added to ensure the users would not be left in the dark about progress of the import of the json file. Figure~\ref{fig:loading} shows the loading of the import, while figure~\ref{fig:loaded} shows the completion pop-up.
+
+\begin{figure}[h!]
+	\centering
+	\parbox{7cm}{
+		\includegraphics[width=6cm]{images/import.png}
+		\caption{Movie-reel shown with minimise button displayed.}
+		\label{fig:loading}}
+	\qquad
+	\begin{minipage}{7cm}
+		\includegraphics[width=6cm]{images/loaded.png}
+		\caption{Movie-reel hidden with display button shown.}
+		\label{fig:loaded}
+	\end{minipage}
+\end{figure}
 
 Testing involved some JSUnit again, where test data was entered and checked against the resulting JSON and local storage objects. The tests can be seen in appendix D section~\ref{test:save}. Up to this point and for future tests, it was ensured that the Travis builds were passing when running all the JSUnit tests through Jasmine. This feature was completed quicker than the allocated time due to the research into Local storage previously, and therefore helped gain back some valuable time for other features.
 
@@ -327,8 +359,10 @@ In addition to the graph shown, the features can be expressed as feature sets in
 \subsection{After-test fixes and developments}
 Before a look at what fixes were done to solve issues found earlier in the iteration stage, developments to do with testing can be mentioned. Since starting using both requireJS and Jasmine, it was noticed that it could be useful to have a helper module where different tests could share set-up or tear down code. The snippet from the test utility module can be found in appendix D section~\ref{test:utils}, and was used where it was required that some GUI elements had to be created before they could be tested using fake event triggers.
 
-Moving onto feature developments, the first which was the most important was the...
-%fix OLAN, smoke trails too!
+Moving onto feature developments, the first which was the most important was the issue concerning the creation of Aresti figures for OLAN entered. Because this issue was the largest and held back quite integral parts of the project, it is important that a comprehensive amount of detail was given, and shown how the issue was debugged. Finding out the main issues and sources of the problem helped in looking for a fix for this part of the application. Although this task is still ongoing, due to the time restraining of both the printing and binding of this report, the final findings and solution if one is created will be created in an appending document which will be placed at the end of this document before the bibliography. Appendix E will contain findings if there are any developments. 
+
+As for the issue itself, what initially was found to be an issue DOOOO THIS!
+
 A small feature that was added from a look and usability view was a button to hide the movie-reel. At times where all 5 slots were taken up from the amount of manoeuvres entered, it could be obstructing to the view. Having the option to minimise the reel was added, thus allowing the user to hide and show it if they so desired. Figure~\ref{fig:minimise} shows the new button which can be used to hide the reel, whilst figure~\ref{fig:maxmimise} shows the ability to make the reel appear again.
 \begin{figure}[h!]
 	\centering
@@ -345,6 +379,7 @@ A small feature that was added from a look and usability view was a button to hi
 \end{figure}
 
 A fix that was added to the application also looking towards the movie-reel was the issue found where when more than 10 manoeuvres were present, then the reel did not scroll onto the next five when the first five had been animated across. This issue has now been addressed, and now correctly shows the next five manoeuvres after animating across the previous five. A flow chart shown in figure~\ref{fig:moves} illustrates how the application knows when to move to the next five manoeuvres.
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\textwidth]{images/reel-flow.png}
@@ -352,12 +387,35 @@ A fix that was added to the application also looking towards the movie-reel was 
 	\label{fig:moves}
 \end{figure}
 
-%parameters OLAN not done
-%check if manoeuvres fit
+A couple of smaller but integral improvements added before this report progressed to the evaluation stage was the addition of both checks to OLAN compatibilities on the scene, and smoke trails. In the OpenAero application discussed in the analysis, it had checks which looked at making sure OLAN entry was only allowed to be added when it was valid. One such check that has been added to this project's application is the ability to generate a warning when the user enters an OLAN manoeuvre which would cause the flight path to pass through the ground. To do this, a check which looked at all the vectors in each flight path made sure that both the x and y value co-ordinates were above zero, or an error was shown. The same foundation element was used as with the save-load message, which appears over the canvas to show the warning as seen in figure~\ref{fig:warnMan}. By crossing off the error, it will not appear again throughout use of the application.  
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/warn.png}
+	\caption{Warning message on entry of OLAN that passes through negative values.}
+	\label{fig:warnMan}
+\end{figure}
+
+The smoke trails were more complicated to create, as after a meeting with the project supervisor, an example of what would be desired of them initially meant that where the aircrafts rotation was upside down the smoke should be red, and gradually become green as the orientation is more stable. The application with this feature added can be seen in figure~\ref{fig:smoke}. In order to implement this, it was required to firstly get the value of the rotation of the vector, and then draw a square fragment of the smoke depending on how close to the required angles to make the smoke red. By multiplying the percentage of closeness to the angles being upside down, the red and green values of a RGB colour could be increased and decreased by multiplying the strength percentage by 255.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/smoke.png}
+	\caption{Smoke trails for mid-flight showing more red as the flight went upside down in a loop.}
+	\label{fig:smoke}
+\end{figure}
 
 A final change performed within the allocated time left was the re-factoring of code. A book that was used for guidance with this was 'Clean Code'~\cite{clean_code} by Robert C. Martin who mentioned that methods should do one thing only, and not be longer than four or five lines. Following this principles, this was performed on the application code, and JSDoc re-compiled.
 
-After all changes were complete, a reconstruction of the module diagram from the design section was possible. The diagram in figure~\ref{fig:mod_after} shows which modules communicate with each other, with the main module initiating a lot of other modules, this has many links. Modules like the htmlHandler were used a lot because many events or actions from the user required the GUI to be updated.
+After all changes were complete, a reconstruction of both the burndown chart from the start of implementation(in figure~\ref{fig:newburndown}) and module diagram from the design section was possible. The diagram in figure~\ref{fig:mod_after} shows which modules communicate with each other, with the main module initiating a lot of other modules, this has many links. Modules like the htmlHandler were used a lot because many events or actions from the user required the GUI to be updated.
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=1\textwidth]{images/burndownnew.png}
+  \caption{Updated burn-down graph with fully implemented features updated. Note, the movie-reel feature was considered complete because using images seemed more practical.}
+  \label{fig:newburndown}
+\end{figure}
+
 \begin{figure}[h!]
   \centering
       \includegraphics[width=1\textwidth]{images/mod_after.png}
@@ -388,14 +446,14 @@ The questionnaires handed out were created using Google forms, to keep the proce
 
 The results of each question can be found in appendix D section~\ref{test:questionnaireResults}. One of the questions that was disagreed with most was the speed at which the application loaded, and this was reflected in two comments alongside this. The main reasoning for this seemed to be that the model aircraft loaded by default looked to be too large to load up. Because most browsers now have the ability to cache objects and images, this should not be a problem for future use of the application once the page is loaded up.
 
+Of course with the current issue of the OLAN not being constructed properly at the time the questionnaires were handed out, the results showed all users disagreed with the question regarding the expected output of OLAN.
+
 Another possible improvement that was found from feedback during the questionnaire stage was how the application could provide better initial first use information. The second question from the results showed how that forty percent of those questioned answered disagree to the easiness of using the application. Suggested by one of the users was to include some form of initial help page or pop-up when loading the page up. 
 
 Other than these two suggestions, there was one which suggested better compatibility with mobile devices. Items such as tablets had too high a resolution to request the mobile page, thus meaning tablets had the desktop version. This meant buttons appeared small and text hard to read. Again, this could be an easy fix, by adding another level to the different sizes the page can set to. More compatibility could be possible with browsers too, with one user reporting that an old version of Safari allowed them to input into the OLAN box before the models were loaded, causing errors. 
 
-Feedback for the rest of the application was good, and it has seemed most users liked features such as the movie reel, which had all ten users saying it was a useful feature. The same result was gained from the speed of the application, with all ten saying the application did not lag. These results provide further detailed evaluation into the final application and can be a basis for the evaluation section of this report.
-
-\section{Implementation and testing review}
-On completion of the process of the tests of the final application, a short review of the methods that was used to create the application can now follow. Starting with the pre-coding tasks that had to be completed, Github was initially set up on the machines the application as going to be created on, followed shortly by the set up of Travis and Grunt which was used later for automatic running of tests. The latest build status can be seen on the repository, and also in figure~\ref{fig:travis}. Once the repository and branch that would used to host the application was set up, Sublime text was used to perform the coding, and was used because of the package compatibility to assist with code formatting. In terms of how long it took to prepare the environment for coding, this took less than a day, including the work blog.
+\section{Testing review}
+On completion of the process of the tests of the final application, a short review of the methods that was used to create the application can now follow. Starting with the pre-coding tasks that had to be completed, Github was initially set up on the machines the application as going to be created on, followed shortly by the set up of Travis and Grunt which was used later for automatic running of tests. The latest build status can be seen on the repository, and also in figure~\ref{fig:travis}. Once the repository and branch that would used to host the application was set up, Sublime text was used to perform the coding, and was used because of the package compatibility to assist with code formatting. In terms of how long it took to prepare the environment for coding and testing, this took less than a day, including the work blog.
 
 \begin{figure}[h!]
   \centering
@@ -403,8 +461,6 @@ On completion of the process of the tests of the final application, a short revi
   \caption{Latest Travis build after a commit, running all the Jasmine tests in the application.}
   \label{fig:travis}
 \end{figure}
-
-This leads up to time management, where the amount of work done in the implementation stage was an important factor. Considering that all features had been started and tested by a week before the stage deadline, progress was kept on top of, and it was ensured that tasks that were taking too long did not affect the rest of the application. An example of some of the issues are ones that came from attempting to create the manoeuvres on the canvas with the OLAN interpretations. The first set back was the interpolation issues, which were fixed by changing the curve inclines. Another setback was the issue with curves not appearing the go in the correct direction, which was again fixed at the end of the implementation. 
 
 Testing mechanisms used a wide selection of methods, from usability tests to unit tests ensuring that while the back-end methods performed the features as efficiently as possible, the front end allowed users to interact with these features easily. By using the FDD iterative approach, and producing this setion of the report alongside each iteration it has meant that the entire application and documentation has been built in the most stable way. Throughout testing the application, it was ensured the performance levels were checked to be fast enough to run on most devices, primarily using a library called stats.js \cite{stats}. This allowed a small frame-rate counter in the corner of the application, which monitored how many frames or iterations of the animation the application achieved each second. Values between 40 and 60 was the aim, and 60 was the value throughout the most heavy work (having lots of manoeuvres being flown). The frame-rate counter was displayed as shown in figure~\ref{fig:framerate} with an example of frame-rate values on different devices in figure~\ref{fig:framerateDevices}.
 

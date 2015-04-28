@@ -10,39 +10,47 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Wire-frame design detailing mobile view of application with navigation bar in minified version.\relax }}{21}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Screenshot of GUI created with Foundation, JQyery and HTML markup.\relax }}{26}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Model of plane loaded up using JSON and three.js object loader. This plane will represent the on-board camera, and fill be the object that will be assigned locations along an OLAN path to show flying the flight plans entered by users.\relax }}{30}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Figure illustrating that where the vector is turning right to complete the diagonal line up, it is becoming flat with the X axis rather than curving to the correct angle.\relax }}{31}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Movie reel overlaying the bottom of the canvas, with some figures loaded after the user typed in a string of OLAN.\relax }}{36}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Burn-down chart of features implemented and tested fully. X axis represents number of features to implement, whilst Y axis shows the date that the features have been implemented by.\relax }}{39}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Feature progress reports for each of the feature sets implemented up to this point in time. The predicted month of completion is shown at the bottom, and tasks where they are not complete and tested fully are ones without a green background.\relax }}{39}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Movie-reel shown with minimise button displayed.\relax }}{40}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Movie-reel hidden with display button shown.\relax }}{40}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Flow chart showing how movie-reel knows when to move.\relax }}{40}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Module diagram showing links between each module at the end of the implementation stage.\relax }}{41}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Screenshot of all Jasmine tests passing in the browser.\relax }}{42}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Latest Travis build after a commit, running all the Jasmine tests in the application.\relax }}{44}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Frame-rate counter shown in bottom right of the application.\relax }}{44}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Average rate per device(Graphics RAM in brackets)\relax }}{45}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Average frame rate per browser (all latest versions of browser on 04/05/2015)\relax }}{45}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Final state of the application, with menus, canvas and movie reel added.\relax }}{46}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Grid on top of terrain after editing the image for the terrain texture.\relax }}{28}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Canvas from maximum zoom-out of perspective camera.\relax }}{29}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Model of plane loaded up using JSON and three.js object loader. This plane will represent the on-board camera, and fill be the object that will be assigned locations along an OLAN path to show flying the flight plans entered by users.\relax }}{30}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Figure illustrating that where the vector is turning right to complete the diagonal line up, it is becoming flat with the X axis rather than curving to the correct angle.\relax }}{31}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Movie-reel shown with minimise button displayed.\relax }}{33}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Movie-reel hidden with display button shown.\relax }}{33}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Movie reel overlaying the bottom of the canvas, with some figures loaded after the user typed in a string of OLAN.\relax }}{37}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Burn-down chart of features implemented and tested fully. X axis represents number of features to implement, whilst Y axis shows the date that the features have been implemented by.\relax }}{40}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Feature progress reports for each of the feature sets implemented up to this point in time. The predicted month of completion is shown at the bottom, and tasks where they are not complete and tested fully are ones without a green background.\relax }}{40}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Movie-reel shown with minimise button displayed.\relax }}{41}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Movie-reel hidden with display button shown.\relax }}{41}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Flow chart showing how movie-reel knows when to move.\relax }}{42}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Warning message on entry of OLAN that passes through negative values.\relax }}{42}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Smoke trails for mid-flight showing more red as the flight went upside down in a loop.\relax }}{43}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Updated burn-down graph with fully implemented features updated. Note, the movie-reel feature was considered complete because using images seemed more practical.\relax }}{43}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Module diagram showing links between each module at the end of the implementation stage.\relax }}{44}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Screenshot of all Jasmine tests passing in the browser.\relax }}{45}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Latest Travis build after a commit, running all the Jasmine tests in the application.\relax }}{47}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Frame-rate counter shown in bottom right of the application.\relax }}{47}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Average rate per device(Graphics RAM in brackets)\relax }}{48}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Average frame rate per browser (all latest versions of browser on 04/05/2015)\relax }}{48}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Final state of the application, with menus, canvas and movie reel added.\relax }}{48}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Initial gantt chart, outline times throughout project activities, to be updated as time passes during the project span.\relax }}{54}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Requirements brief created before a meeting to clarify questions on the initial requirements. The pdf continues onto the next page.\relax }}{55}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces A document created before a second meeting, outlining my current undertsanding of the OLAN language, and how manoeuvres can be constructed from smaller single-element ones.\relax }}{57}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces More detailed Gantt chart, focuses on the implimentation and testing stratedgy of each feature. As you can see, prioritised tasks are the first to be completed.\relax }}{62}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Initial gantt chart, outline times throughout project activities, to be updated as time passes during the project span.\relax }}{57}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Requirements brief created before a meeting to clarify questions on the initial requirements. The pdf continues onto the next page.\relax }}{58}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces A document created before a second meeting, outlining my current undertsanding of the OLAN language, and how manoeuvres can be constructed from smaller single-element ones.\relax }}{60}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces More detailed Gantt chart, focuses on the implimentation and testing stratedgy of each feature. As you can see, prioritised tasks are the first to be completed.\relax }}{65}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces HTML code showing the page is divided into two, one for the canvas, and one for the menu. The 'off-canvas-list' has sub menus that allow more menus to be hidden to the left.\relax }}{65}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces JSON code showing a vertical upline defined by JSON instructions.\relax }}{66}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Snippet of code showing how RequireJS starts the application. The RequireJS library is loaded onto the page, the configuration telling the library the base of the application JavaScript files is set, and then is told to start by running the main.js file.\relax }}{66}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Snippet of code responsible for converting the manoeuvre objects into vectors, allowing the creation of Three.js spline curves.\relax }}{67}
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Code used for checking local storage compatibility.\relax }}{67}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces HTML code showing the page is divided into two, one for the canvas, and one for the menu. The 'off-canvas-list' has sub menus that allow more menus to be hidden to the left.\relax }}{68}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces JSON code showing a vertical upline defined by JSON instructions.\relax }}{69}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Snippet of code showing how RequireJS starts the application. The RequireJS library is loaded onto the page, the configuration telling the library the base of the application JavaScript files is set, and then is told to start by running the main.js file.\relax }}{69}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Snippet of code responsible for converting the manoeuvre objects into vectors, allowing the creation of Three.js spline curves.\relax }}{70}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Code used for checking local storage compatibility.\relax }}{70}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces RequireJS module for allowing test units to share methods providing them with GUI elements before tests. Tear down code removes the elements after each test.\relax }}{69}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces JSUnit code created to test the capabilites of changing the JSON instructions into objects.\relax }}{69}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Checks if objects for both are created at runtime of the application.\relax }}{70}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Unit code checking information is set correctly, and if it can be changed at stored for various animation properties.\relax }}{72}
-\contentsline {figure}{\numberline {D.5}{\ignorespaces JSUnit code for checking flight paths export correctly to JSON and local storage, and check importing back works.\relax }}{73}
-\contentsline {figure}{\numberline {D.6}{\ignorespaces A google forms questionnaire created to allow users to give feedback about the application.\relax }}{76}
-\contentsline {figure}{\numberline {D.7}{\ignorespaces Statistics from the questionnaire results, showing percentages of answers and comments/ suggestions.\relax }}{78}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces RequireJS module for allowing test units to share methods providing them with GUI elements before tests. Tear down code removes the elements after each test.\relax }}{72}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces JSUnit code created to test the capabilites of changing the JSON instructions into objects.\relax }}{72}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Checks if objects for both are created at runtime of the application.\relax }}{73}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Unit code checking information is set correctly, and if it can be changed at stored for various animation properties.\relax }}{75}
+\contentsline {figure}{\numberline {D.5}{\ignorespaces JSUnit code for checking flight paths export correctly to JSON and local storage, and check importing back works.\relax }}{76}
+\contentsline {figure}{\numberline {D.6}{\ignorespaces A google forms questionnaire created to allow users to give feedback about the application.\relax }}{79}
+\contentsline {figure}{\numberline {D.7}{\ignorespaces Statistics from the questionnaire results, showing percentages of answers and comments/ suggestions.\relax }}{81}
+\addvspace {10\p@ }

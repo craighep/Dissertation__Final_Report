@@ -29,13 +29,15 @@ As it can be seen in the section itself, not all features were completed initial
 
 Issues with the manoeuvres that were drawn on the canvas led to some delays in the project, and a decision was taken to move to the next feature implementation meant that some of the features that may have not been done at all if the problem causing task was continued with. Although in FDD practice each feature should be done one at a time, moving on when the previous is complete, by going back to the problem later on but making sure there would be enough time to fix the issue was remaining, gave a better chance of a more complete application.
 
+As mentioned in the implementation stage of this report, although the issue was not fixed at the time of that specific stage, the issue with rotations causing the drawing problem was continually worked on. At the latter stage of this report and following a meeting with the project supervisor, it was decided it would be better to ensure a full report is ready and append any fixes documented extra to the actual printed and binded report. Due to this, the changes after the print date were appended to the end of this report in appendix E. 
+
 There were three primary means of testing during this stage of the project, each of which were chosen were it was felt appropriate. For instance, creating JSUnit tests where the feature was heavily animation based would be sufficient to test the entire feature, so usability tests solved that problem. It was ensured that each feature set had its own tests created, whether it be usability or JSUnit. Because of the use of the Jasmine framework, and linking this up to Travis, it was possible to see if any tests were failing due to refactoring or fixes. By getting alerts on a build failure, it meant the speed in which bug fixing could occur was faster.
 
 The user questionnaire helped to evaluate the completed application and define how well the application met its needs. By creating a questionnaire where only two options were possible, meant that users would be more inclined to reply to the questionnaire quicker. This was true when all handed out were returned the next day, allowing reviewing and charts to be created from the answers. Using Google forms also provided a nice return style of data, allowing easy charts to be made and assumptions created. One key suggestion that appeared from the questionnaires involved the loading time of the application, where the model aircraft seemed too slow.
 
 The parts of the completed application that should be highlighted as meeting or not meeting major requirements:
 \begin{itemize}
-	\item OLAN to 3D manoeuvres- At first problematic, but after testing and fixes, the main functionality here was complete (parameters for individual OLAN was not possible though).
+	\item OLAN to 3D manoeuvres- These caused problamtic, and were debugged thouroughly, but due to time constraints, were not fixed within the projet time, unless mentioned within appendix E. Parameters for individual OLAN was not possible though moving the start position was.
 	\item The ability to animate the flight- Manoeuvres were linkable, and could be animated along with the aircraft model. The ability to pause and change speed was also an added feature.
 	\item A scene with cameras, lighting and various options- All of these were implemented, with added features such as on-board view for flights.
 	\item Added features such as the movie-reel- Although only pictures, this feature proved useful to users, and gave a live update to the the progress of animation.
@@ -49,6 +51,10 @@ The parts of the completed application that should be highlighted as meeting or 
 Now that the walk-through of the project has been completed, each detailed with issues highlighted, there are some possible improvements that could have been made to the way the project was done if it was started again knowing what happened the first time.
 
 The first would be to research more into both how to construct shapes in Three.js, so that issues that were found when creating manoeuvres could have been avoided. An alternative approach could have also been to change libraries all together. By looking for similar libraries to Three.js, a library may be present that could have made the task much easier or simpler. 
+
+A feature that would have been useful to be added, but due to time constraints did not happen, was an extension of the warnings when entering OLAN, which was to check for none-compatible OLAN. For example, an OLAN move which exited facing upside down followed by another upwards orientated manouevre should not be allowed. 
+
+%paraemters were never done!
 
 It could have also been that the size of the feature sets during implementation were too large, and could have been broken down more. By having smaller feature sets, then the application would have suffered less if one fell behind schedule. This would be because project time would have been divided more fairly, and would have been easier to track.
 
@@ -65,7 +71,11 @@ There were a lot of applications I had not been involved with before too, such a
 
 The way I handled problems during implementation meant I could not let the rest of the application suffer from issues with certain features such as generating the manoeuvre shapes. However, I did have to decide at the time how much project time I should have used before moving on. In all, I believe I handled the pressure well, and ensured that even though the feature was complete, it did not push back the rest of the project. I then set myself personal aims to complete each feature ahead of time in order to create time to fix previous problems.
 
+One rather large issue which I will learn from for any project I do in the future is to ensure binding and printing are taken away from project time from the beginning, to make sure absolute deadlines are earlier to allow for the report to contain everything that is required. By having the issue I had generating OLAN shapes tested me on how to tackle an issue that that the report relied on, causing me to ask advice from my supervisor on whether to stop development as soon as the report is printed, or whether to carry on with code even though the report would not reflect it. By printing a separate document, later, this was a clever way of getting round such an issue.
+
 Overall, I have learned a great deal of time management skills during this project, and due to this being the first time I have put FDD to practice, it has given me the chance to explore new means of creating an application and seeing how effective performing all the stages is different orders can effect how project time is divided up. Since this report was written in-line with the project, I found it very easy to pick out important and relevant topics for each section, as they were 'fresh on the mind'.
+
+If I were to perform a project like this again though, I may stick to a more strict waterfall methodology method of working, to ensure that work that needs to be done is concentrated on more and given more flexibility on time. I would have also been happier testing the entire application after development, as this could have meant time could have been spent more on developing rather than forcing myself to break away every so often and test.
 
 \section{Word count}
 It was important to keep the word count of the document under the project requirements limit. I found this to be manageable by keeping track of each section's word count throughout the time writing this report. The count of this report can be seen in~\ref{tbl:count}.
@@ -79,3 +89,7 @@ It was important to keep the word count of the document under the project requir
 	\end{tabular}
 	\label{tbl:count}
 \end{table}
+
+\section{Licensing the application}
+
+As found in Appendix B, all the libraries used in this project were created with the MIT license allowing me to also license my application under this. The reasoning for this is because I plan on both continuing work on the application, and allowing others to do the same, or even branching off and creating their own take on the application. I believe in freely spreading code and functionality, and if my application can help any one else in any needs they may have, the MIT license allows this. The full license can be found in the 'LICENSE' file in the source code folder or in appendix B section 2.
