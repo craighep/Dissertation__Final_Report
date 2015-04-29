@@ -361,19 +361,63 @@ Before a look at what fixes were done to solve issues found earlier in the itera
 
 Moving onto feature developments, the first which was the most important was the issue concerning the creation of Aresti figures for OLAN entered. Because this issue was the largest and held back quite integral parts of the project, it is important that a comprehensive amount of detail was given, and shown how the issue was debugged. Finding out the main issues and sources of the problem helped in looking for a fix for this part of the application. Although this task is still ongoing, due to the time restraining of both the printing and binding of this report, the final findings and solution if one is created will be created in an appending document which will be placed at the end of this document before the bibliography. Appendix E will contain findings if there are any developments. 
 
-As for the issue itself, to explain it best see figures~\ref{fig:happening} and~\ref{fig:supposed} to see what happens currently when one loop is added after another 
+As for the issue itself, to explain it best see figures~\ref{fig:happening} and~\ref{fig:supposed} to see what happens currently when one loop is added after another. It can be seen that the second loop currently spans the outside of the first, which is not what is desired at this stage. Rather, the second loop should be a set length (in this case 10 pixels) to the right, and be the same size as the first. This issue also seems to extend to any scenerio where a flat piece of of the path is followed by another change of direction, which then appears to not go into the correct form desired. 
 
-%%%%%%%%%%%%                                                                                                                          %%%%%%%%%%%%
-%%%%%%%%%%%%                                                                                                                          %%%%%%%%%%%%
-%%%%%%%%%%%%                                                                                                                          %%%%%%%%%%%%
-%%%%%%%%%%%%                                                                                                                          %%%%%%%%%%%%      
-%%%%%%%%%%%%                                            LAST PIECE OF SHIT TO DO!                                                     %%%%%%%%%%%%
-%%%%%%%%%%%%                                                                                                                          %%%%%%%%%%%% 
-%%%%%%%%%%%%                                                                                                                          %%%%%%%%%%%%    
-%%%%%%%%%%%%                                                                                                                          %%%%%%%%%%%%
-%%%%%%%%%%%%                                            THEN FREEDOM!                                                                 %%%%%%%%%%%% 
+\begin{figure}[h!]
+  \centering
+  \parbox{7cm}{
+    \includegraphics[width=7cm]{images/actual.png}
+    \caption{Movie-reel shown with minimise button displayed.}
+    \label{fig:happening}}
+  \qquad
+  \begin{minipage}{7cm}
+    \includegraphics[width=7cm]{images/supposed.png}
+    \caption{Movie-reel hidden with display button shown.}
+    \label{fig:supposed}
+  \end{minipage}
+\end{figure}
 
-A small feature that was added from a look and usability view was a button to hide the movie-reel. At times where all 5 slots were taken up from the amount of manoeuvres entered, it could be obstructing to the view. Having the option to minimise the reel was added, thus allowing the user to hide and show it if they so desired. Figure~\ref{fig:minimise} shows the new button which can be used to hide the reel, whilst figure~\ref{fig:maxmimise} shows the ability to make the reel appear again.
+There seem to be three primary issues found with the example shown above:
+\begin{itemize}
+  \item The angle at which the second loop begins to start its upward direction is larger than the first.
+  \item On each iteration of the second curves incline, the amount spanned between vector points is larger than the first.
+  \item The center point on the second loop looks the same as the first, resulting in the loop to end lower than the planned point, becuase the loop is larger.
+\end{itemize}
+
+With these three issues in mind, the next step was to perform further tests to see if this affected different angles, amount of angles, and the length of straight lines. The first test carried out was to replace the 15 degrees used for curving with 90 degree turns, to see if a square loop would act the same. This test can be seen in figure~\ref{fig:square}, and shows again the same issue as before with round loops.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/square.png}
+  \caption{Flow chart showing how movie-reel knows when to move.}
+  \label{fig:square}
+\end{figure}
+
+By also printing out points and drawing vector points on the canvas as it is rendered, it can be seen that interpolation is not the culprit for this issue. Figure~\ref{fig:vectorPoints} shows that before interpolation, the points reflect the loops perfectly and are not being changed by interpolation.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/vectorPoints.png}
+  \caption{Flow chart showing how movie-reel knows when to move.}
+  \label{fig:vectorPoints}
+\end{figure}
+
+The next step taken to try and find the reasoning behind the bug was to console log an array of different values concerning rotation, vector positioning, and distances between vectors. The first of which was added so that each angle between every vector was printed. The result of this found that on each iteration, the same amount of rotation on the X axis was being performed each time. This led to the thought that perhaps the amount of rotation was building up on each loop, resulting in a larger rotation at the start of a new loop.
+
+Checking the distance between points on the Z axis was next, because mentioned earlier the points looked further away from each other. To do this, Pythagoras' theorem was applied between points, by getting the square of the difference in X values, adding this to the square of the difference in Y values, and then performing the square root of the result.
+
+\begin{figure}
+  \begin{lstlisting}
+  var x = updateVector.x - prevVector.x;
+  var y = updateVector.y - prevVector.y;
+  var total =  (x * x)+ (y*y);
+  console.log(Math.sqrt(total));
+  \end{lstlisting}
+\end{figure}
+
+The results showed that the length between each vector seemed to exponentially increase on each additional loop. And becuase the distance of the Z axis was currently being hard written into each maneouvre, the only reasoning for this part of the issue was that 
+
+Moving on from this issue and back to other changes, a small feature that was added from a look and usability view was a button to hide the movie-reel. At times where all 5 slots were taken up from the amount of manoeuvres entered, it could be obstructing to the view. Having the option to minimise the reel was added, thus allowing the user to hide and show it if they so desired. Figure~\ref{fig:minimise} shows the new button which can be used to hide the reel, whilst figure~\ref{fig:maxmimise} shows the ability to make the reel appear again.
 \begin{figure}[h!]
 	\centering
 	\parbox{7cm}{
