@@ -24,7 +24,7 @@
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Flow chart showing how movie-reel knows when to move.\relax }}{42}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Warning message on entry of OLAN that passes through negative values.\relax }}{42}
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Smoke trails for mid-flight showing more red as the flight went upside down in a loop.\relax }}{43}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Updated burn-down graph with fully implemented features updated. Note, the movie-reel feature was considered complete because using images seemed more practical.\relax }}{43}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Updated burn-down graph with fully implemented features updated. Note, the movie-reel feature was considered complete because using images seemed more practical.\relax }}{44}
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Module diagram showing links between each module at the end of the implementation stage.\relax }}{44}
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Screenshot of all Jasmine tests passing in the browser.\relax }}{45}
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Latest Travis build after a commit, running all the Jasmine tests in the application.\relax }}{47}
@@ -53,4 +53,9 @@
 \contentsline {figure}{\numberline {D.5}{\ignorespaces JSUnit code for checking flight paths export correctly to JSON and local storage, and check importing back works.\relax }}{76}
 \contentsline {figure}{\numberline {D.6}{\ignorespaces A google forms questionnaire created to allow users to give feedback about the application.\relax }}{79}
 \contentsline {figure}{\numberline {D.7}{\ignorespaces Statistics from the questionnaire results, showing percentages of answers and comments/ suggestions.\relax }}{81}
+\contentsline {figure}{\numberline {D.8}{\ignorespaces Canvas after load, with plan placed in center of canvas.\relax }}{84}
+\contentsline {figure}{\numberline {D.9}{\ignorespaces First level menu open.\relax }}{84}
+\contentsline {figure}{\numberline {D.10}{\ignorespaces Second level menu open showing animation options.\relax }}{85}
+\contentsline {figure}{\numberline {D.11}{\ignorespaces OLAN entered and drawn onto the canvas with no flight, with the path shown.\relax }}{85}
+\contentsline {figure}{\numberline {D.12}{\ignorespaces A flight taking place, with the path invisible, only shown by smoke trails.(This manoeuvre shows a loop, or "o" in OLAN)\relax }}{86}
 \addvspace {10\p@ }
