@@ -47,8 +47,15 @@
  \begin{quotation}\noindent Explanation of observer design pattern in
   JavaScript, with code examples. \end{quotation}
 
+\bibitem{blogPost}
+{Craig Heptinstall}, ``{GUI, Complete control package, plane graphics},''
+  \url{http://www.craighep.co.uk/blog/?p=120}, 2008, last checked: 22nd
+  February 2015.
+ \begin{quotation}\noindent A blog post relating to changing GUI, reporting on
+  work done and hours put into the feature. \end{quotation}
+
 \bibitem{blog}
-{Craig Heptinstall}, ``{Dissertation Blog | Craig Heptinstall},''
+------, ``{Dissertation Blog | Craig Heptinstall},''
   \url{http://www.craighep.co.uk/blog/}, 2015, last checked: 19th April 2015.
  \begin{quotation}\noindent Dissertation updates blog made using wordpress
   \end{quotation}

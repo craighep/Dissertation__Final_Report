@@ -28,7 +28,7 @@ The first feature that was to be implemented was less of a feature but more a re
 \item Provide a help and about page that overlays the application web page
 \end{itemize}
 
-The first task that was performed to create this task was to create a minimalistic layout matching the wire frames designed in chapter 2 of this report. The first action performed was to get the latest Foundation \cite{foundation} css library file, and then to create a layout using the features from the library. The navigation was made using the 'navbar' markup, which helps stick the navigation bar to the top of the page, alongside automatically changing into a mobile pull down menu once the screen size reaches a certain amount. Then using other mark-ups provided by Foundation I was able to float the various navigation bar buttons to their respective sides. 
+The first task that was performed to create this task was to create a minimalistic layout matching the wire frames designed in chapter 2 of this report. The first action performed was to get the latest Foundation \cite{foundation} css library file, and then to create a layout using the features from the library. The navigation was made using the 'navbar' markup, which helps stick the navigation bar to the top of the page, alongside automatically changing into a mobile pull down menu once the screen size reaches a certain amount.
 
 The most important part of the GUI which has now been implemented is the off-canvas feature menus. The code for this can be seen in section~\ref{code:canvas} of appendix C. The way that Foundation helps create this off canvas option is by wrapping everything in one div, then separating the menu and content in half. When a user then pushes the designated button with the wrapper id, the entirety of the wrapper is pushed to the right to display the menu and less of the content. The about and help pages were also added successfully, with the addition of another library called Modernizer. This library allowed for a clean effect to overlay the information on top of the web-page.
 
@@ -43,7 +43,7 @@ Once the basic HTML elements with relevant ID tags were added to the index page 
 
 As planned, Sass was used to style specific elements of the page, such as the width of the OLAN input box, and to change text placement on the help and about pages. Setting up the Sass with Koala was easy, and upon each save of the file, CSS was compiled. 
 
-One final mention goes to the creation of the WebGL canvas. To create the basic canvas, only a few lines of JavaScript was needed. To create it, a renderer was created using  the 'THREE.WebGLRenderer' object. Becuase this is early in the implementation stage, it was created without RequireJS as the archetcure is only one JS file. Once the object is created, JQuery appends the '.domElement' of this object to the container div created in the basic HTML. For future features, the WebGLRenderer object with be where any objects such as flight paths are added to.
+One final mention goes to the creation of the WebGL canvas. To create the basic canvas, only a few lines of JavaScript was needed. To create it, a renderer was created using  the 'THREE.WebGLRenderer' object. Because this is early in the implementation stage, it was created without RequireJS as the architecture is only one JS file. Once the object is created, JQuery appends the '.domElement' of this object to the container div created in the basic HTML. For future features, the WebGLRenderer object will be where any objects such as flight paths are added to.
 
 As for testing this feature, because very little JavaScript was required to be coded here, usability testing was the only way to check for the completion of what was required. The test results can be found in Appendix D under section~\ref{test:canvas}. Overall, this feature has been made to 100\% of the requirements laid out, and matches the design very well. Therefore, the progress tracker for this feature can be shown as:
 
@@ -83,7 +83,7 @@ Like the last feature, no changes from the original design were performed, resul
 \subsubsection{Feature 3- Creating a scene with terrain and lighting}
 The third feature, which is another to be brought forward ahead of flight path creation is the terrain and lighting effects. The reason for creating this before the OLAN construction is the same as creating the canvas, because without an area to see where the paths are drawn onto, the effects of that feature will be hard to test if it is working. Especially terrain, where the need for this is to see where the X axis of 0 will be. Without this, when implementing checks such as if the path would hit the ground would be harder to test. Again, the three.js library was of great use here, especially with built in methods to allow for lighting to be added.
 
-In order to have started this feature, another module was added to the architecture named 'TerrainHandler', which was where both lighting and ground was to then have their methods of adding to the canvas. This feature was found to be the shortest of the features, as it only required two simple methods. Rather than passing the renderer canvas object to this module to add the ground and lighting, it was decided to simply make both methods like factories to return the ground and lighting objects to where they were called from. In the case of where this module was called from, the main class where the canvas was created seemed the best place to call each method, as everything to do with setting up the scene could remain together and be easily understood or developed further.
+In order to have started this feature, another module was added to the architecture named 'TerrainHandler', which was where both lighting and ground was to then have their methods of adding to the canvas. This feature was found to be the shortest of the features, as it only required two simple methods. Rather than passing the renderer canvas object to this module to add the ground and lighting, it was decided to simply make both methods like factories to return the ground and lighting objects to where they were called from.
 
 Some refactoring was done here also, including the change from having a grid drawn with threeJS alongside an image to changing the image to have a built in grid. The reasoning for this change was because with a large grid on the scene, the amount of power required to render the scene was too large making it lag. To fix this, a simple edit to the terrain texture image was done by adding a thin black line on each edge of the image. Because each image measures 10 by 10 pixels, the grid remains accurate. Figure~\ref{fig:grid} shows the terrain with grid.
 
@@ -179,7 +179,11 @@ Although there was an issue implementing the drawing of flight paths in the prev
 
 With each curve being stored in an array object, meant if linked up manoeuvres were being animated along, once one manoeuvre had reach 100\% for getting points along its line, the next manoeuvre would be selected from the array and the get-point percentage reset back to 0. By doing this, a flawless smooth cross between manoeuvres has been achieved.
 
-As for testing this feature, more JSUnit was used, but mainly for the getters and setters of the controller. For instance, checking that the pause, play and speed setters worked correctly required simple test cases that checked the private variables holding the values were correct. Alongside these tests, usability tests were also completed because of the new buttons in the GUI representing the play/pause and speed options. Both tests can be found in the appendices under section~\ref{test:animation}. Following the completion of this feature, the progress can be reported on. 
+As for testing this feature, more JSUnit was used, but mainly for the getters and setters of the controller. For instance, checking that the pause, play and speed setters worked correctly required simple test cases that checked the private variables holding the values were correct. Alongside these tests, usability tests were also completed because of the new buttons in the GUI representing the play/pause and speed options. Both tests can be found in the appendices under section~\ref{test:animation}. 
+
+In addition to this part of the report, a blog post was created to also reflect the changes, and can be found on the dissertation blog~\cite{blogPost}.
+
+Following the completion of this feature, the progress can be reported on. 
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|p{7cm}|}
@@ -239,7 +243,7 @@ As for any future development, it was mentioned that it could have been better t
 \subsubsection{Feature 8- Adding further GUI options}
 By this point, quite a few of the features installed into the application had the possibility of allowing the user to interact with a range of different parameters and options. For example, with the spline curves, there was options such as the smoothness of interpolation (the number of extrusion segments), options to switch between cameras, and the scale of flight paths amongst others. As with other options that had been added along the way with some features such as speed and auto-save, linking each to the GUI was fairly straight forward, with all that being required was to create an ID for the HTML element to be an option, and then listen for a change or click using the HTML handler, finally calling its respected method.  
 
-The options that were added can be shown in a comprehensive list with reasonings for each.
+The options that were added can be shown in a comprehensive list with reasons for each.
 \begin{itemize}
 	\item Extrusion segments- The smoothness of paths, where the more the user chooses the more segments each curve is made of. This can help users with less powerful systems, as there is less to render with less segments.
 	\item On-board view- an option that changes the current camera view to one where the user will view the canvas environment from the point of the view of the front of the aircraft. This gives the feel of actually flying the OLAN path, which could be helpful to users such as pilots who may want to learn a routine from the inside of a cockpit.
@@ -404,20 +408,29 @@ By also printing out points and drawing vector points on the canvas as it is ren
 
 The next step taken to try and find the reasoning behind the bug was to console log an array of different values concerning rotation, vector positioning, and distances between vectors. The first of which was added so that each angle between every vector was printed. The result of this found that on each iteration, the same amount of rotation on the X axis was being performed each time. This led to the thought that perhaps the amount of rotation was building up on each loop, resulting in a larger rotation at the start of a new loop.
 
-Checking the distance between points on the Z axis was next, because mentioned earlier the points looked further away from each other. To do this, Pythagoras' theorem was applied between points, by getting the square of the difference in X values, adding this to the square of the difference in Y values, and then performing the square root of the result.
+Checking the distance between points on the Z axis was next, because mentioned earlier the points looked further away from each other. To do this, Pythagoras' theorem was applied between points, by getting the square of the difference in X values, adding this to the square of the difference in Y values, and then performing the square root of the result. The way this was added to the current code can be shown in figure~\ref{code:pythagoras}.
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{lstlisting}
   var x = updateVector.x - prevVector.x;
   var y = updateVector.y - prevVector.y;
   var total =  (x * x)+ (y*y);
   console.log(Math.sqrt(total));
   \end{lstlisting}
+  \caption{Code placed after each iteration of creating a vector point from each instruction for manoeuvres.}
+  \label{code:pythagoras}
 \end{figure}
 
-The results showed that the length between each vector seemed to exponentially increase on each additional loop. And becuase the distance of the Z axis was currently being hard written into each maneouvre, the only reasoning for this part of the issue was that 
+The results showed that the length between each vector seemed to exponentially increase on each additional loop. And because the distance of the Z axis was currently being hard written into each maneouvre, the only reasoning for this part of the issue was that the rotation of a vector was being based off of the initial starting vector, and not the starting vector of the second loop, which began (in this case) 10 pixels to the right. 
+
+An initial thought solution for this issue was to simply subtract the starting vector of the second loop from the first initial vector of the flight, and then rotate around the vector that would be calculated. Upon searching through various sources on the threeJS site, examples helped to provide code on how to do this, but this ended up unsuccessful.
+
+There were points during this stage where attempts were made to use different libraries (such as glMatrix) to generate separate matrices for each vector and rotate around them rather than the previous vector. Due to time constraints though, this part of the project fell short. Although at this stage of the project the problem remains, see Appendix E for any fixes completed to this during the latter stages of the the project where time will allow.
 
 Moving on from this issue and back to other changes, a small feature that was added from a look and usability view was a button to hide the movie-reel. At times where all 5 slots were taken up from the amount of manoeuvres entered, it could be obstructing to the view. Having the option to minimise the reel was added, thus allowing the user to hide and show it if they so desired. Figure~\ref{fig:minimise} shows the new button which can be used to hide the reel, whilst figure~\ref{fig:maxmimise} shows the ability to make the reel appear again.
+
+\clearpage
+
 \begin{figure}[h!]
 	\centering
 	\parbox{7cm}{
@@ -454,7 +467,7 @@ The smoke trails were more complicated to create, as after a meeting with the pr
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{images/smoke.png}
+	\includegraphics[width=0.8\textwidth]{images/smoke.png}
 	\caption{Smoke trails for mid-flight showing more red as the flight went upside down in a loop.}
 	\label{fig:smoke}
 \end{figure}
@@ -465,14 +478,14 @@ After all changes were complete, a reconstruction of both the burndown chart fro
 
 \begin{figure}[h!]
   \centering
-      \includegraphics[width=1\textwidth]{images/burndownnew.png}
+      \includegraphics[width=0.8\textwidth]{images/burndownnew.png}
   \caption{Updated burn-down graph with fully implemented features updated. Note, the movie-reel feature was considered complete because using images seemed more practical.}
   \label{fig:newburndown}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-      \includegraphics[width=1\textwidth]{images/mod_after.png}
+      \includegraphics[width=0.9\textwidth]{images/mod_after.png}
   \caption{Module diagram showing links between each module at the end of the implementation stage.}
   \label{fig:mod_after}
 \end{figure}
@@ -484,19 +497,21 @@ A great advantage of Jasmine is the ability to run the tests in both the browser
 
 \begin{figure}[h!]
   \centering
-      \includegraphics[width=0.9\textwidth]{images/jasmine.png}
+      \includegraphics[width=1\textwidth]{images/jasmine.png}
   \caption{Screenshot of all Jasmine tests passing in the browser.}
   \label{fig:jasmine}
 \end{figure}
 
+\clearpage
+
 \section{User testing}
-Now that the allocated time for implementation and testing has been used, testing to see how the application meets its initial requirements is important. Along with the JSUnit tests and the usability tests that were created, user testing is a means of testing ideal for front-end applications where the usability of the application is paramount. There are a few routes that can be taken to perform user testing, one of which is a questionnaire. Rather than allowing the user to send feedback through suggestions or pros and cons, a quicker and more direct way to check the applications fulfills its needs is to provide the user with a set of direct questions, allowing them to state if they agree or disagree. One example could be whether the colour scheme is suitable. By getting the amount agreeing above a certain threshold percentage wise would help show that the colour scheme aspect was correctly applied.
+Along with the JSUnit tests and the usability tests that were created, user testing is a means of testing ideal for front-end applications where the usability of the application is paramount. There are a few routes that can be taken to perform user testing, one of which is a questionnaire. Rather than allowing the user to send feedback through suggestions or pros and cons, a quicker and more direct way to check the applications fulfils its needs is to provide the user with a set of direct questions, allowing them to state if they agree or disagree.
 
 The questionnaire, which can be found in the appendices under appendix D, section~\ref{test:questionnaire} provided ten agree or disagree questions that the users had to answer. Upon creating the questionnaire, these were then handed to a pick of 10 users, in technical and none-technical backgrounds to ensure a good spread of opinion. If just technical users were chosen, they might not see the application from the aspect of GUI as much as a standard user, as some users may find it harder to find things on a page. Things such as menus for instance may not be as visible and easy to find for users who have not seen similar layouts in the past, and it is important that they application has a level of being self-documenting.
 
 The users selected to perform the testing comprised of eight students and two none-students. It was also ensured that half the students selected were not on a computer science related degree to ensure a wider set of technological knowledge. For each test, a brief description of the application was given to the user explaining the purpose and requirements of the project and application, followed by the user trying out different features in the GUI and canvas. With one of the users selected actually being a pilot, mean that finding out if the application is actually useful for its purpose, and if the users the application was created for actually found it useful and easy to use.
 
-The questionnaires handed out were created using Google forms, to keep the process on the Internet for easier tracking. Because this form of testing was not planned out originally on the Gantt chart at the start of this project, it was important that the tests were carried out as quickly as possible, so Google forms were sent out and asked they could be returned a couple of days later. Indeed all ten questionnaires were returned, each of which all answers had been answered. This was very successful, as it then allowed the results to be analysed properly, and graphs created.
+The questionnaires handed out were created using Google forms, to keep the process on the Internet for easier tracking. Because this form of testing was not planned out originally on the Gantt chart at the start of this project, it was important that the tests were carried out as quickly as possible, so Google forms were sent out and asked they could be returned a couple of days later. 
 
 The results of each question can be found in appendix D section~\ref{test:questionnaireResults}. One of the questions that was disagreed with most was the speed at which the application loaded, and this was reflected in two comments alongside this. The main reasoning for this seemed to be that the model aircraft loaded by default looked to be too large to load up. Because most browsers now have the ability to cache objects and images, this should not be a problem for future use of the application once the page is loaded up.
 
@@ -507,7 +522,7 @@ Another possible improvement that was found from feedback during the questionnai
 Other than these two suggestions, there was one which suggested better compatibility with mobile devices. Items such as tablets had too high a resolution to request the mobile page, thus meaning tablets had the desktop version. This meant buttons appeared small and text hard to read. Again, this could be an easy fix, by adding another level to the different sizes the page can set to. More compatibility could be possible with browsers too, with one user reporting that an old version of Safari allowed them to input into the OLAN box before the models were loaded, causing errors. 
 
 \section{Testing review}
-On completion of the process of the tests of the final application, a short review of the methods that was used to create the application can now follow. Starting with the pre-coding tasks that had to be completed, Github was initially set up on the machines the application as going to be created on, followed shortly by the set up of Travis and Grunt which was used later for automatic running of tests. The latest build status can be seen on the repository, and also in figure~\ref{fig:travis}. Once the repository and branch that would used to host the application was set up, Sublime text was used to perform the coding, and was used because of the package compatibility to assist with code formatting. In terms of how long it took to prepare the environment for coding and testing, this took less than a day, including the work blog.
+Starting with the pre-coding tasks that had to be completed, Github was initially set up on the machines the application as going to be created on, followed shortly by the set up of Travis and Grunt which was used later for automatic running of tests. The latest build status can be seen on the repository, and also in figure~\ref{fig:travis}. Once the repository and branch that would used to host the application was set up, Sublime text was used to perform the coding, and was used because of the package compatibility to assist with code formatting. In terms of how long it took to prepare the environment for coding and testing, this took less than a day, including the work blog.
 
 \begin{figure}[h!]
   \centering
@@ -516,7 +531,7 @@ On completion of the process of the tests of the final application, a short revi
   \label{fig:travis}
 \end{figure}
 
-Testing mechanisms used a wide selection of methods, from usability tests to unit tests ensuring that while the back-end methods performed the features as efficiently as possible, the front end allowed users to interact with these features easily. By using the FDD iterative approach, and producing this setion of the report alongside each iteration it has meant that the entire application and documentation has been built in the most stable way. Throughout testing the application, it was ensured the performance levels were checked to be fast enough to run on most devices, primarily using a library called stats.js \cite{stats}. This allowed a small frame-rate counter in the corner of the application, which monitored how many frames or iterations of the animation the application achieved each second. Values between 40 and 60 was the aim, and 60 was the value throughout the most heavy work (having lots of manoeuvres being flown). The frame-rate counter was displayed as shown in figure~\ref{fig:framerate} with an example of frame-rate values on different devices in figure~\ref{fig:framerateDevices}.
+Throughout testing the application, it was ensured the performance levels were checked to be fast enough to run on most devices, primarily using a library called stats.js \cite{stats}. This allowed a small frame-rate counter in the corner of the application, which monitored how many frames or iterations of the animation the application achieved each second. Values between 40 and 60 was the aim, and 60 was the value throughout the most heavy work (having lots of manoeuvres being flown). The frame-rate counter was displayed as shown in figure~\ref{fig:framerate} with an example of frame-rate values on different devices in figure~\ref{fig:framerateDevices}.
 
 \begin{figure}[h]
   \centering
@@ -543,19 +558,19 @@ In addition to monitoring the stats from the display whilst developing, it was a
 
 It can be seen that there was one anomaly result, in the desktop with the same graphics memory as the laptop had a lower rate. This could be explained by a number of factors, one such way could be that the processor that would be executing the code may have been slower on the desktop. This was another consideration that ensured optimal coding methods.
 
-There are possible improvements that could have been made to this stage of the project though, one such would have been sticking to a much stricter order to features, by creating the base logic to produce the manoeuvres first, rather than getting the GUI up and running. This though would have slowed down testing, so there are weigh-ups both ways.
-
 It was found that during the implantation stage, by regularly updating both the work blog \cite{blog} and the JSDoc, both were useful guides for reviewing the completed application. The JSDoc which can be found in the 'docs' folder in the code structure contains descriptions of every method in the application, and has a good front-end website to view each. Although it was key to ensure that all code contained in the application was self-explanatory to a certain amount for future developments, it was important to include a description above each method to help any readers know the general layout and workings of the application. 
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.8\textwidth]{images/final.png}
-	\caption{Final state of the application, with menus, canvas and movie reel added.}
-	\label{fig:final}
-\end{figure}
+\clearpage
 
 The completed application which can be seen in figure~\ref{fig:final} can be found and viewed on-line at: \url{http://craighep.github.io/Dissertation/}
 
 For other screenshots of the application in its current completed form, see appendix D section~\ref{sec:complete}.
 
 And all documentation including the JSDoc can be viewed on-line at: \url{http://craighep.github.io/Dissertation/docs/}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/final.png}
+  \caption{Final state of the application, with menus, canvas and movie reel added.}
+  \label{fig:final}
+\end{figure}

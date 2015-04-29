@@ -4,70 +4,70 @@
 \contentsline {subsection}{\numberline {1.2.1}OLAN and Aresti interpretations}{4}
 \contentsline {subsection}{\numberline {1.2.2}Application functionality interpretations}{6}
 \contentsline {section}{\numberline {1.3}Process}{8}
-\contentsline {chapter}{\numberline {2}Design}{10}
-\contentsline {section}{\numberline {2.1}Overall Architecture}{10}
-\contentsline {section}{\numberline {2.2}Back-end logic and design}{11}
-\contentsline {subsection}{\numberline {2.2.1}Design patterns}{11}
-\contentsline {subsection}{\numberline {2.2.2}Module diagram}{12}
-\contentsline {subsection}{\numberline {2.2.3}Object structure and storage formatting}{16}
-\contentsline {subsection}{\numberline {2.2.4}Naming conventions}{18}
-\contentsline {section}{\numberline {2.3}User Interface}{18}
-\contentsline {subsection}{\numberline {2.3.1}GUI Use-case}{18}
-\contentsline {subsection}{\numberline {2.3.2}CSS and wire-frame design}{20}
-\contentsline {section}{\numberline {2.4}Planned use of services}{22}
-\contentsline {chapter}{\numberline {3}Implementation \& Testing}{24}
-\contentsline {section}{\numberline {3.1}FDD project approach}{24}
-\contentsline {subsection}{\numberline {3.1.1}Iterative Implementation}{25}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Feature 1- Create a basic GUI}{25}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Feature 2- Convert OLAN and Aresti to JSON form}{27}
-\contentsline {subsubsection}{\numberline {3.1.1.3}Feature 3- Creating a scene with terrain and lighting}{27}
-\contentsline {subsubsection}{\numberline {3.1.1.4}Feature 4- Cameras}{29}
-\contentsline {subsubsection}{\numberline {3.1.1.5}Feature 5- Construction of 3D paths from OLAN}{30}
-\contentsline {subsubsection}{\numberline {3.1.1.6}Feature 6- Animate OLAN flight path}{32}
-\contentsline {subsubsection}{\numberline {3.1.1.7}Feature 7- Exporting and importing routines}{33}
-\contentsline {subsubsection}{\numberline {3.1.1.8}Feature 8- Adding further GUI options}{34}
-\contentsline {subsubsection}{\numberline {3.1.1.9}Feature 9- Flight 'movie reel'}{35}
-\contentsline {subsubsection}{\numberline {3.1.1.10}Feature 10- Parameterisation of OLAN input}{38}
-\contentsline {section}{\numberline {3.2}Final status and progress}{39}
-\contentsline {subsection}{\numberline {3.2.1}After-test fixes and developments}{40}
-\contentsline {section}{\numberline {3.3}Jasmine testing}{45}
+\contentsline {chapter}{\numberline {2}Design}{9}
+\contentsline {section}{\numberline {2.1}Overall Architecture}{9}
+\contentsline {section}{\numberline {2.2}Back-end logic and design}{10}
+\contentsline {subsection}{\numberline {2.2.1}Design patterns}{10}
+\contentsline {subsection}{\numberline {2.2.2}Module diagram}{11}
+\contentsline {subsection}{\numberline {2.2.3}Object structure and storage formatting}{15}
+\contentsline {subsection}{\numberline {2.2.4}Naming conventions}{17}
+\contentsline {section}{\numberline {2.3}User Interface}{17}
+\contentsline {subsection}{\numberline {2.3.1}GUI Use-case}{17}
+\contentsline {subsection}{\numberline {2.3.2}CSS and wire-frame design}{19}
+\contentsline {section}{\numberline {2.4}Planned use of services}{21}
+\contentsline {chapter}{\numberline {3}Implementation \& Testing}{23}
+\contentsline {section}{\numberline {3.1}FDD project approach}{23}
+\contentsline {subsection}{\numberline {3.1.1}Iterative Implementation}{24}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Feature 1- Create a basic GUI}{24}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Feature 2- Convert OLAN and Aresti to JSON form}{25}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Feature 3- Creating a scene with terrain and lighting}{26}
+\contentsline {subsubsection}{\numberline {3.1.1.4}Feature 4- Cameras}{27}
+\contentsline {subsubsection}{\numberline {3.1.1.5}Feature 5- Construction of 3D paths from OLAN}{29}
+\contentsline {subsubsection}{\numberline {3.1.1.6}Feature 6- Animate OLAN flight path}{31}
+\contentsline {subsubsection}{\numberline {3.1.1.7}Feature 7- Exporting and importing routines}{32}
+\contentsline {subsubsection}{\numberline {3.1.1.8}Feature 8- Adding further GUI options}{33}
+\contentsline {subsubsection}{\numberline {3.1.1.9}Feature 9- Flight 'movie reel'}{34}
+\contentsline {subsubsection}{\numberline {3.1.1.10}Feature 10- Parameterisation of OLAN input}{37}
+\contentsline {section}{\numberline {3.2}Final status and progress}{38}
+\contentsline {subsection}{\numberline {3.2.1}After-test fixes and developments}{39}
+\contentsline {section}{\numberline {3.3}Jasmine testing}{46}
 \contentsline {section}{\numberline {3.4}User testing}{47}
 \contentsline {section}{\numberline {3.5}Testing review}{48}
-\contentsline {chapter}{\numberline {4}Evaluation}{52}
-\contentsline {section}{\numberline {4.1}Anlaysis and design decisions}{52}
-\contentsline {section}{\numberline {4.2}Application and testing evaluation}{54}
-\contentsline {section}{\numberline {4.3}Project improvements}{55}
-\contentsline {section}{\numberline {4.4}Future work}{56}
-\contentsline {section}{\numberline {4.5}Self-Evaluation}{56}
-\contentsline {section}{\numberline {4.6}Word count}{57}
-\contentsline {section}{\numberline {4.7}Licensing the application}{57}
-\contentsline {chapter}{Appendices}{58}
-\contentsline {chapter}{\numberline {A}Background research and analysis}{59}
-\contentsline {section}{\numberline {1.1}Initial project Gantt chart}{60}
-\contentsline {section}{\numberline {1.2}Inital requirements analysis}{61}
-\contentsline {section}{\numberline {1.3}OLAN understandings}{63}
-\contentsline {section}{\numberline {1.4}Revised FDD Gantt chart}{68}
-\contentsline {chapter}{\numberline {B}Third-Party Code, Libraries and tools}{69}
-\contentsline {section}{\numberline {2.1}Libraries and licenses}{69}
-\contentsline {section}{\numberline {2.2}MIT license}{70}
-\contentsline {chapter}{\numberline {C}Code samples}{71}
-\contentsline {section}{\numberline {3.1}Off-canvas HTML code, showing how menus are hidden }{71}
-\contentsline {section}{\numberline {3.2}JSON OLAN instructions example}{72}
-\contentsline {section}{\numberline {3.3}RequireJS setup code}{72}
-\contentsline {section}{\numberline {3.4}Converting JSON representations into vectors}{73}
-\contentsline {section}{\numberline {3.5}Using local storage to export scenarios}{73}
-\contentsline {chapter}{\numberline {D}Application tests}{74}
-\contentsline {section}{\numberline {4.1}Usability testing for the GUI front-end}{74}
-\contentsline {section}{\numberline {4.2}Test utility code for creating GUI before testing}{75}
-\contentsline {section}{\numberline {4.3}Test Unit code for converting JSON to manoeuvre instruction object}{75}
-\contentsline {section}{\numberline {4.4}Test Unit code for checking lights and ground are created successfully}{76}
-\contentsline {section}{\numberline {4.5}Usability testing for cameras}{77}
-\contentsline {section}{\numberline {4.6}Test Unit code for animation controller getters and setters}{78}
-\contentsline {section}{\numberline {4.7}Test Unit code for checking import and export to JSON/ local storage functionality}{79}
-\contentsline {section}{\numberline {4.8}Usability testing for GUI options}{80}
-\contentsline {section}{\numberline {4.9}Usability testing providing parameters between OLAN}{81}
-\contentsline {section}{\numberline {4.10}User questionnaire}{82}
-\contentsline {section}{\numberline {4.11}User questionnaire results}{84}
-\contentsline {section}{\numberline {4.12}Application screenshots}{87}
-\contentsline {chapter}{\numberline {E}Post-Report changes}{90}
-\contentsline {chapter}{Annotated Bibliography}{93}
+\contentsline {chapter}{\numberline {4}Evaluation}{51}
+\contentsline {section}{\numberline {4.1}Anlaysis and design decisions}{51}
+\contentsline {section}{\numberline {4.2}Application and testing evaluation}{52}
+\contentsline {section}{\numberline {4.3}Project improvements}{53}
+\contentsline {section}{\numberline {4.4}Future work}{54}
+\contentsline {section}{\numberline {4.5}Self-Evaluation}{54}
+\contentsline {section}{\numberline {4.6}Word count}{56}
+\contentsline {section}{\numberline {4.7}Licensing the application}{56}
+\contentsline {chapter}{Appendices}{57}
+\contentsline {chapter}{\numberline {A}Background research and analysis}{58}
+\contentsline {section}{\numberline {1.1}Initial project Gantt chart}{59}
+\contentsline {section}{\numberline {1.2}Inital requirements analysis}{60}
+\contentsline {section}{\numberline {1.3}OLAN understandings}{62}
+\contentsline {section}{\numberline {1.4}Revised FDD Gantt chart}{67}
+\contentsline {chapter}{\numberline {B}Third-Party Code, Libraries and tools}{68}
+\contentsline {section}{\numberline {2.1}Libraries and licenses}{68}
+\contentsline {section}{\numberline {2.2}MIT license}{69}
+\contentsline {chapter}{\numberline {C}Code samples}{70}
+\contentsline {section}{\numberline {3.1}Off-canvas HTML code, showing how menus are hidden }{70}
+\contentsline {section}{\numberline {3.2}JSON OLAN instructions example}{71}
+\contentsline {section}{\numberline {3.3}RequireJS setup code}{71}
+\contentsline {section}{\numberline {3.4}Converting JSON representations into vectors}{72}
+\contentsline {section}{\numberline {3.5}Using local storage to export scenarios}{72}
+\contentsline {chapter}{\numberline {D}Application tests}{73}
+\contentsline {section}{\numberline {4.1}Usability testing for the GUI front-end}{73}
+\contentsline {section}{\numberline {4.2}Test utility code for creating GUI before testing}{74}
+\contentsline {section}{\numberline {4.3}Test Unit code for converting JSON to manoeuvre instruction object}{74}
+\contentsline {section}{\numberline {4.4}Test Unit code for checking lights and ground are created successfully}{75}
+\contentsline {section}{\numberline {4.5}Usability testing for cameras}{76}
+\contentsline {section}{\numberline {4.6}Test Unit code for animation controller getters and setters}{77}
+\contentsline {section}{\numberline {4.7}Test Unit code for checking import and export to JSON/ local storage functionality}{78}
+\contentsline {section}{\numberline {4.8}Usability testing for GUI options}{79}
+\contentsline {section}{\numberline {4.9}Usability testing providing parameters between OLAN}{80}
+\contentsline {section}{\numberline {4.10}User questionnaire}{81}
+\contentsline {section}{\numberline {4.11}User questionnaire results}{83}
+\contentsline {section}{\numberline {4.12}Application screenshots}{86}
+\contentsline {chapter}{\numberline {E}Post-Report changes}{89}
+\contentsline {chapter}{Annotated Bibliography}{92}
