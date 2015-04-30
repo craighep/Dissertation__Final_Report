@@ -1,12 +1,12 @@
 \chapter{Implementation \& Testing}
-Following from the analysis and design of the application, it is now possible to start implementing the features produced from investigating the requirements earlier in the project. As it was already stated that the project would be running under an FDD means, rather than having two sections (one for implementation and one for testing), this section will show each feature one-by-one. By following this scheme, the feature priority list will be utalised to ensure the more important features are done first, and that they fulfill their function before moving on. However, this should not hide the fact that issues are possible when implementing and any such issues could hamper further development. If this does occur, the issues and reasons will be explained, followed by what judgment was made to continue on with development of the application as a whole.
+Following from the analysis and design of the application, it is now possible to start implementing the features produced from investigating the requirements earlier in the project. As it was already stated that the project would be running under an FDD means, rather than having two sections (one for implementation and one for testing), this section will show each feature one-by-one. By following this scheme, the feature priority list will be utilised to ensure the more important features are done first, and that they fulfil their function before moving on. However, this should not hide the fact that issues are possible when implementing and any such issues could hamper further development. If this does occur, the issues and reasons will be explained, followed by what judgment was made to continue on with development of the application as a whole.
 
 \section{FDD project approach}
 As mentioned, the feature driven development methodology will now shape the approach that is taken to create each feature. Although design has already been completed for all features, there are still elements to each iteration that should be outlined before proceeding. The best way to plan this is to give a brief list of steps that will be performed in each iteration. This is as follows:
 
 \begin{enumerate}
 \item Give a re-cap on the requirements of the feature
-\item Provide a walk through of implementation (with code samples)
+\item Provide a walkthrough of implementation (with code samples)
 \item Show tests used (JSUnit, usability tests) and results
 \item Describe and differences with the feature and original design
 \item If there are any issues, describe and give explanations
@@ -43,7 +43,7 @@ Once the basic HTML elements with relevant ID tags were added to the index page 
 
 As planned, Sass was used to style specific elements of the page, such as the width of the OLAN input box, and to change text placement on the help and about pages. Setting up the Sass with Koala was easy, and upon each save of the file, CSS was compiled. 
 
-One final mention goes to the creation of the WebGL canvas. To create the basic canvas, only a few lines of JavaScript was needed. To create it, a renderer was created using  the 'THREE.WebGLRenderer' object. Because this is early in the implementation stage, it was created without RequireJS as the architecture is only one JS file. Once the object is created, JQuery appends the '.domElement' of this object to the container div created in the basic HTML. For future features, the WebGLRenderer object will be where any objects such as flight paths are added to.
+One final mention goes to the creation of the WebGL canvas. To create the basic canvas, only a few lines of JavaScript was needed. To create it, a renderer was created using the 'THREE.WebGLRenderer' object. Because this is early in the implementation stage, it was created without RequireJS as the architecture is only one JS file. Once the object is created, JQuery appends the '.domElement' of this object to the container div created in the basic HTML. For future features, the WebGLRenderer object will be where any objects such as flight paths are added to.
 
 As for testing this feature, because very little JavaScript was required to be coded here, usability testing was the only way to check for the completion of what was required. The test results can be found in Appendix D under section~\ref{test:canvas}. Overall, this feature has been made to 100\% of the requirements laid out, and matches the design very well. Therefore, the progress tracker for this feature can be shown as:
 
@@ -59,7 +59,7 @@ As for testing this feature, because very little JavaScript was required to be c
 \textbf{Feature overall progress: 100\%}
 
 \subsubsection{Feature 2- Convert OLAN and Aresti to JSON form}
-The second feature, which was of high importance to the rest of the application was to create OLAN interpreted JSON which would give instructions on how to construct each manoeuvre. Because this was quite thoroughly planned and then designed how each instruction was going to broken down, the time designated for this task felt generous. Simply using the template created in the design, it was possible to fill in each instruction part by part through each OLAN manoeuvre. An example of some instructions can be seen in Appendix C in section~\ref{code:jsonmoves}.
+The second feature, which was of high importance to the rest of the application was to create OLAN interpreted JSON which would give instructions on how to construct each manoeuvre. Because this was quite thoroughly planned and then designed how each instruction was going to be broken down, the time designated for this task felt generous. Simply using the template created in the design, it was possible to fill in each instruction part by part through each OLAN manoeuvre. An example of some instructions can be seen in Appendix C in section~\ref{code:jsonmoves}.
 
 The only time consuming part of this feature was the shear amount of different manoeuvres that had to be converted. For this reason, not every OLAN letter was created. The reason for this is because some moves are possible to be created from others, so further in development, more will be possible to be added. 
 
@@ -74,7 +74,7 @@ Like the last feature, no changes from the original design were performed, resul
 \hline
 \textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
 12-03-2015     & 16-03-2015   & 5 Days            & 80\%             & JSON created to represent most manoeuvres, for that reason it is not an exact 100\& progress. JavaScript code and RequirejS functionality added to support the rest of the application. \\ \hline
-17-03-2015     & 18-03-2015   & 2 Days            & 100\%             & JSUnit tests created and passed successfully, showing JSON matches up with manouvre array object.\\ \hline
+17-03-2015     & 18-03-2015   & 2 Days            & 100\%             & JSUnit tests created and passed successfully, showing JSON matches up with manoeuvre array object.\\ \hline
 \end{tabular}
 \end{table}
 
@@ -108,7 +108,7 @@ As for testing, by keeping the terrain and lighting in their own module also hel
 \textbf{Feature overall progress: 100\%}
 
 \subsubsection{Feature 4- Cameras}
-The final predecessing feature before the creation of OLAN paths that was decided should be ready were the various cameras that will look around the canvas. The initial requirements for cameras was to have two different views: one for navigating around the canvas, and the other for being on-board the flight path. At this stage of the project, creating the second was only possible to a certain extent, because without the construction of the paths yet, getting the location of where the on-board camera should be is not possible. Therefore, for this requirement both cameras were created, with the exception of the on-board camera where functionality is currently restricted. 
+The penultimate feature before the creation of OLAN paths that was decided should be ready were the various cameras that will look around the canvas. The initial requirements for cameras was to have two different views: one for navigating around the canvas, and the other for being on-board the flight path. At this stage of the project, creating the second was only possible to a certain extent, because without the construction of the paths yet, getting the location of where the on-board camera should be is not possible. Therefore, for this requirement both cameras were created, with the exception of the on-board camera where functionality is currently restricted. 
 
 To start, another module was created for the 'CameraController'. Because it was best to keep the cameras completely separated from other parts of the application to reduce decoupling, both camera objects were stored in this module and provided get and set methods for calls from other modules. An initiator method was created for use from the main module, to create both camera objects at start up. Both these objects were again available from the three.js library as 'THREE.PerspectiveCamera'. Then by passing the module around to any other modules, it will then be possible to update and retrieve each camera object again. Alongside the camera creation, a controller for changing the angle of view, zoom and co-ordinates was created as another module. Figure~\ref{fig:zoom} shows the entire 5000 by 5000 canvas on maximum zoom-out.
 
@@ -121,7 +121,7 @@ To start, another module was created for the 'CameraController'. Because it was 
 
 This module, which has been called 'CanvasController' as designed in the module diagram, adds event listeners for dragging the mouse around the canvas, keyboard presses to move up and down, and scroll for zooming. Then by getting the new updated values of view-point angles, these are passed back to the camera controller which updates the values of each camera. By repeating this in a render loop in the main module, the updating of cameras is done several times a second, to make movements appear fluid. To help this, the code was redactor several times to ensure that the amount of work done by the browser is as little as possible on each loop of the animation.
 
-As for testing, alike the first feature where usability testing was the primary and sole means of checking the implementation fulfills the feature, JSUnit testing was not used. Usability testing was found the best option here, and results can be found in appendix D section~\ref{test:cameras}. During testing, it was found that there was an issue that when rotating the camera around the canvas, it seemed to always rotate around the point (0,0,0). This meant that navigating the canvas was slightly harder than it should have been. This was  though, by simply moving the camera rather than the scene in the canvas. As for the camera that was designed to be as on board view, a model airplane was added to represent the camera so it could be seen on the canvas. Although it does not move yet, the plane loads up at the start of the application and can be placed anywhere on the scene. You can see the plan on the canvas at point (0,0,0) below in figure~\ref{fig:plane}. The plane model is constructed from a JSON file from a page on the web with thousands of free models.
+As for testing, alike the first feature where usability testing was the primary and sole means of checking the implementation fulfils the feature, JSUnit testing was not used. Usability testing was found the best option here, and results can be found in appendix D section~\ref{test:cameras}. During testing, it was found that there was an issue that when rotating the camera around the canvas, it seemed to always rotate around the point (0,0,0). This meant that navigating the canvas was slightly harder than it should have been. This was  though, by simply moving the camera rather than the scene in the canvas. As for the camera that was designed to be as on board view, a model airplane was added to represent the camera so it could be seen on the canvas. Although it does not move yet, the plane loads up at the start of the application and can be placed anywhere on the scene. You can see the plan on the canvas at point (0,0,0) below in figure~\ref{fig:plane}. The plane model is constructed from a JSON file from a page on the web with thousands of free models.
 
 \clearpage
 
@@ -148,11 +148,11 @@ The progress of the task is shown below. This feature was done exactly to its re
 \subsubsection{Feature 5- Construction of 3D paths from OLAN}
 The most important feature, drawing shapes onto the canvas using the instructions read in from JSON files was next to be implemented. The main requirement here was to draw smooth shapes that match the Aresti shapes as accurately as possible, also bearing in mind that they should be linkable.
 
-Using the array of maneouvre objects imported from JSON in the first feature implemented, creating shapes based on these was a matter of building up an array of vectors with each new vector being copied from the previous and then having the next instruction take effect on it. To do this, under a new module 'ManouevreController', a method was created that firstly found which manouvre was to be built, then loop through the instructions of that manouevre creating it vector-by-vector. The means in which each manoeuvre is constructed from the OLAN JSON can be seen in appendix C section~\ref{code:jsonmovesJS}. On each iteration, once the amount in each direction (x,y,z) has been found, these values are applied to a new vector with values copied from the previous one in the array.
+Using the array of manoeuvre objects imported from JSON in the first feature implemented, creating shapes based on these was a matter of building up an array of vectors with each new vector being copied from the previous and then having the next instruction take effect on it. To do this, under a new module 'ManouevreController', a method was created that firstly found which manoeuvre was to be built, then loop through the instructions of that manoeuvre creating it vector-by-vector. The means in which each manoeuvre is constructed from the OLAN JSON can be seen in appendix C section~\ref{code:jsonmovesJS}. On each iteration, once the amount in each direction (X, Y, Z) has been found, these values are applied to a new vector with values copied from the previous one in the array.
 
-Once vectors were created, they were passed to a three.js object which was a spline curve. A spline curve is one that interpolates along all its points to create a smooth shape. Once points are added to this object, it can then be added to the canvas. Upon initial usability testing of this, it was found that many of the joins between points were well-off center, due to the interpolation being too large. This was down to the fact that with each turn instruction being a 45 degree angle, meant that the change was too sharp from a straight to curved line, so the straight line was affected too much. To fix this, by dividing up the 45 degree into smaller pieces meant that interpolation was needed much less, therefore the curves appeared smoother and had much less effect on any predecessing straight lines.
+Once vectors were created, they were passed to a three.js object which was a spline curve. A spline curve is one that interpolates along all its points to create a smooth shape. Once points are added to this object, it can then be added to the canvas. Upon initial usability testing of this, it was found that many of the joins between points were well-off centre, due to the interpolation being too large. This was down to the fact that with each turn instruction being a 45 degree angle, meant that the change was too sharp from a straight to curved line, so the straight line was affected too much. To fix this, by dividing up the 45 degree into smaller pieces meant that interpolation was needed much less, therefore the curves appeared smoother and had much less effect on any previous straight lines.
 
-Another big issue that appeared during testing was that any manoeuvres that had a change in angle through a turn always seemed to revert back to a straight line, meaning the rest of the manoeuvre was out of sync and did not look correct. This was an especially time-consuming bug, and a example of it can be seen in figure~\ref{fig:issue}. Because finding out the problem and attempting to fix it was eating away at other feature time, the issue was left for the time being, in order to complete other key features outlined in the requirements. In order to ensure this issue would not remain at the end of the project, a strict time limit was set on the next features to allow for a good amount of time to fix the issue here.
+Another big issue that appeared during testing was that any manoeuvres that had a change in angle through a turn always seemed to revert back to a straight line, meaning the rest of the manoeuvre was out of sync and did not look correct. This was an especially time-consuming bug, and an example of it can be seen in figure~\ref{fig:issue}. Because finding out the problem and attempting to fix it was eating away at other feature time, the issue was left for the time being, in order to complete other key features outlined in the requirements. In order to ensure this issue would not remain at the end of the project, a strict time limit was set on the next features to allow for a good amount of time to fix the issue here.
 
 \begin{figure}[h]
   \centering
@@ -201,28 +201,28 @@ The last of the primary features planned for the application was the saving and 
 
 To start this, a final module was created for the handling of JSON files and local storage, and this was then linked up to the HTML handler module to get the user's current OLAN input value. Four methods were required for this:
 \begin{enumerate}
-	\item Exporting to JSON- This method makes a simple JSON file with one object contained ("OLAN" : olan string)
-	\item Importing from JSON- Allowing selection of a user file from the browser, and selecting the OLAN from it, then entering this into the input box to be rendered.
-	\item Exporting to local storage- The same format as the JSON, but saving in the browser. See appendix C section~\ref{code:localStorage}.
-	\item Importing from local storage- same, should be automatic when application loads up
+  \item Exporting to JSON- This method makes a simple JSON file with one object contained ("OLAN" : olan string)
+  \item Importing from JSON- Allowing selection of a user file from the browser, and selecting the OLAN from it, then entering this into the input box to be rendered.
+  \item Exporting to local storage- The same format as the JSON, but saving in the browser. See appendix C section~\ref{code:localStorage}.
+  \item Importing from local storage- same, should be automatic when application loads up
 \end{enumerate}
 
 In addition to the requirements that were implemented, it was decided that user should be able to choose whether automatic backup of the entered OLAN would load up at the start of the application. Because of the observer pattern that is being used throughout implementation, it took a very short space of time to add this feature to the HTML handler listener. 
 
-As for the GUI, to ensure a nice clean and well informed interface for importing, both loading bar and progress pop up were added to ensure the users would not be left in the dark about progress of the import of the json file. Figure~\ref{fig:loading} shows the loading of the import, while figure~\ref{fig:loaded} shows the completion pop-up.
+As for the GUI, to ensure a nice clean and well informed interface for importing, both loading bar and progress pop up were added to ensure the users would not be left in the dark about progress of the import of the JSON file. Figure~\ref{fig:loading} shows the loading of the import, while figure~\ref{fig:loaded} shows the completion pop-up.
 
 \begin{figure}[h!]
-	\centering
-	\parbox{7cm}{
-		\includegraphics[width=6cm]{images/import.png}
-		\caption{Movie-reel shown with minimise button displayed.}
-		\label{fig:loading}}
-	\qquad
-	\begin{minipage}{7cm}
-		\includegraphics[width=6cm]{images/loaded.png}
-		\caption{Movie-reel hidden with display button shown.}
-		\label{fig:loaded}
-	\end{minipage}
+  \centering
+  \parbox{7cm}{
+    \includegraphics[width=6cm]{images/import.png}
+    \caption{Movie-reel shown with minimise button displayed.}
+    \label{fig:loading}}
+  \qquad
+  \begin{minipage}{7cm}
+    \includegraphics[width=6cm]{images/loaded.png}
+    \caption{Movie-reel hidden with display button shown.}
+    \label{fig:loaded}
+  \end{minipage}
 \end{figure}
 
 Testing involved some JSUnit again, where test data was entered and checked against the resulting JSON and local storage objects. The tests can be seen in appendix D section~\ref{test:save}. Up to this point and for future tests, it was ensured that the Travis builds were passing when running all the JSUnit tests through Jasmine. This feature was completed quicker than the allocated time due to the research into Local storage previously, and therefore helped gain back some valuable time for other features.
@@ -245,10 +245,10 @@ By this point, quite a few of the features installed into the application had th
 
 The options that were added can be shown in a comprehensive list with reasons for each.
 \begin{itemize}
-	\item Extrusion segments- The smoothness of paths, where the more the user chooses the more segments each curve is made of. This can help users with less powerful systems, as there is less to render with less segments.
-	\item On-board view- an option that changes the current camera view to one where the user will view the canvas environment from the point of the view of the front of the aircraft. This gives the feel of actually flying the OLAN path, which could be helpful to users such as pilots who may want to learn a routine from the inside of a cockpit.
-	\item Scale- The scale of all the OLAN paths drawn, defaulted at 1, but can be increased in multiples. Useful if the user wants to fit more onto the canvas, or wants to get a larger better view of a move.
-	\item Radius segments- The initial line that is drawn to show the manouevre may be changed to have more sides. For example, the default being 2 means a flat ribbon is drawn. 1 would be a single line, whilst 0 would make the path invisible. This would then allow the user to have an aircraft fly the path without any shapes behind it.
+  \item Extrusion segments- The smoothness of paths, where the more the user chooses the more segments each curve is made of. This can help users with less powerful systems, as there is less to render with less segments.
+  \item On-board view- an option that changes the current camera view to one where the user will view the canvas environment from the point of the view of the front of the aircraft. This gives the feel of actually flying the OLAN path, which could be helpful to users such as pilots who may want to learn a routine from the inside of a cockpit.
+  \item Scale- The scale of all the OLAN paths drawn, defaulted at 1, but can be increased in multiples. Useful if the user wants to fit more onto the canvas, or wants to get a larger better view of a move.
+  \item Radius segments- The initial line that is drawn to show the manoeuvre may be changed to have more sides. For example, the default being 2 means a flat ribbon is drawn. 1 would be a single line, whilst 0 would make the path invisible. This would then allow the user to have an aircraft fly the path without any shapes behind it.
 \end{itemize}
 
 An additional GUI feature that was added here was the check for the loading of the OLAN JSON file before activating the input box in the navigation bar. As mentioned in design, this box should not be editable until the application is fully loaded, so a method was created in the HTML handler to activate the box when needed. This method was called by the camera controller module once the model aircraft was loaded, as this was the last and largest file to load.
@@ -269,9 +269,9 @@ As with any GUI interface features, usability testing was the best option here, 
 \subsubsection{Feature 9- Flight 'movie reel'}
 The movie reel feature was one that would be added if there was enough remaining time, though in this case it was decided that it would be implemented to a set time limit. The aim of the reel would be to show the user what manoeuvre is currently being flown in the animation, by having images or the manoeuvre from the OLAN input box converted to simple 2D Aresti, and then shown along a reel with current progress across them in relation to the entire flight. To start this, it was firstly considered that using the logic from the manoeuvre controller that built flight paths could be used to the same effect for drawing the movie reel figures. 
 
-Upon starting this though, it was found that many aspects of the feature would take too much time to implement, and that they could cause performance issues for the user. The first of these was that if the application was going to draw mini figures at the bottom of the page in a fixed location, it would mean having to create a set of mini-canvases to interact with, rather than using the main canvas and drawing at the bottom of it. Each figure would thus need its own canvas, and after so many are added, this can dramatically affect the browser's performance. Another issue foudn when looking how to create the reel was the complex style of Aresti figures required. For example, creating arrows to represent rolls, and for annotations to be generated in the correct places alongside curves would require detailed mechanics in the back-end in order to produce them. This and the first issue was decided would take up too much development time, thus pushing back the remaining features left to fix and implement. Therefore a compromise was made, where the reel has a range of images of the Aresti figures loaded and put in place alongside each other. These images have already been created using the OpenAero application, so saving these to a folder in the application was easy, and each was saved with the name of the OLAN letter. 
+Upon starting this though, it was found that many aspects of the feature would take too much time to implement, and that they could cause performance issues for the user. The first of these was that if the application was going to draw mini figures at the bottom of the page in a fixed location, it would mean having to create a set of mini-canvases to interact with, rather than using the main canvas and drawing at the bottom of it. Each figure would thus need its own canvas, and after so many are added, this can dramatically affect the browser's performance. Another issue found when looking how to create the reel was the complex style of Aresti figures required. For example, creating arrows to represent rolls, and for annotations to be generated in the correct places alongside curves would require detailed mechanics in the back-end in order to produce them. This and the first issue was decided would take up too much development time, thus pushing back the remaining features left to fix and implement. Therefore a compromise was made, where the reel has a range of images of the Aresti figures loaded and put in place alongside each other. These images have already been created using the OpenAero application, so saving these to a folder in the application was easy, and each was saved with the name of the OLAN letter. 
 
-The movie reel was incorporated into the HTML handler, as this was a dom-element related item and required JQuery to manipulate the space at the bottom of the canvas. Then, added to the listeners in the HTML handler file was an event where when the user enters an OLAN letter, and this is found in the manoeuvres array (to ensure it is a real OLAN notation), an image representing the Aresti figure with the letter for the filename was loaded into a div floated at the bottom of the page where it was appended. Although this means of creating the figure was not what was initially planned, due to time constraints this means of creating the feature ensured it was done as quickly as possible, but also to a good standard of presentation that fit well with the rest of the application. It can be seen in figure~\ref{fig:movie} the reel with some figures loaded up, with the current animation progress highlighted over the manouevres.
+The movie reel was incorporated into the HTML handler, as this was a dom-element related item and required JQuery to manipulate the space at the bottom of the canvas. Then, added to the listeners in the HTML handler file was an event where when the user enters an OLAN letter, and this is found in the manoeuvres array (to ensure it is a real OLAN notation), an image representing the Aresti figure with the letter for the filename was loaded into a div floated at the bottom of the page where it was appended. Although this means of creating the figure was not what was initially planned, due to time constraints this means of creating the feature ensured it was done as quickly as possible, but also to a good standard of presentation that fit well with the rest of the application. It can be seen in figure~\ref{fig:movie} the reel with some figures loaded up, with the current animation progress highlighted over the manoeuvres.
 
 \clearpage 
 
@@ -296,17 +296,17 @@ Figure~\ref{fig:movie} also shows the animation progress, which was achieved by 
 \textbf{Feature overall progress: 75\%}
 
 \subsubsection{Feature 10- Parameterisation of OLAN input}
-The final feature that was added to the implementation Gantt chart was the one that would allow users to enter both parameters to OLAN notation (such as roll amount, length of entry and decent or others), and to tell the manouevre controller to move the start location of the next manoeuvre so many co-ordinates along the X or Y axis. Current progress on this feature after moving on in this stage of the project was that the second part functioned, allowing users to enter elements to move the start position of the following maneouvres. However, as with some other features being implemented, it was felt that the time required to add the various prefixes and postfixes for each and every OLAN shape was too consuming on the overall project time. As with features where it was taking too long for specific parts, this will also be left in accordance with how the Gantt chart stands for time left for implementing and testing. The function for calculating the parameters was added besides the existing method that reads input from the OLAN box, then creating vectors to create a path between a previous and next manoeuvre.
+The final feature that was added to the implementation Gantt chart was the one that would allow users to enter both parameters to OLAN notation (such as roll amount, length of entry and decent or others), and to tell the manoeuvre controller to move the start location of the next manoeuvre so many co-ordinates along the X or Y axis. Current progress on this feature after moving on in this stage of the project was that the second part functioned, allowing users to enter elements to move the start position of the following manoeuvres. However, as with some other features being implemented, it was felt that the time required to add the various prefixes and postfixes for each and every OLAN shape was too consuming on the overall project time. As with features where it was taking too long for specific parts, this will also be left in accordance with how the Gantt chart stands for time left for implementing and testing. The function for calculating the parameters was added besides the existing method that reads input from the OLAN box, then creating vectors to create a path between a previous and next manoeuvre.
 
-For the part of testing the half of the feature that worked, usability testing was the best approach here. In appendix D section~\ref{test:parameters} the test table can be found, and shows the feature passing for this aspect. By attempting to keep the workings of the application as similar as possible as to how OpenAreo handles parameters keeps consistency for users across the web, and to keep consistency in the OLAN language. While testing, it was found that the input of the user should be heavily restricted and strictly typed, ensuring the user types the exact format that the parameters should follow. After testing and evaluating the way that the OpenAero application handles this, it was decided the format should also be '(x,y)' where it is space separated from other elements, and where x and y can be either negative or positive.
+For the part of testing the half of the feature that worked, usability testing was the best approach here. In appendix D section~\ref{test:parameters} the test table can be found, and shows the feature passing for this aspect. By attempting to keep the workings of the application as similar as possible as to how OpenAreo handles parameters keeps consistency for users across the web, and to keep consistency in the OLAN language. While testing, it was found that the input of the user should be heavily restricted and strictly typed, ensuring the user types the exact format that the parameters should follow. After testing and evaluating the way that the OpenAero application handles this, it was decided the format should also be '(X, Y)' where it is space separated from other elements, and where x and y can be either negative or positive.
 
-Following the completion of this particular parametersiation, the progress of the feature can now be reviewed.
+Following the completion of this particular parameterisation, the progress of the feature can now be reviewed.
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|p{7cm}|}
 \hline
 \textbf{Start} & \textbf{End} & \textbf{Duration} & \textbf{Progress} & \textbf{Comments}                                                                                                     \\ \hline
-21-04-2015     & 23-04-2015   & 3 Days            & 50\%             &  Parameters for moving start position of next manoeuvre ready, but individual OLAN maneouvre parameters not implemented yet.\\ \hline
+21-04-2015     & 23-04-2015   & 3 Days            & 50\%             &  Parameters for moving start position of next manoeuvre ready, but individual OLAN manoeuvre parameters not implemented yet.\\ \hline
 24-04-2015     & 24-04-2015   & 1 Day            & 50\%             &  Can only test first half of the feature up to this point, will implement tests if second half if complete.\\ \hline
 \end{tabular}
 \end{table}
@@ -351,7 +351,7 @@ Although work appears to be behind schedule here, it should be noted that there 
 
 Analysing the graph further, the main problem can be seen where work was halted on feature five, the creation of manoeuvres on the canvas. Because issues prolonged work here, it meant other features were pushed back until it was decided that they should be completed in order to make a more whole application. Due to moving onto and completing other features first alongside writing this part of the report, considerable time has been made up. The time remaining will now allow for any completion of features that are most important, and also fixes to others if possible. 
 
-In addition to the graph shown, the features can be expressed as feature sets in traditional FDD progress reports. The progress reports using the due dates, and current progress are highlighted in figure~\ref{fig:featureprogress}, where the name of the feature set is shown, followed by how many parts the feature set contains, and the percentage. Where the background is green, the feature set is complete, yellow means it is currently ongoing, and red means the feature set is behind schedule. It expands on the tasks that need to be done more proptly, so for this project the main issue that will be addressed first is the OLAN to flight path creation.
+In addition to the graph shown, the features can be expressed as feature sets in traditional FDD progress reports. The progress reports using the due dates, and current progress are highlighted in figure~\ref{fig:featureprogress}, where the name of the feature set is shown, followed by how many parts the feature set contains, and the percentage. Where the background is green, the feature set is complete, yellow means it is currently ongoing, and red means the feature set is behind schedule. It expands on the tasks that need to be done more promptly, so for this project the main issue that will be addressed first is the OLAN to flight path creation.
 
 \begin{figure}[h!]
   \centering
@@ -365,7 +365,7 @@ Before a look at what fixes were done to solve issues found earlier in the itera
 
 Moving onto feature developments, the first which was the most important was the issue concerning the creation of Aresti figures for OLAN entered. Because this issue was the largest and held back quite integral parts of the project, it is important that a comprehensive amount of detail was given, and shown how the issue was debugged. Finding out the main issues and sources of the problem helped in looking for a fix for this part of the application. Although this task is still ongoing, due to the time restraining of both the printing and binding of this report, the final findings and solution if one is created will be created in an appending document which will be placed at the end of this document before the bibliography. Appendix E will contain findings if there are any developments. 
 
-As for the issue itself, to explain it best see figures~\ref{fig:happening} and~\ref{fig:supposed} to see what happens currently when one loop is added after another. It can be seen that the second loop currently spans the outside of the first, which is not what is desired at this stage. Rather, the second loop should be a set length (in this case 10 pixels) to the right, and be the same size as the first. This issue also seems to extend to any scenerio where a flat piece of of the path is followed by another change of direction, which then appears to not go into the correct form desired. 
+As for the issue itself, to explain it best see figures~\ref{fig:happening} and~\ref{fig:supposed} to see what happens currently when one loop is added after another. It can be seen that the second loop currently spans the outside of the first, which is not what is desired at this stage. Rather, the second loop should be a set length (in this case 10 pixels) to the right, and be the same size as the first. This issue also seems to extend to any scenario where a flat piece of the path is followed by another change of direction, which then appears to not go into the correct form desired. 
 
 \begin{figure}[h!]
   \centering
@@ -385,7 +385,7 @@ There seem to be three primary issues found with the example shown above:
 \begin{itemize}
   \item The angle at which the second loop begins to start its upward direction is larger than the first.
   \item On each iteration of the second curves incline, the amount spanned between vector points is larger than the first.
-  \item The center point on the second loop looks the same as the first, resulting in the loop to end lower than the planned point, becuase the loop is larger.
+  \item The centre point on the second loop looks the same as the first, resulting in the loop to end lower than the planned point, because the loop is larger.
 \end{itemize}
 
 With these three issues in mind, the next step was to perform further tests to see if this affected different angles, amount of angles, and the length of straight lines. The first test carried out was to replace the 15 degrees used for curving with 90 degree turns, to see if a square loop would act the same. This test can be seen in figure~\ref{fig:square}, and shows again the same issue as before with round loops.
@@ -421,60 +421,60 @@ Checking the distance between points on the Z axis was next, because mentioned e
   \label{code:pythagoras}
 \end{figure}
 
-The results showed that the length between each vector seemed to exponentially increase on each additional loop. And because the distance of the Z axis was currently being hard written into each maneouvre, the only reasoning for this part of the issue was that the rotation of a vector was being based off of the initial starting vector, and not the starting vector of the second loop, which began (in this case) 10 pixels to the right. 
+The results showed that the length between each vector seemed to exponentially increase on each additional loop. And because the distance of the Z axis was currently being hard written into each manoeuvre, the only reasoning for this part of the issue was that the rotation of a vector was being based off of the initial starting vector, and not the starting vector of the second loop, which began (in this case) 10 pixels to the right. 
 
 An initial thought solution for this issue was to simply subtract the starting vector of the second loop from the first initial vector of the flight, and then rotate around the vector that would be calculated. Upon searching through various sources on the threeJS site, examples helped to provide code on how to do this, but this ended up unsuccessful.
 
-There were points during this stage where attempts were made to use different libraries (such as glMatrix) to generate separate matrices for each vector and rotate around them rather than the previous vector. Due to time constraints though, this part of the project fell short. Although at this stage of the project the problem remains, see Appendix E for any fixes completed to this during the latter stages of the the project where time will allow.
+There were points during this stage where attempts were made to use different libraries (such as glMatrix) to generate separate matrices for each vector and rotate around them rather than the previous vector. Due to time constraints though, this part of the project fell short. Although at this stage of the project the problem remains, see Appendix E for any fixes completed to this during the latter stages of the project where time will allow.
 
 Moving on from this issue and back to other changes, a small feature that was added from a look and usability view was a button to hide the movie-reel. At times where all 5 slots were taken up from the amount of manoeuvres entered, it could be obstructing to the view. Having the option to minimise the reel was added, thus allowing the user to hide and show it if they so desired. Figure~\ref{fig:minimise} shows the new button which can be used to hide the reel, whilst figure~\ref{fig:maxmimise} shows the ability to make the reel appear again.
 
 \clearpage
 
 \begin{figure}[h!]
-	\centering
-	\parbox{7cm}{
-		\includegraphics[width=7cm]{images/minimise.png}
-		\caption{Movie-reel shown with minimise button displayed.}
-		\label{fig:minimise}}
-	\qquad
-	\begin{minipage}{7cm}
-		\includegraphics[width=7cm]{images/maximise.png}
-		\caption{Movie-reel hidden with display button shown.}
-		\label{fig:maxmimise}
-	\end{minipage}
+  \centering
+  \parbox{7cm}{
+    \includegraphics[width=7cm]{images/minimise.png}
+    \caption{Movie-reel shown with minimise button displayed.}
+    \label{fig:minimise}}
+  \qquad
+  \begin{minipage}{7cm}
+    \includegraphics[width=7cm]{images/maximise.png}
+    \caption{Movie-reel hidden with display button shown.}
+    \label{fig:maxmimise}
+  \end{minipage}
 \end{figure}
 
 A fix that was added to the application also looking towards the movie-reel was the issue found where when more than 10 manoeuvres were present, then the reel did not scroll onto the next five when the first five had been animated across. This issue has now been addressed, and now correctly shows the next five manoeuvres after animating across the previous five. A flow chart shown in figure~\ref{fig:moves} illustrates how the application knows when to move to the next five manoeuvres.
 
 \begin{figure}[h!]
-	\centering
-	\includegraphics[width=1\textwidth]{images/reel-flow.png}
-	\caption{Flow chart showing how movie-reel knows when to move.}
-	\label{fig:moves}
+  \centering
+  \includegraphics[width=1\textwidth]{images/reel-flow.png}
+  \caption{Flow chart showing how movie-reel knows when to move.}
+  \label{fig:moves}
 \end{figure}
 
 A couple of smaller but integral improvements added before this report progressed to the evaluation stage was the addition of both checks to OLAN compatibilities on the scene, and smoke trails. In the OpenAero application discussed in the analysis, it had checks which looked at making sure OLAN entry was only allowed to be added when it was valid. One such check that has been added to this project's application is the ability to generate a warning when the user enters an OLAN manoeuvre which would cause the flight path to pass through the ground. To do this, a check which looked at all the vectors in each flight path made sure that both the x and y value co-ordinates were above zero, or an error was shown. The same foundation element was used as with the save-load message, which appears over the canvas to show the warning as seen in figure~\ref{fig:warnMan}. By crossing off the error, it will not appear again throughout use of the application.  
 
 \begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.9\textwidth]{images/warn.png}
-	\caption{Warning message on entry of OLAN that passes through negative values.}
-	\label{fig:warnMan}
+  \centering
+  \includegraphics[width=0.9\textwidth]{images/warn.png}
+  \caption{Warning message on entry of OLAN that passes through negative values.}
+  \label{fig:warnMan}
 \end{figure}
 
 The smoke trails were more complicated to create, as after a meeting with the project supervisor, an example of what would be desired of them initially meant that where the aircrafts rotation was upside down the smoke should be red, and gradually become green as the orientation is more stable. The application with this feature added can be seen in figure~\ref{fig:smoke}. In order to implement this, it was required to firstly get the value of the rotation of the vector, and then draw a square fragment of the smoke depending on how close to the required angles to make the smoke red. By multiplying the percentage of closeness to the angles being upside down, the red and green values of a RGB colour could be increased and decreased by multiplying the strength percentage by 255.
 
 \begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.8\textwidth]{images/smoke.png}
-	\caption{Smoke trails for mid-flight showing more red as the flight went upside down in a loop.}
-	\label{fig:smoke}
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/smoke.png}
+  \caption{Smoke trails for mid-flight showing more red as the flight went upside down in a loop.}
+  \label{fig:smoke}
 \end{figure}
 
 A final change performed within the allocated time left was the re-factoring of code. A book that was used for guidance with this was 'Clean Code'~\cite{clean_code} by Robert C. Martin who mentioned that methods should do one thing only, and not be longer than four or five lines. Following this principles, this was performed on the application code, and JSDoc re-compiled.
 
-After all changes were complete, a reconstruction of both the burndown chart from the start of implementation(in figure~\ref{fig:newburndown}) and module diagram from the design section was possible. The diagram in figure~\ref{fig:mod_after} shows which modules communicate with each other, with the main module initiating a lot of other modules, this has many links. Modules like the htmlHandler were used a lot because many events or actions from the user required the GUI to be updated.
+After all changes were complete, a reconstruction of both the burn down chart from the start of implementation(in figure~\ref{fig:newburndown}) and module diagram from the design section was possible. The diagram in figure~\ref{fig:mod_after} shows which modules communicate with each other, with the main module initiating a lot of other modules, this has many links. Modules like the htmlHandler were used a lot because many events or actions from the user required the GUI to be updated.
 
 \begin{figure}[h!]
   \centering
@@ -522,7 +522,7 @@ Another possible improvement that was found from feedback during the questionnai
 Other than these two suggestions, there was one which suggested better compatibility with mobile devices. Items such as tablets had too high a resolution to request the mobile page, thus meaning tablets had the desktop version. This meant buttons appeared small and text hard to read. Again, this could be an easy fix, by adding another level to the different sizes the page can set to. More compatibility could be possible with browsers too, with one user reporting that an old version of Safari allowed them to input into the OLAN box before the models were loaded, causing errors. 
 
 \section{Testing review}
-Starting with the pre-coding tasks that had to be completed, Github was initially set up on the machines the application as going to be created on, followed shortly by the set up of Travis and Grunt which was used later for automatic running of tests. The latest build status can be seen on the repository, and also in figure~\ref{fig:travis}. Once the repository and branch that would used to host the application was set up, Sublime text was used to perform the coding, and was used because of the package compatibility to assist with code formatting. In terms of how long it took to prepare the environment for coding and testing, this took less than a day, including the work blog.
+Starting with the pre-coding tasks that had to be completed, Github was initially set up on the machines the application as going to be created on, followed shortly by the set-up of Travis and Grunt which was used later for automatic running of tests. The latest build status can be seen on the repository, and also in figure~\ref{fig:travis}. Once the repository and branch that would be used to host the application was set up, Sublime text was used to perform the coding, and was used because of the package compatibility to assist with code formatting. In terms of how long it took to prepare the environment for coding and testing, this took less than a day, including the work blog.
 
 \begin{figure}[h!]
   \centering
@@ -531,7 +531,7 @@ Starting with the pre-coding tasks that had to be completed, Github was initiall
   \label{fig:travis}
 \end{figure}
 
-Throughout testing the application, it was ensured the performance levels were checked to be fast enough to run on most devices, primarily using a library called stats.js \cite{stats}. This allowed a small frame-rate counter in the corner of the application, which monitored how many frames or iterations of the animation the application achieved each second. Values between 40 and 60 was the aim, and 60 was the value throughout the most heavy work (having lots of manoeuvres being flown). The frame-rate counter was displayed as shown in figure~\ref{fig:framerate} with an example of frame-rate values on different devices in figure~\ref{fig:framerateDevices}.
+Throughout testing the application, it was ensured the performance levels were checked to be fast enough to run on most devices, primarily using a library called stats.js \cite{stats}. This allowed a small frame-rate counter in the corner of the application, which monitored how many frames or iterations of the animation the application achieved each second. Values between 40 and 60 was the aim, and 60 was the value throughout the heaviest work (having lots of manoeuvres being flown). The frame-rate counter was displayed as shown in figure~\ref{fig:framerate} with an example of frame-rate values on different devices in figure~\ref{fig:framerateDevices}.
 
 \begin{figure}[h]
   \centering
