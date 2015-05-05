@@ -4,5 +4,15 @@ See any appended pages following this for changes done to code after this report
 
 \clearpage
 
-\newpage\mbox{}\newpage
+\section{Resulted and on-going work}
+When this report was printed, there was still the issue present with some of the OLAN manoeuvres. The main issue included the odd behavior of when a new manoeuvre was added, the rotation and thus places where vectors where being added seemed to be out of place to the same distance of how far the manoeuvre started in comparison to the start of the first manoeuvre. Although every effort was taken to attempt to resolve this issue, the application still faces this issue. Following various searches through question/ answer site like 'Stackoverflow', conversations with people who have had experience using the Three.js library and even direct questions on the Github repository with the Three.js developers, it was decided that the issue would take too long and too much restructuring of the current application to create a viable fix. \\
+
+Furthering the suggested ideas mentioned in the implementation part of this report, the way that vectors were rotated were changed from using a matrices to a Euler. The reason for this was that Three.js handled the matrix automatically, increasing the speed it is done in. It was also though that this means of rotation of vectors might have fixed the issue above, though this too did not work. \\
+
+Although the primary issue was never completed in time for the project hand-in, it was ensured that both the JSDoc and refactoring was completed before the end of project. This included adding relevant comments for any new methods created during refactoring, alongside changing current documentation where method existence reasons changed. In addition to this, a read-me file was added to the source code folder, to ensure that any persons that may want to run the application themselves, or edit the application for their own use know how to properly set it up and edit it correctly. A final change performed was creating a general source folder clean up, including deleting unused library classes, and renaming both folders a files in a way that followed a universal standard. Touch ups to the GUI was also added, such as mouse hides on the canvas after a few seconds while animations occur, and checks done to ensure users who try use the application without a WebGL enabled browser are notified.
+
+Overall, although the issue was never fixed in the timescale given, it was a thoroughly enjoyed project to the very end of available time, and because of this not only will the issue be attempted to be fixed, but it will be an application that is developed over the coming months or even years as a hobby. Using time correctly for potential issues as the one experienced in this project will be taken into account for future work, and it will be ensured that considerations and actions are taken faster (e.g. changing library altogether for a solution, though this project was too far in.)
+
+\clearpage
+
 \newpage\mbox{}\newpage
